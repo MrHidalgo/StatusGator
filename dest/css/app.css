@@ -1,4 +1,28 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-arrow:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 38, src/scss/_generated/_spriteFont.scss */
+.icon-arrow:before {
+  content: "";
+}
+
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
 html,
 body {
@@ -327,6 +351,134 @@ picture {
   color: #FFFFFF;
 }
 
+/* line 3, src/scss/_components/common/_header.scss */
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 60px rgba(24, 33, 53, 0.07);
+          box-shadow: 0px 4px 60px rgba(24, 33, 53, 0.07);
+  background-color: #FFFFFF;
+}
+
+/* line 12, src/scss/_components/common/_header.scss */
+.header .c-grid-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 17, src/scss/_components/common/_header.scss */
+.header__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+/* line 22, src/scss/_components/common/_header.scss */
+.header__wrapper-left {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* line 27, src/scss/_components/common/_header.scss */
+.header__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 35, src/scss/_components/common/_header.scss */
+.header__wrapper-right > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 41, src/scss/_components/common/_header.scss */
+.header__wrapper-right > div:nth-of-type(2) {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* line 47, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 51, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn.c-btn__border {
+  border-color: #B0EACD;
+}
+
+/* line 54, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn.c-btn__border span {
+  color: #21BF73;
+}
+
+/* line 59, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+/* line 66, src/scss/_components/common/_header.scss */
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 71, src/scss/_components/common/_header.scss */
+.header__nav a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #163A5F;
+}
+
 /* line 5, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 {
   display: -webkit-box;
@@ -420,6 +572,203 @@ picture {
 /* line 54, src/scss/_components/common/_footer.scss */
 .footer__menu a:not(:last-of-type) {
   padding-bottom: 16px;
+}
+
+/* line 3, src/scss/_components/solution/_main.scss */
+.main {
+  padding-top: 252px;
+  padding-bottom: 42px;
+}
+
+/* line 7, src/scss/_components/solution/_main.scss */
+.main__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 66px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 15, src/scss/_components/solution/_main.scss */
+.main__desc {
+  width: 100%;
+  max-width: 505px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #576472;
+}
+
+/* line 27, src/scss/_components/solution/_main.scss */
+.main__btn {
+  padding-bottom: 50px;
+}
+
+/* line 30, src/scss/_components/solution/_main.scss */
+.main__btn .c-btn {
+  -webkit-box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
+          box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
+}
+
+/* line 3, src/scss/_components/solution/_partners.scss */
+.partners {
+  padding-top: 42px;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/solution/_partners.scss */
+.partners__title {
+  padding-bottom: 50px;
+}
+
+/* line 11, src/scss/_components/solution/_partners.scss */
+.partners__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 15, src/scss/_components/solution/_partners.scss */
+.partners__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 20, src/scss/_components/solution/_partners.scss */
+.partners__box-wrapper > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 24, src/scss/_components/solution/_partners.scss */
+.partners__box-wrapper > div:first-of-type {
+  padding-left: 0;
+}
+
+/* line 27, src/scss/_components/solution/_partners.scss */
+.partners__box-wrapper > div:last-of-type {
+  padding-right: 0;
+}
+
+/* line 33, src/scss/_components/solution/_partners.scss */
+.partners__box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 3, src/scss/_components/solution/_feature.scss */
+.feature {
+  padding-top: 75px;
+}
+
+/* line 6, src/scss/_components/solution/_feature.scss */
+.feature__title {
+  padding-bottom: 50px;
+}
+
+/* line 3, src/scss/_components/solution/_reviews.scss */
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/solution/_reviews.scss */
+.reviews__title {
+  padding-bottom: 50px;
+}
+
+/* line 11, src/scss/_components/solution/_reviews.scss */
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 15, src/scss/_components/solution/_reviews.scss */
+.reviews__wrapper-left {
+  width: 75px;
+}
+
+/* line 19, src/scss/_components/solution/_reviews.scss */
+.reviews__wrapper-middle {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 25, src/scss/_components/solution/_reviews.scss */
+.reviews__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 75px;
+}
+
+/* line 32, src/scss/_components/solution/_reviews.scss */
+.reviews__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
+          box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
+  background-color: rgba(87, 100, 114, 0.1);
+}
+
+/* line 43, src/scss/_components/solution/_reviews.scss */
+.reviews__btn--next .icon-font {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* line 48, src/scss/_components/solution/_reviews.scss */
+.reviews__btn .icon-font {
+  color: #576472;
 }
 
 /* line 3, src/scss/_components/solution/_plans.scss */

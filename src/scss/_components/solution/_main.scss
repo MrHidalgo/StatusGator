@@ -1,0 +1,36 @@
+// SECTION :: START
+
+.main {
+	padding-top: 252px;
+	padding-bottom: 42px;
+
+	&__title {
+		font-weight: 800;
+		font-size: 48px;
+		line-height: 66px;
+		text-align: center;
+		color: #163A5F;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 505px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #576472;
+	}
+
+	&__btn {
+		padding-bottom: 50px;
+
+		.c-btn {
+			box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
+		}
+	}
+}
+
+// SECTION :: END

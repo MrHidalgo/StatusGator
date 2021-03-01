@@ -15,7 +15,7 @@
 /// ===============
 //@import "_generated/spritePNG";
 //@import "_generated/spriteSVG";
-//@import "_generated/spriteFont";
+@import "_generated/spriteFont";
 ///
 /// SHARED
 /// ===============
@@ -46,4 +46,8 @@
 @import "_components/common/header";
 @import "_components/common/footer";
 
+@import "_components/solution/main";
+@import "_components/solution/partners";
+@import "_components/solution/feature";
+@import "_components/solution/reviews";
 @import "_components/solution/plans";

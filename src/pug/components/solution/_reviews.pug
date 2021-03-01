@@ -1,0 +1,27 @@
+// SECTION :: START
+
+section#reviews.reviews
+  .c-grid
+
+    h2.reviews__title.c-title What our customers say
+
+    .reviews__wrapper
+      .reviews__wrapper-left
+
+        a.reviews__btn.reviews__btn--prev(href="#")
+          i.icon-font.icon-arrow
+
+      .reviews__wrapper-middle
+
+        mixin swiperContent()
+          each val, idx in [1,2,3,4,5]
+            .swiper-slide
+
+        +swiper('reviewsSlider', 'swiperContent', false, false, false)
+
+      .reviews__wrapper-right
+
+        a.reviews__btn.reviews__btn--next(href="#")
+          i.icon-font.icon-arrow
+
+// SECTION :: END

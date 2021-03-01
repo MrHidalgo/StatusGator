@@ -1,7 +1,29 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
+  .c-grid-fluid
     .header__wrapper
+      .header__wrapper-left
+
+        .logo.logo--header
+          a.logo__btn(href="#")
+            img.logo__img(src="img/logo.svg" alt="")
+
+      .header__wrapper-right
+        div
+
+          nav.header__nav
+            a(href="#") Home
+            a(href="#") Services
+            a(href="#") Plans & Pricing
+            a(href="#") Blog
+
+        div
+
+          .c-btn__wrapper
+            a.c-btn.c-btn__border.c-btn--medium(href="#")
+              span Sign in
+            a.c-btn.c-btn__bg.c-btn__bg--green.c-btn--medium(href="#")
+              span Sign Up
 
 // HEADER :: END

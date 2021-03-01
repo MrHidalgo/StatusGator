@@ -1,0 +1,41 @@
+// SECTION :: START
+
+.partners {
+	padding-top: 42px;
+	padding-bottom: 75px;
+
+	&__title {
+		padding-bottom: 50px;
+	}
+
+	&__box {
+		display: flex;
+		align-items: flex-start;
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			> div {
+				padding-left: 10px;
+				padding-right: 10px;
+
+				&:first-of-type {
+					padding-left: 0;
+				}
+				&:last-of-type {
+					padding-right: 0;
+				}
+			}
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+// SECTION :: END
