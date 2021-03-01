@@ -1,0 +1,12 @@
+ProjectTitle: StatusGator
+
+PageList:
+- file: solution.html
+  titleName: Solution - Education
+  ready: 1
+- file: solution.html
+  titleName: Solution - Devops
+  ready: 0
+- file: solution.html
+  titleName: Solution - Helpdesk
+  ready: 0
