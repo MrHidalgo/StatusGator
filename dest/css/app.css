@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -21,6 +20,146 @@
 /* line 38, src/scss/_generated/_spriteFont.scss */
 .icon-arrow:before {
   content: "";
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-Black.woff2") format("woff2"), url("../fonts/Kinetika-Black.woff") format("woff"), url("../fonts/Kinetika-Black.ttf") format("truetype"), url("../fonts/Kinetika-Black.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "KinetikaHeavy";
+  src: url("../fonts/KinetikaHeavy.woff2") format("woff2"), url("../fonts/KinetikaHeavy.woff") format("woff"), url("../fonts/KinetikaHeavy.ttf") format("truetype"), url("../fonts/KinetikaHeavy.svg#KinetikaHeavy") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-Bold.woff2") format("woff2"), url("../fonts/Kinetika-Bold.woff") format("woff"), url("../fonts/Kinetika-Bold.ttf") format("truetype"), url("../fonts/Kinetika-Bold.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-SemiBold.woff2") format("woff2"), url("../fonts/Kinetika-SemiBold.woff") format("woff"), url("../fonts/Kinetika-SemiBold.ttf") format("truetype"), url("../fonts/Kinetika-SemiBold.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-Medium.woff2") format("woff2"), url("../fonts/Kinetika-Medium.woff") format("woff"), url("../fonts/Kinetika-Medium.ttf") format("truetype"), url("../fonts/Kinetika-Medium.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-Light.woff2") format("woff2"), url("../fonts/Kinetika-Light.woff") format("woff"), url("../fonts/Kinetika-Light.ttf") format("truetype"), url("../fonts/Kinetika-Light.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-Kinetika.woff2") format("woff2"), url("../fonts/Kinetika-Kinetika.woff") format("woff"), url("../fonts/Kinetika-Kinetika.ttf") format("truetype"), url("../fonts/Kinetika-Kinetika.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Kinetika";
+  src: url("../fonts/Kinetika-Regular.woff2") format("woff2"), url("../fonts/Kinetika-Regular.woff") format("woff"), url("../fonts/Kinetika-Regular.ttf") format("truetype"), url("../fonts/Kinetika-Regular.svg#Kinetika") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "KinetikaBook";
+  src: url("../fonts/KinetikaBook.woff2") format("woff2"), url("../fonts/KinetikaBook.woff") format("woff"), url("../fonts/KinetikaBook.ttf") format("truetype"), url("../fonts/KinetikaBook.svg#KinetikaBook") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "KinetikaUltra";
+  src: url("../fonts/KinetikaUltra.woff2") format("woff2"), url("../fonts/KinetikaUltra.woff") format("woff"), url("../fonts/KinetikaUltra.ttf") format("truetype"), url("../fonts/KinetikaUltra.svg#KinetikaUltra") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-Black.woff2") format("woff2"), url("../fonts/Gogh-Black.woff") format("woff"), url("../fonts/Gogh-Black.ttf") format("truetype"), url("../fonts/Gogh-Black.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "GoghHeavy";
+  src: url("../fonts/GoghHeavy.woff2") format("woff2"), url("../fonts/GoghHeavy.woff") format("woff"), url("../fonts/GoghHeavy.ttf") format("truetype"), url("../fonts/GoghHeavy.svg#GoghHeavy") format("svg");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-ExtraBold.woff2") format("woff2"), url("../fonts/Gogh-ExtraBold.woff") format("woff"), url("../fonts/Gogh-ExtraBold.ttf") format("truetype"), url("../fonts/Gogh-ExtraBold.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-Bold.woff2") format("woff2"), url("../fonts/Gogh-Bold.woff") format("woff"), url("../fonts/Gogh-Bold.ttf") format("truetype"), url("../fonts/Gogh-Bold.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-Medium.woff2") format("woff2"), url("../fonts/Gogh-Medium.woff") format("woff"), url("../fonts/Gogh-Medium.ttf") format("truetype"), url("../fonts/Gogh-Medium.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GoghBook";
+  src: url("../fonts/GoghBook.woff2") format("woff2"), url("../fonts/GoghBook.woff") format("woff"), url("../fonts/GoghBook.ttf") format("truetype"), url("../fonts/GoghBook.svg#GoghBook") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GoghHairline";
+  src: url("../fonts/GoghHairline.woff2") format("woff2"), url("../fonts/GoghHairline.woff") format("woff"), url("../fonts/GoghHairline.ttf") format("truetype"), url("../fonts/GoghHairline.svg#GoghHairline") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-Regular.woff2") format("woff2"), url("../fonts/Gogh-Regular.woff") format("woff"), url("../fonts/Gogh-Regular.ttf") format("truetype"), url("../fonts/Gogh-Regular.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-Light.woff2") format("woff2"), url("../fonts/Gogh-Light.woff") format("woff"), url("../fonts/Gogh-Light.ttf") format("truetype"), url("../fonts/Gogh-Light.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gogh";
+  src: url("../fonts/Gogh-Thin.woff2") format("woff2"), url("../fonts/Gogh-Thin.woff") format("woff"), url("../fonts/Gogh-Thin.ttf") format("truetype"), url("../fonts/Gogh-Thin.svg#Gogh") format("svg");
+  font-style: normal;
+  font-weight: 100;
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -53,7 +192,7 @@ body {
   line-height: 1.42857143;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "Kinetika", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -346,6 +485,7 @@ picture {
   position: relative;
   font-weight: bold;
   font-size: 17px;
+  font-weight: 700;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
@@ -358,18 +498,19 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: 2px solid rgba(225, 230, 249, 0.5);
   -webkit-box-shadow: 0px 4px 60px rgba(24, 33, 53, 0.07);
           box-shadow: 0px 4px 60px rgba(24, 33, 53, 0.07);
   background-color: #FFFFFF;
 }
 
-/* line 12, src/scss/_components/common/_header.scss */
+/* line 13, src/scss/_components/common/_header.scss */
 .header .c-grid-fluid {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-/* line 17, src/scss/_components/common/_header.scss */
+/* line 18, src/scss/_components/common/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -382,13 +523,13 @@ picture {
   height: 100px;
 }
 
-/* line 22, src/scss/_components/common/_header.scss */
+/* line 23, src/scss/_components/common/_header.scss */
 .header__wrapper-left {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 27, src/scss/_components/common/_header.scss */
+/* line 28, src/scss/_components/common/_header.scss */
 .header__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -406,7 +547,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 35, src/scss/_components/common/_header.scss */
+/* line 36, src/scss/_components/common/_header.scss */
 .header__wrapper-right > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -416,34 +557,41 @@ picture {
   max-width: 100%;
 }
 
-/* line 41, src/scss/_components/common/_header.scss */
+/* line 42, src/scss/_components/common/_header.scss */
 .header__wrapper-right > div:nth-of-type(2) {
   width: 100%;
   max-width: 250px;
 }
 
-/* line 47, src/scss/_components/common/_header.scss */
+/* line 48, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
+  max-width: 112px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-/* line 51, src/scss/_components/common/_header.scss */
+/* line 54, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border {
   border-color: #B0EACD;
 }
 
-/* line 54, src/scss/_components/common/_header.scss */
+/* line 57, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border span {
   color: #21BF73;
 }
 
-/* line 59, src/scss/_components/common/_header.scss */
+/* line 62, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn:not(:last-of-type) {
   margin-right: 10px;
 }
 
 /* line 66, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn span {
+  font-size: 14px;
+}
+
+/* line 73, src/scss/_components/common/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -459,7 +607,7 @@ picture {
           justify-content: center;
 }
 
-/* line 71, src/scss/_components/common/_header.scss */
+/* line 78, src/scss/_components/common/_header.scss */
 .header__nav a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -469,13 +617,14 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
   color: #163A5F;
 }
 
@@ -576,20 +725,96 @@ picture {
 
 /* line 3, src/scss/_components/solution/_main.scss */
 .main {
+  position: relative;
   padding-top: 252px;
   padding-bottom: 42px;
 }
 
-/* line 7, src/scss/_components/solution/_main.scss */
+/* line 8, src/scss/_components/solution/_main.scss */
+.main__bg {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1270px;
+  height: 100%;
+  max-height: 720px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 23, src/scss/_components/solution/_main.scss */
+.main__bg-circle {
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 27, src/scss/_components/solution/_main.scss */
+.main__bg-circle:nth-of-type(1) {
+  left: 0;
+  bottom: 217px;
+  width: 10px;
+  height: 10px;
+  background-color: #99F3BD;
+}
+
+/* line 34, src/scss/_components/solution/_main.scss */
+.main__bg-circle:nth-of-type(2) {
+  left: 241px;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #F5DEA3;
+}
+
+/* line 41, src/scss/_components/solution/_main.scss */
+.main__bg-circle:nth-of-type(3) {
+  right: 0;
+  bottom: 89px;
+  width: 40px;
+  height: 40px;
+  background-color: #99F3BD;
+}
+
+/* line 48, src/scss/_components/solution/_main.scss */
+.main__bg-circle:nth-of-type(4) {
+  top: 0;
+  right: 34px;
+  width: 30px;
+  height: 30px;
+  background-color: #F5DEA3;
+}
+
+/* line 55, src/scss/_components/solution/_main.scss */
+.main__bg-circle:nth-of-type(5) {
+  top: 130px;
+  left: 67px;
+  width: 40px;
+  height: 40px;
+  background-color: #99F3BD;
+}
+
+/* line 65, src/scss/_components/solution/_main.scss */
+.main__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 70, src/scss/_components/solution/_main.scss */
 .main__title {
-  font-weight: 800;
   font-size: 48px;
+  font-weight: 800;
   line-height: 66px;
   text-align: center;
   color: #163A5F;
 }
 
-/* line 15, src/scss/_components/solution/_main.scss */
+/* line 78, src/scss/_components/solution/_main.scss */
 .main__desc {
   width: 100%;
   max-width: 505px;
@@ -602,15 +827,36 @@ picture {
   color: #576472;
 }
 
-/* line 27, src/scss/_components/solution/_main.scss */
+/* line 90, src/scss/_components/solution/_main.scss */
 .main__btn {
   padding-bottom: 50px;
 }
 
-/* line 30, src/scss/_components/solution/_main.scss */
+/* line 93, src/scss/_components/solution/_main.scss */
 .main__btn .c-btn {
   -webkit-box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
           box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
+}
+
+/* line 98, src/scss/_components/solution/_main.scss */
+.main__video {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 102, src/scss/_components/solution/_main.scss */
+.main__video video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 3, src/scss/_components/solution/_partners.scss */
