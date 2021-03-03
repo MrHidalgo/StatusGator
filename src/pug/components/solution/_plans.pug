@@ -3,7 +3,9 @@
 section#plans.plans
 
   .plans__bg
-    div
+    .plans__bg-circle
+    .plans__bg-circle
+    .plans__bg-overlay
 
   .c-grid
     .plans__wrapper.plans__wrapper-1
@@ -22,6 +24,7 @@ section#plans.plans
       .plans__box-wrapper
         div
           a.plans__box(href="#")
+            img.plans__box-shadow(src="img/img-plans-shadow.png" srcset="img/img-plans-shadow@2x.png 2x" alt="")
             .plans__box-head
               p.plans__box-badge Free
               p.plans__box-price Free
@@ -45,6 +48,7 @@ section#plans.plans
                   span Try for free
         div
           a.plans__box(href="#")
+            img.plans__box-shadow(src="img/img-plans-shadow.png" srcset="img/img-plans-shadow@2x.png 2x" alt="")
             .plans__box-head
               p.plans__box-badge Incubator
               p.plans__box-price!= "<i>$</i> 27.49"
@@ -72,11 +76,15 @@ section#plans.plans
                 button.c-btn.c-btn__border.c-btn--medium(type='button')
                   span Try for free
         div
-          a.plans__box(href="#")
+          a.plans__box.is-active(href="#")
+            img.plans__box-shadow(src="img/img-plans-shadow--active.png" srcset="img/img-plans-shadow--active@2x.png 2x" alt="")
+            img.plans__box-dino(src='img/img-dino.svg')
+            img.plans__box-dino-hand(src='img/img-dino-hand.svg')
             .plans__box-head
               p.plans__box-badge Startup
               p.plans__box-price!= "<i>$</i> 91.66"
               p.plans__box-info Per month
+              p.plans__box-top Top Plan
             .plans__box-body
               ul.plans__box-list
                 li
@@ -97,10 +105,11 @@ section#plans.plans
             .plans__box-footer
               button.plans__box-link(type='button') Learn more
               .c-btn__wrapper
-                button.c-btn.c-btn__border.c-btn--medium(type='button')
+                button.c-btn.c-btn__bg.c-btn__bg--green.c-btn--medium(type='button')
                   span Try for free
         div
           a.plans__box(href="#")
+            img.plans__box-shadow(src="img/img-plans-shadow.png" srcset="img/img-plans-shadow@2x.png 2x" alt="")
             .plans__box-head
               p.plans__box-badge Venture
               p.plans__box-price!= "<i>$</i> 274.99"
