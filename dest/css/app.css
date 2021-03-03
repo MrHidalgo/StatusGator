@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* line 14, src/scss/_utilities/_extend.scss */
+.reviews__box-author > div:nth-of-type(1) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -496,25 +509,27 @@ picture {
 /* line 37, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--medium {
   height: 56px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-/* line 42, src/scss/_macros/_btn.scss */
+/* line 44, src/scss/_macros/_btn.scss */
 .c-btn__bg--green {
   background-color: #21BF73;
 }
 
-/* line 47, src/scss/_macros/_btn.scss */
+/* line 49, src/scss/_macros/_btn.scss */
 .c-btn.c-btn__border {
   border-color: #163A5F;
   background-color: transparent;
 }
 
-/* line 51, src/scss/_macros/_btn.scss */
+/* line 53, src/scss/_macros/_btn.scss */
 .c-btn.c-btn__border span {
   color: #163A5F;
 }
 
-/* line 56, src/scss/_macros/_btn.scss */
+/* line 58, src/scss/_macros/_btn.scss */
 .c-btn span {
   z-index: 2;
   position: relative;
@@ -1133,16 +1148,46 @@ picture {
 
 /* line 3, src/scss/_components/solution/_reviews.scss */
 .reviews {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 75px;
 }
 
-/* line 7, src/scss/_components/solution/_reviews.scss */
+/* line 8, src/scss/_components/solution/_reviews.scss */
+.reviews__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/solution/_reviews.scss */
+.reviews__bg-circle {
+  position: absolute;
+  top: -webkit-calc(100px + 10%);
+  top: calc(100px + 10%);
+  left: 30%;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(245, 222, 163, 0.5);
+}
+
+/* line 27, src/scss/_components/solution/_reviews.scss */
+.reviews .c-grid {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 32, src/scss/_components/solution/_reviews.scss */
 .reviews__title {
   padding-bottom: 50px;
 }
 
-/* line 11, src/scss/_components/solution/_reviews.scss */
+/* line 36, src/scss/_components/solution/_reviews.scss */
 .reviews__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1154,12 +1199,12 @@ picture {
           align-items: center;
 }
 
-/* line 15, src/scss/_components/solution/_reviews.scss */
+/* line 40, src/scss/_components/solution/_reviews.scss */
 .reviews__wrapper-left {
   width: 75px;
 }
 
-/* line 19, src/scss/_components/solution/_reviews.scss */
+/* line 44, src/scss/_components/solution/_reviews.scss */
 .reviews__wrapper-middle {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1169,7 +1214,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 25, src/scss/_components/solution/_reviews.scss */
+/* line 50, src/scss/_components/solution/_reviews.scss */
 .reviews__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1182,7 +1227,7 @@ picture {
   width: 75px;
 }
 
-/* line 32, src/scss/_components/solution/_reviews.scss */
+/* line 57, src/scss/_components/solution/_reviews.scss */
 .reviews__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1200,21 +1245,127 @@ picture {
   height: 50px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
+  background: rgba(176, 234, 205, 0.3);
+  -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
+          box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 68, src/scss/_components/solution/_reviews.scss */
+.reviews__btn.swiper-button-disabled {
+  pointer-events: none;
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
           box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
   background-color: rgba(87, 100, 114, 0.1);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 43, src/scss/_components/solution/_reviews.scss */
+/* line 74, src/scss/_components/solution/_reviews.scss */
+.reviews__btn.swiper-button-disabled .icon-font {
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 81, src/scss/_components/solution/_reviews.scss */
 .reviews__btn--next .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 48, src/scss/_components/solution/_reviews.scss */
+/* line 86, src/scss/_components/solution/_reviews.scss */
 .reviews__btn .icon-font {
+  color: #21bf73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 92, src/scss/_components/solution/_reviews.scss */
+.reviews__box {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 98, src/scss/_components/solution/_reviews.scss */
+.reviews__box-title {
+  padding-bottom: 60px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
   color: #576472;
+}
+
+/* line 107, src/scss/_components/solution/_reviews.scss */
+.reviews__box-author {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 285px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+/* line 117, src/scss/_components/solution/_reviews.scss */
+.reviews__box-author > div:nth-of-type(1) {
+  overflow: hidden;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 128, src/scss/_components/solution/_reviews.scss */
+.reviews__box-author > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 20px;
+}
+
+/* line 135, src/scss/_components/solution/_reviews.scss */
+.reviews__box-author > div p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #163A5F;
+}
+
+/* line 142, src/scss/_components/solution/_reviews.scss */
+.reviews__box-author > div span {
+  font-size: 14px;
+  line-height: 22px;
+  color: #163A5F;
+}
+
+/* line 152, src/scss/_components/solution/_reviews.scss */
+.reviews__box-btn .c-btn span {
+  font-size: 14px;
+  line-height: 17px;
 }
 
 /* line 3, src/scss/_components/solution/_plans.scss */

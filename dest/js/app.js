@@ -41,13 +41,16 @@ var initSwiper = function initSwiper() {
 
   new Swiper('.reviewsSlider', {
     loop: false,
-    effect: 'slide',
+    effect: 'flip',
+    flipEffect: {
+      slideShadows: false
+    },
     speed: 800,
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.reviews__btn--next',
+      prevEl: '.reviews__btn--prev'
     }
   });
 };

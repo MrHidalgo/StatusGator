@@ -1,6 +1,10 @@
 // SECTION :: START
 
 section#reviews.reviews
+
+  .reviews__bg
+    .reviews__bg-circle
+
   .c-grid
 
     h2.reviews__title.c-title What our customers say
@@ -16,6 +20,19 @@ section#reviews.reviews
         mixin swiperContent()
           each val, idx in [1,2,3,4,5]
             .swiper-slide
+              .reviews__box
+                p.reviews__box-title!= "StatusGator helped us to reduce our ticket volume by 900%. <br>Our recent survey showed that our student happiness rate reached its peak since 1980."
+
+                .reviews__box-author
+                  div
+                    img(src="img/img-reviews-author.png" alt="")
+                  div
+                    p John Howard
+                    span Professor of Harvard University
+
+                .reviews__box-btn.c-btn__wrapper.c-btn__wrapper--center
+                  a.c-btn.c-btn__border.c-btn--medium(href="#")
+                    span Read Case Study
 
         +swiper('reviewsSlider', 'swiperContent', false, false, false)
 
