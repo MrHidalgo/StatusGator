@@ -27,8 +27,29 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrow {
+	@if $filename == anchor {
 		$char: "\E001";
+	}
+	@if $filename == arrow {
+		$char: "\E002";
+	}
+	@if $filename == bell {
+		$char: "\E003";
+	}
+	@if $filename == checked-sq {
+		$char: "\E004";
+	}
+	@if $filename == image {
+		$char: "\E005";
+	}
+	@if $filename == list {
+		$char: "\E006";
+	}
+	@if $filename == plus-sq {
+		$char: "\E007";
+	}
+	@if $filename == toggle {
+		$char: "\E008";
 	}
 
 	@return $char;
@@ -45,7 +66,35 @@
 	}
 }
 
+.icon-anchor {
+	@include icon(anchor);
+
+}
 .icon-arrow {
 	@include icon(arrow);
+
+}
+.icon-bell {
+	@include icon(bell);
+
+}
+.icon-checked-sq {
+	@include icon(checked-sq);
+
+}
+.icon-image {
+	@include icon(image);
+
+}
+.icon-list {
+	@include icon(list);
+
+}
+.icon-plus-sq {
+	@include icon(plus-sq);
+
+}
+.icon-toggle {
+	@include icon(toggle);
 
 }
