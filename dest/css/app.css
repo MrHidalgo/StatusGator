@@ -1146,6 +1146,150 @@ picture {
   color: #576472;
 }
 
+/* line 3, src/scss/_components/solution/_additional.scss */
+.additional {
+  position: relative;
+  padding-top: 100px;
+}
+
+/* line 7, src/scss/_components/solution/_additional.scss */
+.additional__bg {
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, src/scss/_components/solution/_additional.scss */
+.additional__bg > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 42%;
+  padding-right: 80px;
+  padding-top: 153px;
+}
+
+/* line 26, src/scss/_components/solution/_additional.scss */
+.additional__bg > div:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 800px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transform: translateX(40%);
+      -ms-transform: translateX(40%);
+          transform: translateX(40%);
+  background-color: rgba(176, 234, 205, 0.1);
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 26, src/scss/_components/solution/_additional.scss */
+  .additional__bg > div:after {
+    width: 650px;
+    height: 650px;
+  }
+}
+
+/* line 43, src/scss/_components/solution/_additional.scss */
+.additional__bg > div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 51, src/scss/_components/solution/_additional.scss */
+.additional__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 56, src/scss/_components/solution/_additional.scss */
+.additional__wrapper > div {
+  width: 55%;
+}
+
+/* line 61, src/scss/_components/solution/_additional.scss */
+.additional__title {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+/* line 68, src/scss/_components/solution/_additional.scss */
+.additional__box-wrapper {
+  position: relative;
+  left: -70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: -webkit-calc(100% + 70px);
+  width: calc(100% + 70px);
+}
+
+/* line 75, src/scss/_components/solution/_additional.scss */
+.additional__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 2);
+  max-width: calc(100% / 2);
+  padding-left: 70px;
+  padding-bottom: 70px;
+}
+
+/* line 83, src/scss/_components/solution/_additional.scss */
+.additional__box h3 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #163A5F;
+}
+
+/* line 91, src/scss/_components/solution/_additional.scss */
+.additional__box p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #576472;
+}
+
+/* line 97, src/scss/_components/solution/_additional.scss */
+.additional__box p a {
+  color: #21bf73;
+  text-decoration: underline;
+}
+
 /* line 3, src/scss/_components/solution/_reviews.scss */
 .reviews {
   position: relative;
