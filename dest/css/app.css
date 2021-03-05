@@ -1191,8 +1191,7 @@ picture {
 }
 
 /* line 26, src/scss/_components/solution/_additional.scss */
-.additional__bg > div:after {
-  content: '';
+.additional__bg > div span {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -1209,20 +1208,20 @@ picture {
 
 @media screen and (max-width: 1535px) {
   /* line 26, src/scss/_components/solution/_additional.scss */
-  .additional__bg > div:after {
+  .additional__bg > div span {
     width: 650px;
     height: 650px;
   }
 }
 
-/* line 43, src/scss/_components/solution/_additional.scss */
+/* line 42, src/scss/_components/solution/_additional.scss */
 .additional__bg > div img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 51, src/scss/_components/solution/_additional.scss */
+/* line 50, src/scss/_components/solution/_additional.scss */
 .additional__wrapper {
   z-index: 2;
   position: relative;
@@ -1232,18 +1231,18 @@ picture {
   display: flex;
 }
 
-/* line 56, src/scss/_components/solution/_additional.scss */
+/* line 55, src/scss/_components/solution/_additional.scss */
 .additional__wrapper > div {
   width: 55%;
 }
 
-/* line 61, src/scss/_components/solution/_additional.scss */
+/* line 60, src/scss/_components/solution/_additional.scss */
 .additional__title {
   padding-bottom: 50px;
   text-align: left;
 }
 
-/* line 68, src/scss/_components/solution/_additional.scss */
+/* line 67, src/scss/_components/solution/_additional.scss */
 .additional__box-wrapper {
   position: relative;
   left: -70px;
@@ -1258,7 +1257,7 @@ picture {
   width: calc(100% + 70px);
 }
 
-/* line 75, src/scss/_components/solution/_additional.scss */
+/* line 74, src/scss/_components/solution/_additional.scss */
 .additional__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 2);
@@ -1267,7 +1266,7 @@ picture {
   padding-bottom: 70px;
 }
 
-/* line 83, src/scss/_components/solution/_additional.scss */
+/* line 82, src/scss/_components/solution/_additional.scss */
 .additional__box h3 {
   padding-bottom: 10px;
   font-weight: bold;
@@ -1276,7 +1275,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 91, src/scss/_components/solution/_additional.scss */
+/* line 90, src/scss/_components/solution/_additional.scss */
 .additional__box p {
   font-weight: 500;
   font-size: 16px;
@@ -1284,7 +1283,7 @@ picture {
   color: #576472;
 }
 
-/* line 97, src/scss/_components/solution/_additional.scss */
+/* line 96, src/scss/_components/solution/_additional.scss */
 .additional__box p a {
   color: #21bf73;
   text-decoration: underline;

@@ -23,8 +23,7 @@
 			padding-right: 80px;
 			padding-top: 153px;
 
-			&:after {
-				content: '';
+			span {
 				z-index: -1;
 				position: absolute;
 				top: 0;

@@ -48,6 +48,7 @@
 
 		// lib
 		initSwiper();
+		initStellar();
 		// ==========================================
 
 		// callback
