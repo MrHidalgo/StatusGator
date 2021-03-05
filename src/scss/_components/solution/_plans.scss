@@ -207,11 +207,23 @@
 			top: -44px;
 			right: -44px;
 
+			svg {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+
 			&-hand {
 				z-index: 2;
 				position: absolute;
-				top: 0;
-				right: 0;
+				top: -10px;
+				right: -10px;
+
+				svg {
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
 			}
 		}
 

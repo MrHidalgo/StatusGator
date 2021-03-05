@@ -1133,10 +1133,12 @@ picture {
 /* line 103, src/scss/_components/solution/_feature.scss */
 .feature__box-list li .icon-font {
   font-size: 18px;
+  height: 18px;
+  line-height: 18px;
   color: #21bf73;
 }
 
-/* line 108, src/scss/_components/solution/_feature.scss */
+/* line 110, src/scss/_components/solution/_feature.scss */
 .feature__box-list li p {
   font-size: 18px;
   font-weight: 500;
@@ -1427,13 +1429,17 @@ picture {
 
 /* line 86, src/scss/_components/solution/_reviews.scss */
 .reviews__btn .icon-font {
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
   color: #21bf73;
+  font-size: 14px;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 92, src/scss/_components/solution/_reviews.scss */
+/* line 96, src/scss/_components/solution/_reviews.scss */
 .reviews__box {
   width: 100%;
   max-width: 800px;
@@ -1441,7 +1447,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 98, src/scss/_components/solution/_reviews.scss */
+/* line 102, src/scss/_components/solution/_reviews.scss */
 .reviews__box-title {
   padding-bottom: 60px;
   font-weight: 500;
@@ -1451,7 +1457,7 @@ picture {
   color: #576472;
 }
 
-/* line 107, src/scss/_components/solution/_reviews.scss */
+/* line 111, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1468,7 +1474,7 @@ picture {
   margin-bottom: 60px;
 }
 
-/* line 117, src/scss/_components/solution/_reviews.scss */
+/* line 121, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div:nth-of-type(1) {
   overflow: hidden;
   position: relative;
@@ -1478,7 +1484,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 128, src/scss/_components/solution/_reviews.scss */
+/* line 132, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1489,7 +1495,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 135, src/scss/_components/solution/_reviews.scss */
+/* line 139, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div p {
   font-weight: 600;
   font-size: 16px;
@@ -1497,14 +1503,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 142, src/scss/_components/solution/_reviews.scss */
+/* line 146, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div span {
   font-size: 14px;
   line-height: 22px;
   color: #163A5F;
 }
 
-/* line 152, src/scss/_components/solution/_reviews.scss */
+/* line 156, src/scss/_components/solution/_reviews.scss */
 .reviews__box-btn .c-btn span {
   font-size: 14px;
   line-height: 17px;
@@ -1790,14 +1796,28 @@ picture {
 }
 
 /* line 210, src/scss/_components/solution/_plans.scss */
+.plans__box-dino svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 216, src/scss/_components/solution/_plans.scss */
 .plans__box-dino-hand {
   z-index: 2;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10px;
+  right: -10px;
 }
 
-/* line 218, src/scss/_components/solution/_plans.scss */
+/* line 222, src/scss/_components/solution/_plans.scss */
+.plans__box-dino-hand svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 230, src/scss/_components/solution/_plans.scss */
 .plans__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1809,24 +1829,24 @@ picture {
           justify-content: space-between;
 }
 
-/* line 222, src/scss/_components/solution/_plans.scss */
+/* line 234, src/scss/_components/solution/_plans.scss */
 .plans__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 45px) / 4);
   max-width: calc((100% - 45px) / 4);
 }
 
-/* line 228, src/scss/_components/solution/_plans.scss */
+/* line 240, src/scss/_components/solution/_plans.scss */
 .plans__box-head, .plans__box-body, .plans__box-footer {
   width: 100%;
 }
 
-/* line 234, src/scss/_components/solution/_plans.scss */
+/* line 246, src/scss/_components/solution/_plans.scss */
 .plans__box-head {
   position: relative;
 }
 
-/* line 238, src/scss/_components/solution/_plans.scss */
+/* line 250, src/scss/_components/solution/_plans.scss */
 .plans__box-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1840,7 +1860,7 @@ picture {
   border-top: 1px solid rgba(45, 57, 88, 0.2);
 }
 
-/* line 248, src/scss/_components/solution/_plans.scss */
+/* line 260, src/scss/_components/solution/_plans.scss */
 .plans__box-badge {
   padding-bottom: 35px;
   font-weight: bold;
@@ -1849,7 +1869,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 256, src/scss/_components/solution/_plans.scss */
+/* line 268, src/scss/_components/solution/_plans.scss */
 .plans__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1870,7 +1890,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 266, src/scss/_components/solution/_plans.scss */
+/* line 278, src/scss/_components/solution/_plans.scss */
 .plans__box-price i {
   padding-right: 5px;
   font-weight: 800;
@@ -1878,7 +1898,7 @@ picture {
   line-height: 28px;
 }
 
-/* line 274, src/scss/_components/solution/_plans.scss */
+/* line 286, src/scss/_components/solution/_plans.scss */
 .plans__box-top {
   position: absolute;
   top: 0;
@@ -1906,7 +1926,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 291, src/scss/_components/solution/_plans.scss */
+/* line 303, src/scss/_components/solution/_plans.scss */
 .plans__box-info {
   text-align: center;
   font-size: 14px;
@@ -1914,7 +1934,7 @@ picture {
   color: rgba(87, 100, 114, 0.8);
 }
 
-/* line 298, src/scss/_components/solution/_plans.scss */
+/* line 310, src/scss/_components/solution/_plans.scss */
 .plans__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1927,7 +1947,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 302, src/scss/_components/solution/_plans.scss */
+/* line 314, src/scss/_components/solution/_plans.scss */
 .plans__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1935,17 +1955,17 @@ picture {
   display: flex;
 }
 
-/* line 305, src/scss/_components/solution/_plans.scss */
+/* line 317, src/scss/_components/solution/_plans.scss */
 .plans__box-list li:not(:last-of-type) {
   padding-bottom: 16px;
 }
 
-/* line 310, src/scss/_components/solution/_plans.scss */
+/* line 322, src/scss/_components/solution/_plans.scss */
 .plans__box-list li > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 313, src/scss/_components/solution/_plans.scss */
+/* line 325, src/scss/_components/solution/_plans.scss */
 .plans__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1955,14 +1975,14 @@ picture {
   max-width: 100%;
 }
 
-/* line 321, src/scss/_components/solution/_plans.scss */
+/* line 333, src/scss/_components/solution/_plans.scss */
 .plans__box-list span {
   font-size: 14px;
   line-height: 20px;
   color: #163A5F;
 }
 
-/* line 328, src/scss/_components/solution/_plans.scss */
+/* line 340, src/scss/_components/solution/_plans.scss */
 .plans__box-link {
   cursor: pointer;
   outline: none;
@@ -1995,24 +2015,24 @@ picture {
   color: #163A5F;
 }
 
-/* line 349, src/scss/_components/solution/_plans.scss */
+/* line 361, src/scss/_components/solution/_plans.scss */
 .plans__box .c-btn {
   width: 100%;
 }
 
-/* line 352, src/scss/_components/solution/_plans.scss */
+/* line 364, src/scss/_components/solution/_plans.scss */
 .plans__box .c-btn-wrapper {
   width: 100%;
 }
 
-/* line 358, src/scss/_components/solution/_plans.scss */
+/* line 370, src/scss/_components/solution/_plans.scss */
 .plans__subtitle {
   font-size: 64px;
   line-height: 88px;
   color: #21BF73;
 }
 
-/* line 363, src/scss/_components/solution/_plans.scss */
+/* line 375, src/scss/_components/solution/_plans.scss */
 .plans__subtitle strong {
   font-weight: 700;
 }
