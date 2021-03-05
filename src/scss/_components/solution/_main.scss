@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 252px;
 	padding-bottom: 42px;
+	@include adaptive(1279) {
+		padding-top: 222px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -73,6 +76,9 @@
 		line-height: 66px;
 		text-align: center;
 		color: #163A5F;
+		@include adaptive(1439) {
+			font-size: 44px;
+		}
 	}
 
 	&__desc {

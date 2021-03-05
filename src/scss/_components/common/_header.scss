@@ -13,6 +13,10 @@
 	.c-grid-fluid {
 		padding-left: 50px;
 		padding-right: 50px;
+		@include adaptive(1279) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 
 	&__wrapper {
@@ -40,14 +44,17 @@
 				}
 
 				&:nth-of-type(2) {
+					display: flex;
+					justify-content: flex-end;
 					width: 100%;
 					max-width: 250px;
 				}
 			}
 
 			.c-btn {
+				white-space: nowrap;
 				width: 100%;
-				max-width: 112px;
+				min-width: 112px;
 				padding-left: 10px;
 				padding-right: 10px;
 
@@ -97,6 +104,10 @@
 			line-height: 20px;
 			text-align: center;
 			color: #163A5F;
+			@include adaptive(1279) {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
 
 			&:before,
 			&:after {

@@ -7,6 +7,9 @@
   line-height: 50px;
   text-align: center;
   color: #163A5F;
+  @include adaptive(1439) {
+    font-size: 33px;
+  }
 }
 
 // TITLE :: END

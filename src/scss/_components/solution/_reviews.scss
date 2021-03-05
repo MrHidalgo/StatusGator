@@ -116,6 +116,9 @@
 			line-height: 30px;
 			text-align: center;
 			color: #576472;
+			@include adaptive(1439) {
+				font-size: 20px;
+			}
 		}
 
 		&-author {

@@ -48,6 +48,9 @@
 
 		&-1 {
 			padding-bottom: 143px;
+			@include adaptive(1023) {
+				padding-bottom: 100px;
+			}
 		}
 
 		&-2 {
@@ -178,6 +181,9 @@
 		border-radius: 20px;
 		border: 1px solid rgba(#2D3958, 0.2);
 		background-color: #FFFFFF;
+		@include adaptive(1279) {
+			padding: 15px;
+		}
 
 		&.is-active {
 			top: -13px;
@@ -233,11 +239,20 @@
 
 		&-wrapper {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
+			@include adaptive(1023) {
+				padding-left: 35px;
+				padding-right: 35px;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc((100% - 45px) / 4);
+				@include adaptive(1023) {
+					max-width: calc((100% - 15px) / 2);
+					padding-bottom: 50px;
+				}
 			}
 		}
 
@@ -259,6 +274,9 @@
 			margin-top: 30px;
 			padding-bottom: 50px;
 			border-top: 1px solid rgba(#2D3958, 0.2);
+			@include adaptive(1279) {
+				padding-bottom: 30px;
+			}
 		}
 
 		&-badge {
@@ -267,6 +285,9 @@
 			font-size: 24px;
 			line-height: 33px;
 			color: #163A5F;
+			@include adaptive(1279) {
+				font-size: 20px;
+			}
 		}
 
 		&-price {
@@ -278,6 +299,9 @@
 			line-height: 50px;
 			text-align: center;
 			color: #163A5F;
+			@include adaptive(1279) {
+				font-size: 42px;
+			}
 
 			i {
 				padding-right: 5px;
@@ -302,6 +326,9 @@
 			line-height: 20px;
 			text-align: center;
 			color: #21BF73;
+			@include adaptive(1279) {
+				font-size: 12px;
+			}
 		}
 
 		&-info {
@@ -402,6 +429,14 @@
 		font-size: 64px;
 		line-height: 88px;
 		color: #21BF73;
+		@include adaptive(1439) {
+			font-size: 54px;
+			line-height: 80px;
+		}
+		@include adaptive(1279) {
+			font-size: 50px;
+			line-height: 65px;
+		}
 
 		strong {
 			font-weight: 700;

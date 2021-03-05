@@ -46,6 +46,15 @@
 		&-right {
 			width: calc((100% / 2) - 40px);
 			padding-left: 100px;
+			@include adaptive(1439) {
+				padding-left: 75px;
+			}
+			@include adaptive(1279) {
+				padding-left: 25px;
+			}
+			@include adaptive(1023) {
+				padding-left: 0;
+			}
 		}
 
 		&-left {
@@ -62,6 +71,9 @@
 			font-size: 30px;
 			line-height: 46px;
 			color: #163A5F;
+			@include adaptive(1023) {
+				font-size: 26px;
+			}
 		}
 
 		&-list {
@@ -112,6 +124,9 @@
 					font-weight: 500;
 					line-height: 22px;
 					color: #576472;
+					@include adaptive(1023) {
+						font-size: 16px;
+					}
 				}
 			}
 		}
