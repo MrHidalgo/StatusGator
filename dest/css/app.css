@@ -514,24 +514,56 @@ picture {
 /* line 44, src/scss/_macros/_btn.scss */
 .c-btn__bg--green {
   background-color: #21BF73;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* line 49, src/scss/_macros/_btn.scss */
+/* line 48, src/scss/_macros/_btn.scss */
+.c-btn__bg--green:hover {
+  background-color: #25d580;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 55, src/scss/_macros/_btn.scss */
 .c-btn.c-btn__border {
   border-color: #163A5F;
   background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* line 53, src/scss/_macros/_btn.scss */
+/* line 60, src/scss/_macros/_btn.scss */
+.c-btn.c-btn__border:hover {
+  background-color: #163A5F;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 64, src/scss/_macros/_btn.scss */
+.c-btn.c-btn__border:hover span {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 70, src/scss/_macros/_btn.scss */
 .c-btn.c-btn__border span {
   color: #163A5F;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 58, src/scss/_macros/_btn.scss */
+/* line 76, src/scss/_macros/_btn.scss */
 .c-btn span {
   z-index: 2;
   position: relative;
-  font-weight: bold;
   font-size: 17px;
   font-weight: 700;
   line-height: 21px;
@@ -625,21 +657,32 @@ picture {
 }
 
 /* line 57, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn.c-btn__border:hover {
+  border-color: #21BF73;
+  background-color: #21BF73;
+}
+
+/* line 61, src/scss/_components/common/_header.scss */
+.header__wrapper-right .c-btn.c-btn__border:hover span {
+  color: #ffffff;
+}
+
+/* line 66, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border span {
   color: #21BF73;
 }
 
-/* line 62, src/scss/_components/common/_header.scss */
+/* line 71, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn:not(:last-of-type) {
   margin-right: 10px;
 }
 
-/* line 66, src/scss/_components/common/_header.scss */
+/* line 75, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn span {
   font-size: 14px;
 }
 
-/* line 73, src/scss/_components/common/_header.scss */
+/* line 82, src/scss/_components/common/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -655,8 +698,9 @@ picture {
           justify-content: center;
 }
 
-/* line 78, src/scss/_components/common/_header.scss */
+/* line 87, src/scss/_components/common/_header.scss */
 .header__nav a {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -665,15 +709,46 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
   color: #163A5F;
+}
+
+/* line 101, src/scss/_components/common/_header.scss */
+.header__nav a:before, .header__nav a:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #163A5F;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 112, src/scss/_components/common/_header.scss */
+.header__nav a:before {
+  left: 50%;
+}
+
+/* line 115, src/scss/_components/common/_header.scss */
+.header__nav a:after {
+  right: 50%;
+}
+
+/* line 120, src/scss/_components/common/_header.scss */
+.header__nav a:hover:before, .header__nav a:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 /* line 5, src/scss/_components/common/_footer.scss */
@@ -743,6 +818,10 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -750,13 +829,14 @@ picture {
           flex-direction: column;
 }
 
-/* line 44, src/scss/_components/common/_footer.scss */
+/* line 45, src/scss/_components/common/_footer.scss */
 .footer__menu:not(:last-of-type) {
   padding-right: 150px;
 }
 
-/* line 48, src/scss/_components/common/_footer.scss */
+/* line 49, src/scss/_components/common/_footer.scss */
 .footer__menu a {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -766,9 +846,40 @@ picture {
   color: #576472;
 }
 
-/* line 54, src/scss/_components/common/_footer.scss */
+/* line 56, src/scss/_components/common/_footer.scss */
+.footer__menu a:before, .footer__menu a:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #576472;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 67, src/scss/_components/common/_footer.scss */
+.footer__menu a:before {
+  left: 50%;
+}
+
+/* line 70, src/scss/_components/common/_footer.scss */
+.footer__menu a:after {
+  right: 50%;
+}
+
+/* line 74, src/scss/_components/common/_footer.scss */
 .footer__menu a:not(:last-of-type) {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 79, src/scss/_components/common/_footer.scss */
+.footer__menu a:hover:before, .footer__menu a:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/solution/_main.scss */
@@ -1399,6 +1510,24 @@ picture {
 }
 
 /* line 68, src/scss/_components/solution/_reviews.scss */
+.reviews__btn:hover {
+  background-color: #21bf73;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 72, src/scss/_components/solution/_reviews.scss */
+.reviews__btn:hover .icon-font {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 78, src/scss/_components/solution/_reviews.scss */
 .reviews__btn.swiper-button-disabled {
   pointer-events: none;
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
@@ -1411,7 +1540,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 74, src/scss/_components/solution/_reviews.scss */
+/* line 84, src/scss/_components/solution/_reviews.scss */
 .reviews__btn.swiper-button-disabled .icon-font {
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1419,14 +1548,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 81, src/scss/_components/solution/_reviews.scss */
+/* line 91, src/scss/_components/solution/_reviews.scss */
 .reviews__btn--next .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 86, src/scss/_components/solution/_reviews.scss */
+/* line 96, src/scss/_components/solution/_reviews.scss */
 .reviews__btn .icon-font {
   width: 14px;
   height: 14px;
@@ -1438,7 +1567,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 96, src/scss/_components/solution/_reviews.scss */
+/* line 106, src/scss/_components/solution/_reviews.scss */
 .reviews__box {
   width: 100%;
   max-width: 800px;
@@ -1446,7 +1575,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 102, src/scss/_components/solution/_reviews.scss */
+/* line 112, src/scss/_components/solution/_reviews.scss */
 .reviews__box-title {
   padding-bottom: 60px;
   font-weight: 500;
@@ -1456,7 +1585,7 @@ picture {
   color: #576472;
 }
 
-/* line 111, src/scss/_components/solution/_reviews.scss */
+/* line 121, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1473,7 +1602,7 @@ picture {
   margin-bottom: 60px;
 }
 
-/* line 121, src/scss/_components/solution/_reviews.scss */
+/* line 131, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div:nth-of-type(1) {
   overflow: hidden;
   position: relative;
@@ -1483,7 +1612,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 132, src/scss/_components/solution/_reviews.scss */
+/* line 142, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1494,7 +1623,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 139, src/scss/_components/solution/_reviews.scss */
+/* line 149, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div p {
   font-weight: 600;
   font-size: 16px;
@@ -1502,14 +1631,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 146, src/scss/_components/solution/_reviews.scss */
+/* line 156, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div span {
   font-size: 14px;
   line-height: 22px;
   color: #163A5F;
 }
 
-/* line 156, src/scss/_components/solution/_reviews.scss */
+/* line 166, src/scss/_components/solution/_reviews.scss */
 .reviews__box-btn .c-btn span {
   font-size: 14px;
   line-height: 17px;
@@ -1652,22 +1781,31 @@ picture {
   height: 0;
 }
 
-/* line 96, src/scss/_components/solution/_plans.scss */
+/* line 95, src/scss/_components/solution/_plans.scss */
 .plans__option input:checked + label span {
   color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 /* line 99, src/scss/_components/solution/_plans.scss */
 .plans__option input:checked + label span:nth-of-type(2) {
   color: #163a5f;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 105, src/scss/_components/solution/_plans.scss */
+/* line 106, src/scss/_components/solution/_plans.scss */
 .plans__option input:checked + label u:after {
   left: 60px;
+  -webkit-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
 
-/* line 113, src/scss/_components/solution/_plans.scss */
+/* line 115, src/scss/_components/solution/_plans.scss */
 .plans__option label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1679,7 +1817,7 @@ picture {
           align-items: center;
 }
 
-/* line 117, src/scss/_components/solution/_plans.scss */
+/* line 119, src/scss/_components/solution/_plans.scss */
 .plans__option label span {
   position: relative;
   display: block;
@@ -1688,15 +1826,18 @@ picture {
   font-size: 18px;
   line-height: 1;
   color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 126, src/scss/_components/solution/_plans.scss */
+/* line 129, src/scss/_components/solution/_plans.scss */
 .plans__option label span:nth-of-type(1) {
   color: #163a5f;
   text-align: right;
 }
 
-/* line 131, src/scss/_components/solution/_plans.scss */
+/* line 134, src/scss/_components/solution/_plans.scss */
 .plans__option label span i {
   position: absolute;
   top: -webkit-calc(100% + 1px);
@@ -1708,7 +1849,7 @@ picture {
   color: #21bf73;
 }
 
-/* line 142, src/scss/_components/solution/_plans.scss */
+/* line 145, src/scss/_components/solution/_plans.scss */
 .plans__option label u {
   cursor: pointer;
   position: relative;
@@ -1722,7 +1863,7 @@ picture {
   text-decoration: none;
 }
 
-/* line 153, src/scss/_components/solution/_plans.scss */
+/* line 156, src/scss/_components/solution/_plans.scss */
 .plans__option label u:after {
   content: '';
   position: absolute;
@@ -1735,9 +1876,12 @@ picture {
   -webkit-box-shadow: 1px 1px 10px #179558;
           box-shadow: 1px 1px 10px #179558;
   background-color: #FFFFFF;
+  -webkit-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
 
-/* line 168, src/scss/_components/solution/_plans.scss */
+/* line 172, src/scss/_components/solution/_plans.scss */
 .plans__box {
   position: relative;
   display: -webkit-box;
@@ -1757,7 +1901,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 178, src/scss/_components/solution/_plans.scss */
+/* line 182, src/scss/_components/solution/_plans.scss */
 .plans__box.is-active {
   top: -13px;
   height: -webkit-calc(100% + 26px);
@@ -1767,12 +1911,12 @@ picture {
           box-shadow: 0px 2px 10px rgba(45, 57, 88, 0.05);
 }
 
-/* line 185, src/scss/_components/solution/_plans.scss */
+/* line 189, src/scss/_components/solution/_plans.scss */
 .plans__box.is-active .plans__box-price {
   color: #21bf73;
 }
 
-/* line 191, src/scss/_components/solution/_plans.scss */
+/* line 195, src/scss/_components/solution/_plans.scss */
 .plans__box-shadow {
   z-index: -1;
   position: absolute;
@@ -1786,7 +1930,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 204, src/scss/_components/solution/_plans.scss */
+/* line 208, src/scss/_components/solution/_plans.scss */
 .plans__box-dino {
   z-index: -1;
   position: absolute;
@@ -1794,14 +1938,14 @@ picture {
   right: -44px;
 }
 
-/* line 210, src/scss/_components/solution/_plans.scss */
+/* line 214, src/scss/_components/solution/_plans.scss */
 .plans__box-dino svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 216, src/scss/_components/solution/_plans.scss */
+/* line 220, src/scss/_components/solution/_plans.scss */
 .plans__box-dino-hand {
   z-index: 2;
   position: absolute;
@@ -1809,14 +1953,14 @@ picture {
   right: -10px;
 }
 
-/* line 222, src/scss/_components/solution/_plans.scss */
+/* line 226, src/scss/_components/solution/_plans.scss */
 .plans__box-dino-hand svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 230, src/scss/_components/solution/_plans.scss */
+/* line 234, src/scss/_components/solution/_plans.scss */
 .plans__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1828,24 +1972,24 @@ picture {
           justify-content: space-between;
 }
 
-/* line 234, src/scss/_components/solution/_plans.scss */
+/* line 238, src/scss/_components/solution/_plans.scss */
 .plans__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 45px) / 4);
   max-width: calc((100% - 45px) / 4);
 }
 
-/* line 240, src/scss/_components/solution/_plans.scss */
+/* line 244, src/scss/_components/solution/_plans.scss */
 .plans__box-head, .plans__box-body, .plans__box-footer {
   width: 100%;
 }
 
-/* line 246, src/scss/_components/solution/_plans.scss */
+/* line 250, src/scss/_components/solution/_plans.scss */
 .plans__box-head {
   position: relative;
 }
 
-/* line 250, src/scss/_components/solution/_plans.scss */
+/* line 254, src/scss/_components/solution/_plans.scss */
 .plans__box-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1859,7 +2003,7 @@ picture {
   border-top: 1px solid rgba(45, 57, 88, 0.2);
 }
 
-/* line 260, src/scss/_components/solution/_plans.scss */
+/* line 264, src/scss/_components/solution/_plans.scss */
 .plans__box-badge {
   padding-bottom: 35px;
   font-weight: bold;
@@ -1868,7 +2012,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 268, src/scss/_components/solution/_plans.scss */
+/* line 272, src/scss/_components/solution/_plans.scss */
 .plans__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1889,7 +2033,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 278, src/scss/_components/solution/_plans.scss */
+/* line 282, src/scss/_components/solution/_plans.scss */
 .plans__box-price i {
   padding-right: 5px;
   font-weight: 800;
@@ -1897,7 +2041,7 @@ picture {
   line-height: 28px;
 }
 
-/* line 286, src/scss/_components/solution/_plans.scss */
+/* line 290, src/scss/_components/solution/_plans.scss */
 .plans__box-top {
   position: absolute;
   top: 0;
@@ -1925,7 +2069,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 303, src/scss/_components/solution/_plans.scss */
+/* line 307, src/scss/_components/solution/_plans.scss */
 .plans__box-info {
   text-align: center;
   font-size: 14px;
@@ -1933,7 +2077,7 @@ picture {
   color: rgba(87, 100, 114, 0.8);
 }
 
-/* line 310, src/scss/_components/solution/_plans.scss */
+/* line 314, src/scss/_components/solution/_plans.scss */
 .plans__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1946,7 +2090,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 314, src/scss/_components/solution/_plans.scss */
+/* line 318, src/scss/_components/solution/_plans.scss */
 .plans__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1954,17 +2098,17 @@ picture {
   display: flex;
 }
 
-/* line 317, src/scss/_components/solution/_plans.scss */
+/* line 321, src/scss/_components/solution/_plans.scss */
 .plans__box-list li:not(:last-of-type) {
   padding-bottom: 16px;
 }
 
-/* line 322, src/scss/_components/solution/_plans.scss */
+/* line 326, src/scss/_components/solution/_plans.scss */
 .plans__box-list li > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 325, src/scss/_components/solution/_plans.scss */
+/* line 329, src/scss/_components/solution/_plans.scss */
 .plans__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1974,17 +2118,18 @@ picture {
   max-width: 100%;
 }
 
-/* line 333, src/scss/_components/solution/_plans.scss */
+/* line 337, src/scss/_components/solution/_plans.scss */
 .plans__box-list span {
   font-size: 14px;
   line-height: 20px;
   color: #163A5F;
 }
 
-/* line 340, src/scss/_components/solution/_plans.scss */
+/* line 344, src/scss/_components/solution/_plans.scss */
 .plans__box-link {
   cursor: pointer;
   outline: none;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2014,24 +2159,55 @@ picture {
   color: #163A5F;
 }
 
-/* line 361, src/scss/_components/solution/_plans.scss */
+/* line 365, src/scss/_components/solution/_plans.scss */
+.plans__box-link:before, .plans__box-link:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #163A5F;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 376, src/scss/_components/solution/_plans.scss */
+.plans__box-link:before {
+  left: 50%;
+}
+
+/* line 379, src/scss/_components/solution/_plans.scss */
+.plans__box-link:after {
+  right: 50%;
+}
+
+/* line 384, src/scss/_components/solution/_plans.scss */
+.plans__box-link:hover:before, .plans__box-link:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 392, src/scss/_components/solution/_plans.scss */
 .plans__box .c-btn {
   width: 100%;
 }
 
-/* line 364, src/scss/_components/solution/_plans.scss */
+/* line 395, src/scss/_components/solution/_plans.scss */
 .plans__box .c-btn-wrapper {
   width: 100%;
 }
 
-/* line 370, src/scss/_components/solution/_plans.scss */
+/* line 401, src/scss/_components/solution/_plans.scss */
 .plans__subtitle {
   font-size: 64px;
   line-height: 88px;
   color: #21BF73;
 }
 
-/* line 375, src/scss/_components/solution/_plans.scss */
+/* line 406, src/scss/_components/solution/_plans.scss */
 .plans__subtitle strong {
   font-weight: 700;
 }

@@ -39,6 +39,7 @@
 
 	&__menu {
 		display: flex;
+		align-items: flex-start;
 		flex-direction: column;
 
 		&:not(:last-of-type) {
@@ -46,13 +47,40 @@
 		}
 
 		a {
+			position: relative;
 			display: flex;
 			font-size: 14px;
 			line-height: 17px;
 			color: #576472;
 
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				width: 0;
+				height: 1px;
+				background-color: #576472;
+				@include transition(width);
+			}
+
+			&:before {
+				left: 50%;
+			}
+			&:after {
+				right: 50%;
+			}
+
 			&:not(:last-of-type) {
-				padding-bottom: 16px;
+				margin-bottom: 16px;
+			}
+
+			&:hover {
+				&:before,
+				&:after {
+					width: 50%;
+					@include transition(width);
+				}
 			}
 		}
 	}

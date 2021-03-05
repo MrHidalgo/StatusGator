@@ -65,6 +65,16 @@
 		box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
 		@include transition(box-shadow, background-color);
 
+		&:hover {
+			background-color: #21bf73;
+			@include transition(box-shadow, background-color);
+
+			.icon-font {
+				color: #ffffff;
+				@include transition(color);
+			}
+		}
+
 		&.swiper-button-disabled {
 			pointer-events: none;
 			box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);

@@ -90,20 +90,22 @@
 			width: 0;
 			height: 0;
 
-
 			&:checked {
 				& + label {
 					span {
 						color: #576472;
+						@include transition(color);
 
 						&:nth-of-type(2) {
 							color: #163a5f;
+							@include transition(color);
 						}
 					}
 
 					u {
 						&:after {
 							left: 60px;
+							@include transition(left);
 						}
 					}
 				}
@@ -122,6 +124,7 @@
 				font-size: 18px;
 				line-height: 1;
 				color: #576472;
+				@include transition(color);
 
 				&:nth-of-type(1) {
 					color: #163a5f;
@@ -160,6 +163,7 @@
 					border-radius: 50%;
 					box-shadow: 1px 1px 10px #179558;
 					background-color: #FFFFFF;
+					@include transition(left);
 				}
 			}
 		}
@@ -340,6 +344,7 @@
 		&-link {
 			cursor: pointer;
 			outline: none;
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -356,6 +361,32 @@
 			line-height: 17px;
 			text-align: center;
 			color: #163A5F;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				width: 0;
+				height: 1px;
+				background-color: #163A5F;
+				@include transition(width);
+			}
+
+			&:before {
+				left: 50%;
+			}
+			&:after {
+				right: 50%;
+			}
+
+			&:hover {
+				&:before,
+				&:after {
+					width: 50%;
+					@include transition(width);
+				}
+			}
 		}
 
 		.c-btn {

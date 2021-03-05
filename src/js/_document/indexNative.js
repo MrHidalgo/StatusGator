@@ -32,6 +32,60 @@
 			.fromTo(leftHand, 1.35, {x: 0, rotation:0}, {x:2, rotation: -30, ease:Power1.easeInOut}, '-=1.35')
 			.fromTo(rightHand, 1.35, {y:0, rotation:0}, {y:2, rotation: -30, ease:Power1.easeInOut}, '-=1.35');
 	};
+	
+	
+	var headerFixed = function headerFixed() {
+		var elSelector = 'header',
+			$element = $(elSelector);
+		
+		if (!$element.length) return true;
+		
+		var elHeight = 0,
+			elTop = 0,
+			$document = $(document),
+			dHeight = 0,
+			$window = $(window),
+			wHeight = 0,
+			wScrollCurrent = 0,
+			wScrollBefore = 0,
+			wScrollDiff = 0;
+		
+		if($window.scrollTop() > 0) {
+			$element.addClass('is-color');
+		} else {
+			$element.removeClass('is-color')
+		}
+		
+		$window.on('scroll', function (ev) {
+			if($window.scrollTop() > 0) {
+				$element.addClass('is-color');
+			} else {
+				$element.removeClass('is-color')
+			}
+			
+			elHeight = $($element).outerHeight();
+			dHeight = $document.height();
+			wHeight = $window.height();
+			wScrollCurrent = $window.scrollTop();
+			wScrollDiff = wScrollBefore - wScrollCurrent;
+			elTop = parseInt($($element).css('top')) + wScrollDiff;
+			
+			if (wScrollCurrent <= 0) {
+				$($element).css('top', 0).removeClass('is-fixed is-hide');
+			} else if (wScrollDiff > 0) {
+				$($element).css('top', elTop > 0 ? 0 : elTop).removeClass('is-hide').addClass('is-fixed');
+			} else if (wScrollDiff < 0) {
+				if (wScrollCurrent + wHeight >= dHeight - elHeight) {
+					// $($element).css('top', (elTop = wScrollCurrent + wHeight - dHeight) < 0 ? elTop : 0);
+				} else {
+					$($element).css('top', Math.abs(elTop) > elHeight ? -elHeight : elTop).addClass('is-hide');
+				}
+			}
+			
+			wScrollBefore = wScrollCurrent;
+			
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -53,6 +107,7 @@
 
 		// callback
 		gatorAnimation();
+		headerFixed();
 		// ==========================================
 	};
 	initNative();

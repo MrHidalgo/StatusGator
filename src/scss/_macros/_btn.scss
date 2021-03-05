@@ -43,22 +43,39 @@ $bth-border-radius: 6px;
   &__bg {
     &--green {
       background-color: #21BF73;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: lighten(#21BF73, 5%);
+        @include transition(background-color);
+      }
     }
   }
 
   &.c-btn__border {
     border-color: #163A5F;
     background-color: transparent;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: #163A5F;
+      @include transition(background-color);
+
+      span {
+        color: #ffffff;
+        @include transition(color);
+      }
+    }
 
     span {
       color: #163A5F;
+      @include transition(color);
     }
   }
 
   span {
     z-index: 2;
     position: relative;
-    font-weight: bold;
     font-size: 17px;
     font-weight: 700;
     line-height: 21px;
