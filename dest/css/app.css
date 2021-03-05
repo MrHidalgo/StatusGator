@@ -241,8 +241,6 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-family: "Kinetika", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 33, src/scss/_shared/_main-setting-reset.scss */
@@ -475,10 +473,10 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   width: auto;
-  height: 70px;
+  height: 65px;
   padding-left: 40px;
   padding-right: 40px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-border-radius: 6px;
@@ -508,7 +506,7 @@ picture {
 
 /* line 37, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--medium {
-  height: 56px;
+  height: 55px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -570,7 +568,7 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  height: 80px;
 }
 
 /* line 23, src/scss/_components/common/_header.scss */
@@ -1050,13 +1048,13 @@ picture {
 /* line 52, src/scss/_components/solution/_feature.scss */
 .feature__box-left video {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
 /* line 59, src/scss/_components/solution/_feature.scss */
 .feature__box-title {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   font-weight: bold;
   font-size: 30px;
   line-height: 46px;
@@ -1076,7 +1074,7 @@ picture {
           flex-direction: column;
   width: 100%;
   max-width: 435px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 /* line 74, src/scss/_components/solution/_feature.scss */
@@ -1093,7 +1091,7 @@ picture {
 
 /* line 78, src/scss/_components/solution/_feature.scss */
 .feature__box-list li:not(:last-of-type) {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 /* line 83, src/scss/_components/solution/_feature.scss */
@@ -1750,7 +1748,7 @@ picture {
   padding: 30px;
   -webkit-border-radius: 20px;
           border-radius: 20px;
-  border: 1px solid rgba(87, 100, 114, 0.1);
+  border: 1px solid rgba(45, 57, 88, 0.2);
   background-color: #FFFFFF;
 }
 
