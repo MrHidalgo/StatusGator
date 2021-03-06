@@ -3,6 +3,15 @@
 .logo {
 	display: flex;
 
+	&.logo--header {
+		@include adaptive(767) {
+		  .logo {
+				&__btn {
+					max-width: 77px;
+				}
+			}
+		}
+	}
 	&.logo--footer {
 		padding-bottom: 24px;
 	}

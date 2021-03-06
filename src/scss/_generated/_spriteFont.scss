@@ -39,17 +39,20 @@
 	@if $filename == checked-sq {
 		$char: "\E004";
 	}
-	@if $filename == image {
+	@if $filename == close {
 		$char: "\E005";
 	}
-	@if $filename == list {
+	@if $filename == image {
 		$char: "\E006";
 	}
-	@if $filename == plus-sq {
+	@if $filename == list {
 		$char: "\E007";
 	}
-	@if $filename == toggle {
+	@if $filename == plus-sq {
 		$char: "\E008";
+	}
+	@if $filename == toggle {
+		$char: "\E009";
 	}
 
 	@return $char;
@@ -80,6 +83,10 @@
 }
 .icon-checked-sq {
 	@include icon(checked-sq);
+
+}
+.icon-close {
+	@include icon(close);
 
 }
 .icon-image {

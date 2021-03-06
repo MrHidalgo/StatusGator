@@ -103,6 +103,7 @@
 		// lib
 		initSwiper();
 		initStellar();
+		initHamburger();
 		// ==========================================
 
 		// callback

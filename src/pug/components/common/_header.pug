@@ -4,12 +4,29 @@ header#header.header
   .c-grid-fluid
     .header__wrapper
       .header__wrapper-left
+        div
 
-        .logo.logo--header
-          a.logo__btn(href="#")
-            img.logo__img(src="img/logo.svg" alt="")
+          +hamburger()
 
-      .header__wrapper-right
+          .logo.logo--header
+            a.logo__btn(href="#")
+              img.logo__img(src="img/logo.svg" alt="")
+
+        div
+
+          .c-btn__wrapper
+            a.c-btn.c-btn__bg.c-btn__bg--green.c-btn--medium(href="#")
+              span Sign Up
+
+      .header__wrapper-right(mobile-block-js)
+        div
+          .logo.logo--header
+            a.logo__btn(href="#")
+              img.logo__img(src="img/logo.svg" alt="")
+
+          a.header__close(href="#")
+            i.icon-font.icon-close
+          
         div
 
           nav.header__nav
