@@ -7,6 +7,10 @@
 	@include adaptive(1279) {
 		padding-top: 222px;
 	}
+	@include adaptive(767) {
+		padding-top: 92px;
+		padding-bottom: 25px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -22,6 +26,9 @@
 		padding-right: 15px;
 		margin-left: auto;
 		margin-right: auto;
+		@include adaptive(767) {
+			opacity: 0.55;
+		}
 
 		&-circle {
 			position: absolute;
@@ -79,6 +86,15 @@
 		@include adaptive(1439) {
 			font-size: 44px;
 		}
+		@include adaptive(767) {
+			width: 100%;
+			max-width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 10px;
+			font-size: 24px;
+			line-height: 33px;
+		}
 	}
 
 	&__desc {
@@ -91,13 +107,26 @@
 		line-height: 30px;
 		text-align: center;
 		color: #576472;
+		@include adaptive(767) {
+			width: 100%;
+			max-width: 300px;
+			padding-bottom: 20px;
+			font-size: 14px;
+			line-height: 22px;
+		}
 	}
 
 	&__btn {
 		padding-bottom: 50px;
+		@include adaptive(767) {
+			padding-bottom: 32px;
+		}
 
 		.c-btn {
 			box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
+			@include adaptive(767) {
+			  box-shadow: none;
+			}
 		}
 	}
 

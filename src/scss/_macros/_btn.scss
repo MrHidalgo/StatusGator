@@ -24,6 +24,9 @@ $bth-border-radius: 6px;
   box-shadow: none;
   border-radius: $bth-border-radius;
   background-color: transparent;
+  @include adaptive(767) {
+    height: 57px;
+  }
 
   &__wrapper {
     display: flex;
@@ -81,6 +84,10 @@ $bth-border-radius: 6px;
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
+    @include adaptive(767) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 }
 

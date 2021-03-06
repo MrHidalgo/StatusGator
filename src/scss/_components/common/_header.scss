@@ -23,6 +23,11 @@
 		display: flex;
 		align-items: center;
 		height: 80px;
+		@include adaptive(767) {
+			height: auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
 		&-left {
 			display: flex;
@@ -49,10 +54,22 @@
 				}
 			}
 
-			.c-btn__wrapper {
-				display: none;
-				@include adaptive(1023) {
-					display: flex;
+			.c-btn {
+				@include adaptive(767) {
+					height: 38px;
+					padding-left: 20px;
+					padding-right: 20px;
+
+					span {
+						font-size: 14px;
+					}
+				}
+
+				&__wrapper {
+					display: none;
+					@include adaptive(1023) {
+						display: flex;
+					}
 				}
 			}
 		}

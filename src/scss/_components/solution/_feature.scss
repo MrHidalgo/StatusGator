@@ -3,14 +3,37 @@
 .feature {
 	padding-top: 75px;
 	padding-bottom: 99px;
+	@include adaptive(767) {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
 
 	&__title {
 		padding-bottom: 50px;
+		@include adaptive(767) {
+			padding-bottom: 45px;
+		}
 	}
 
 	&__box {
 		display: flex;
 		align-items: center;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+
+			&-1,
+			&-3 {
+				.feature__box {
+					&-left {
+						order: 2;
+					}
+					&-right {
+						order: 1;
+						padding-bottom: 25px;
+					}
+				}
+			}
+		}
 
 		&--reverse {
 			.feature__box {
@@ -35,12 +58,18 @@
 			> div {
 				&:not(:last-of-type) {
 					padding-bottom: 100px;
+					@include adaptive(767) {
+						padding-bottom: 50px;
+					}
 				}
 			}
 		}
 
 		&-left {
 			width: calc((100% / 2) + 40px);
+			@include adaptive(767) {
+				width: 100%;
+			}
 		}
 
 		&-right {
@@ -55,6 +84,9 @@
 			@include adaptive(1023) {
 				padding-left: 0;
 			}
+			@include adaptive(767) {
+				width: 100%;
+			}
 		}
 
 		&-left {
@@ -62,6 +94,11 @@
 				display: block;
 				max-width: 80%;
 				height: auto;
+				@include adaptive(767) {
+					max-width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+				}
 			}
 		}
 
@@ -74,6 +111,11 @@
 			@include adaptive(1023) {
 				font-size: 26px;
 			}
+			@include adaptive(767) {
+				padding-bottom: 20px;
+				font-size: 20px;
+				line-height: 30px;
+			}
 		}
 
 		&-list {
@@ -82,6 +124,9 @@
 			width: 100%;
 			max-width: 435px;
 			padding-bottom: 30px;
+			@include adaptive(767) {
+				padding-bottom: 20px;
+			}
 
 			li {
 				display: flex;
@@ -103,6 +148,10 @@
 						border: 1px solid rgba(87, 100, 114, 0.1);
 						box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
 						background-color: #FFFFFF;
+						@include adaptive(767) {
+							width: 40px;
+							height: 40px;
+						}
 					}
 					&:nth-of-type(2) {
 						flex: 1;
@@ -117,6 +166,9 @@
 					height: 18px;
 					line-height: 18px;
 					color: #21bf73;
+					@include adaptive(767) {
+						font-size: 15px;
+					}
 				}
 
 				p {
@@ -127,6 +179,18 @@
 					@include adaptive(1023) {
 						font-size: 16px;
 					}
+					@include adaptive(767) {
+						font-size: 14px;
+						line-height: 22px;
+					}
+				}
+			}
+		}
+
+		&-btn {
+			@include adaptive(767) {
+				.c-btn {
+					width: 100%;
 				}
 			}
 		}

@@ -14,6 +14,15 @@
 	}
 	&.logo--footer {
 		padding-bottom: 24px;
+		@include adaptive(767) {
+			padding-bottom: 0;
+
+			.logo {
+				&__btn {
+					max-width: 90px;
+				}
+			}
+		}
 	}
 
 	&__btn {
