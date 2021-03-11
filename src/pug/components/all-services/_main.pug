@@ -1,0 +1,106 @@
+// SECTION :: START
+
+section#services-main.services-main
+
+	.services-main__bg
+		span
+		span
+		span
+		span
+
+	.c-grid
+		.services-main__wrapper.services-main__wrapper-1
+
+			p.services-main__title!= "Now Monitoring and Normalizing Data <br>from <span>1020 Services!</span>"
+
+			.services-main__search
+				div
+					label
+						input(type='text' name='' placeholder='')
+					.c-btn__wrapper
+						a.c-btn.c-btn__bg.c-btn__bg--green(href="#")
+							span Search
+
+
+		.services-main__wrapper.services-main__wrapper-2
+			.services-main__wrapper-left
+
+				p.services-main__subtitle Sort by:
+
+				.services-main__link
+					a.is-active(href="#") Most Popular
+					a(href="#") Recently Added
+					a(href="#") For DevOps
+					a(href="#") For HelpDesk
+					a(href="#") For Education
+
+				p.services-main__subtitle Category
+
+				.services-main__link
+					a(href="#") Advertising
+					a(href="#") Analytics
+					a(href="#") API
+					a(href="#") Audio
+					a.is-active(href="#") Expand All
+
+			.services-main__wrapper-right
+
+				.services-main__box-wrapper
+					each val, idx in [1,2,3]
+						div
+							.services-main__box
+								.services-main__box-head
+									div
+										img(src="img/img-athennian.png" srcset='img/img-athennian@2x.png 2x' alt="")
+									div
+										p Athennian
+								.services-main__box-body
+									ul
+										li
+											span US East 2-S3
+										li
+											span US East 1-S3
+										li
+											span ... and 10 matching components
+						div
+							.services-main__box
+								.services-main__box-head
+									div
+										img(src="img/img-atlassian.png" srcset='img/img-atlassian@2x.png 2x' alt="")
+									div
+										p Atlassian
+								.services-main__box-body
+									ul
+										li
+											span US East 2-S3
+										li
+											span US East 1-S3
+										li
+											span ... and 10 matching components
+						div
+							.services-main__box
+								.services-main__box-head
+									div
+										img(src="img/img-atlassian.png" srcset='img/img-atlassian@2x.png 2x' alt="")
+									div
+										p Atlassian Access
+								.services-main__box-body
+									ul
+										li
+											span US East 2-S3
+										li
+											span US East 1-S3
+										li
+											span ... and 10 matching components
+
+				.services-main__see
+					div
+						.services-main__see-icon
+							i.icon-font.icon-eye
+						p Can’t see the service you need? Click here and we add it in 24 hours.
+					div
+						.c-btn__wrapper
+							a.c-btn.c-btn__bg.c-btn__bg--green(href="#")
+								span Add
+
+// SECTION :: END

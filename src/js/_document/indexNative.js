@@ -8,6 +8,8 @@
 	const gatorAnimation = () => {
 		const tl = new TimelineMax({repeat: -1, yoyo: true});
 		
+		if(!$('#dino').length) return false;
+		
 		const dino = $('#dino'),
 			eyeLeft = $('#dinoEyeLeft'),
 			eyeLeftWhite = $('#dinoEyeLeftWhite'),

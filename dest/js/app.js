@@ -155,6 +155,8 @@ var initSwiper = function initSwiper() {
 	var gatorAnimation = function gatorAnimation() {
 		var tl = new TimelineMax({ repeat: -1, yoyo: true });
 
+		if (!$('#dino').length) return false;
+
 		var dino = $('#dino'),
 		    eyeLeft = $('#dinoEyeLeft'),
 		    eyeLeftWhite = $('#dinoEyeLeftWhite'),

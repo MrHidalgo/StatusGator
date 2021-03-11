@@ -2,43 +2,43 @@
 
 section#reviews.reviews
 
-  .reviews__bg
-    .reviews__bg-circle
+	.reviews__bg
+		.reviews__bg-circle
 
-  .c-grid
+	.c-grid
 
-    h2.reviews__title.c-title What our customers say
+		h2.reviews__title.c-title What our customers say
 
-    .reviews__wrapper
-      .reviews__wrapper-left
+		.reviews__wrapper
+			.reviews__wrapper-left
 
-        a.reviews__btn.reviews__btn--prev(href="#")
-          i.icon-font.icon-arrow
+				a.reviews__btn.reviews__btn--prev(href="#")
+					i.icon-font.icon-arrow
 
-      .reviews__wrapper-middle
+			.reviews__wrapper-middle
 
-        mixin swiperContent()
-          each val, idx in [1,2,3,4,5]
-            .swiper-slide
-              .reviews__box
-                p.reviews__box-title!= "StatusGator helped us to reduce our ticket volume by 900%. <br>Our recent survey showed that our student happiness rate reached its peak since 1980."
+				mixin swiperContent()
+					each val, idx in [1,2,3,4,5]
+						.swiper-slide
+							.reviews__box
+								p.reviews__box-title!= "StatusGator helped us to reduce our ticket volume by 900%. <br>Our recent survey showed that our student happiness rate reached its peak since 1980."
 
-                .reviews__box-author
-                  div
-                    img(src="img/img-reviews-author.png" alt="")
-                  div
-                    p John Howard
-                    span Professor of Harvard University
+								.reviews__box-author
+									div
+										img(src="img/img-reviews-author.png" alt="")
+									div
+										p John Howard
+										span Professor of Harvard University
 
-        +swiper('reviewsSlider', 'swiperContent', false, false, false)
+				+swiper('reviewsSlider', 'swiperContent', false, false, false)
 
-      .reviews__wrapper-right
+			.reviews__wrapper-right
 
-        a.reviews__btn.reviews__btn--next(href="#")
-          i.icon-font.icon-arrow
+				a.reviews__btn.reviews__btn--next(href="#")
+					i.icon-font.icon-arrow
 
-    .reviews__box-btn.c-btn__wrapper.c-btn__wrapper--center
-      a.c-btn.c-btn__border.c-btn--medium(href="#")
-        span Read Case Study
+		.reviews__box-btn.c-btn__wrapper.c-btn__wrapper--center
+			a.c-btn.c-btn__border.c-btn--medium(href="#")
+				span Read Case Study
 
 // SECTION :: END

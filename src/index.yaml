@@ -10,3 +10,9 @@ PageList:
 - file: solution.html
   titleName: Solution - Helpdesk
   ready: 0
+- file: plans.html
+  titleName: Plans
+  ready: 0
+- file: all-services.html
+  titleName: All Services
+  ready: 1

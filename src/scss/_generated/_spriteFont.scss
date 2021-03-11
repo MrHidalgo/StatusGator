@@ -42,17 +42,20 @@
 	@if $filename == close {
 		$char: "\E005";
 	}
-	@if $filename == image {
+	@if $filename == eye {
 		$char: "\E006";
 	}
-	@if $filename == list {
+	@if $filename == image {
 		$char: "\E007";
 	}
-	@if $filename == plus-sq {
+	@if $filename == list {
 		$char: "\E008";
 	}
-	@if $filename == toggle {
+	@if $filename == plus-sq {
 		$char: "\E009";
+	}
+	@if $filename == toggle {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -87,6 +90,10 @@
 }
 .icon-close {
 	@include icon(close);
+
+}
+.icon-eye {
+	@include icon(eye);
 
 }
 .icon-image {

@@ -175,7 +175,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-anchor:before, .icon-arrow:before, .icon-bell:before, .icon-checked-sq:before, .icon-close:before, .icon-image:before, .icon-list:before, .icon-plus-sq:before, .icon-toggle:before {
+.icon-anchor:before, .icon-arrow:before, .icon-bell:before, .icon-checked-sq:before, .icon-close:before, .icon-eye:before, .icon-image:before, .icon-list:before, .icon-plus-sq:before, .icon-toggle:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,49 +186,54 @@
   text-transform: none;
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
+/* line 65, src/scss/_generated/_spriteFont.scss */
 .icon-anchor:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
+/* line 65, src/scss/_generated/_spriteFont.scss */
 .icon-arrow:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
+/* line 65, src/scss/_generated/_spriteFont.scss */
 .icon-bell:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
+/* line 65, src/scss/_generated/_spriteFont.scss */
 .icon-checked-sq:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
+/* line 65, src/scss/_generated/_spriteFont.scss */
 .icon-close:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
-.icon-image:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-eye:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
-.icon-list:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-image:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
-.icon-plus-sq:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-list:before {
   content: "";
 }
 
-/* line 62, src/scss/_generated/_spriteFont.scss */
-.icon-toggle:before {
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-plus-sq:before {
   content: "";
+}
+
+/* line 65, src/scss/_generated/_spriteFont.scss */
+.icon-toggle:before {
+  content: "";
 }
 
 @font-face {
@@ -236,6 +241,7 @@
   src: url("../fonts/Kinetika-Black.woff2") format("woff2"), url("../fonts/Kinetika-Black.woff") format("woff"), url("../fonts/Kinetika-Black.ttf") format("truetype"), url("../fonts/Kinetika-Black.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
@@ -243,6 +249,7 @@
   src: url("../fonts/KinetikaHeavy.woff2") format("woff2"), url("../fonts/KinetikaHeavy.woff") format("woff"), url("../fonts/KinetikaHeavy.ttf") format("truetype"), url("../fonts/KinetikaHeavy.svg#KinetikaHeavy") format("svg");
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
@@ -250,6 +257,7 @@
   src: url("../fonts/Kinetika-Bold.woff2") format("woff2"), url("../fonts/Kinetika-Bold.woff") format("woff"), url("../fonts/Kinetika-Bold.ttf") format("truetype"), url("../fonts/Kinetika-Bold.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -257,6 +265,7 @@
   src: url("../fonts/Kinetika-SemiBold.woff2") format("woff2"), url("../fonts/Kinetika-SemiBold.woff") format("woff"), url("../fonts/Kinetika-SemiBold.ttf") format("truetype"), url("../fonts/Kinetika-SemiBold.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
@@ -264,6 +273,7 @@
   src: url("../fonts/Kinetika-Medium.woff2") format("woff2"), url("../fonts/Kinetika-Medium.woff") format("woff"), url("../fonts/Kinetika-Medium.ttf") format("truetype"), url("../fonts/Kinetika-Medium.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
@@ -271,6 +281,7 @@
   src: url("../fonts/Kinetika-Light.woff2") format("woff2"), url("../fonts/Kinetika-Light.woff") format("woff"), url("../fonts/Kinetika-Light.ttf") format("truetype"), url("../fonts/Kinetika-Light.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
@@ -278,6 +289,7 @@
   src: url("../fonts/Kinetika-Kinetika.woff2") format("woff2"), url("../fonts/Kinetika-Kinetika.woff") format("woff"), url("../fonts/Kinetika-Kinetika.ttf") format("truetype"), url("../fonts/Kinetika-Kinetika.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: 100;
+  font-display: swap;
 }
 
 @font-face {
@@ -285,6 +297,7 @@
   src: url("../fonts/Kinetika-Regular.woff2") format("woff2"), url("../fonts/Kinetika-Regular.woff") format("woff"), url("../fonts/Kinetika-Regular.ttf") format("truetype"), url("../fonts/Kinetika-Regular.svg#Kinetika") format("svg");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -292,6 +305,7 @@
   src: url("../fonts/KinetikaBook.woff2") format("woff2"), url("../fonts/KinetikaBook.woff") format("woff"), url("../fonts/KinetikaBook.ttf") format("truetype"), url("../fonts/KinetikaBook.svg#KinetikaBook") format("svg");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -299,6 +313,7 @@
   src: url("../fonts/KinetikaUltra.woff2") format("woff2"), url("../fonts/KinetikaUltra.woff") format("woff"), url("../fonts/KinetikaUltra.ttf") format("truetype"), url("../fonts/KinetikaUltra.svg#KinetikaUltra") format("svg");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -306,6 +321,7 @@
   src: url("../fonts/Gogh-Black.woff2") format("woff2"), url("../fonts/Gogh-Black.woff") format("woff"), url("../fonts/Gogh-Black.ttf") format("truetype"), url("../fonts/Gogh-Black.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
@@ -313,6 +329,7 @@
   src: url("../fonts/GoghHeavy.woff2") format("woff2"), url("../fonts/GoghHeavy.woff") format("woff"), url("../fonts/GoghHeavy.ttf") format("truetype"), url("../fonts/GoghHeavy.svg#GoghHeavy") format("svg");
   font-style: normal;
   font-weight: 900;
+  font-display: swap;
 }
 
 @font-face {
@@ -320,6 +337,7 @@
   src: url("../fonts/Gogh-ExtraBold.woff2") format("woff2"), url("../fonts/Gogh-ExtraBold.woff") format("woff"), url("../fonts/Gogh-ExtraBold.ttf") format("truetype"), url("../fonts/Gogh-ExtraBold.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
 }
 
 @font-face {
@@ -327,6 +345,7 @@
   src: url("../fonts/Gogh-Bold.woff2") format("woff2"), url("../fonts/Gogh-Bold.woff") format("woff"), url("../fonts/Gogh-Bold.ttf") format("truetype"), url("../fonts/Gogh-Bold.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -334,6 +353,7 @@
   src: url("../fonts/Gogh-Medium.woff2") format("woff2"), url("../fonts/Gogh-Medium.woff") format("woff"), url("../fonts/Gogh-Medium.ttf") format("truetype"), url("../fonts/Gogh-Medium.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
@@ -341,6 +361,7 @@
   src: url("../fonts/GoghBook.woff2") format("woff2"), url("../fonts/GoghBook.woff") format("woff"), url("../fonts/GoghBook.ttf") format("truetype"), url("../fonts/GoghBook.svg#GoghBook") format("svg");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -348,6 +369,7 @@
   src: url("../fonts/GoghHairline.woff2") format("woff2"), url("../fonts/GoghHairline.woff") format("woff"), url("../fonts/GoghHairline.ttf") format("truetype"), url("../fonts/GoghHairline.svg#GoghHairline") format("svg");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -355,6 +377,7 @@
   src: url("../fonts/Gogh-Regular.woff2") format("woff2"), url("../fonts/Gogh-Regular.woff") format("woff"), url("../fonts/Gogh-Regular.ttf") format("truetype"), url("../fonts/Gogh-Regular.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -362,6 +385,7 @@
   src: url("../fonts/Gogh-Light.woff2") format("woff2"), url("../fonts/Gogh-Light.woff") format("woff"), url("../fonts/Gogh-Light.ttf") format("truetype"), url("../fonts/Gogh-Light.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
@@ -369,6 +393,7 @@
   src: url("../fonts/Gogh-Thin.woff2") format("woff2"), url("../fonts/Gogh-Thin.woff") format("woff"), url("../fonts/Gogh-Thin.ttf") format("truetype"), url("../fonts/Gogh-Thin.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: 100;
+  font-display: swap;
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -402,9 +427,13 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-family: "Kinetika", sans-serif;
+  font-smoothing: auto;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 33, src/scss/_shared/_main-setting-reset.scss */
+/* line 35, src/scss/_shared/_main-setting-reset.scss */
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -418,7 +447,7 @@ body {
   min-height: 100vh;
 }
 
-/* line 38, src/scss/_shared/_main-setting-reset.scss */
+/* line 40, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -439,7 +468,7 @@ body > .body {
           flex: 1 0 auto;
 }
 
-/* line 44, src/scss/_shared/_main-setting-reset.scss */
+/* line 46, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -447,19 +476,19 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 51, src/scss/_shared/_main-setting-reset.scss */
+/* line 53, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 54, src/scss/_shared/_main-setting-reset.scss */
+/* line 56, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 61, src/scss/_shared/_main-setting-reset.scss */
+/* line 63, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -469,36 +498,36 @@ textarea {
   margin: 0;
 }
 
-/* line 71, src/scss/_shared/_main-setting-reset.scss */
+/* line 73, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 77, src/scss/_shared/_main-setting-reset.scss */
+/* line 79, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 83, src/scss/_shared/_main-setting-reset.scss */
+/* line 85, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 89, src/scss/_shared/_main-setting-reset.scss */
+/* line 91, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 95, src/scss/_shared/_main-setting-reset.scss */
+/* line 97, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 100, src/scss/_shared/_main-setting-reset.scss */
+/* line 102, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -506,36 +535,36 @@ hr {
   padding: 0;
 }
 
-/* line 108, src/scss/_shared/_main-setting-reset.scss */
+/* line 110, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 113, src/scss/_shared/_main-setting-reset.scss */
+/* line 115, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 119, src/scss/_shared/_main-setting-reset.scss */
+/* line 121, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 124, src/scss/_shared/_main-setting-reset.scss */
+/* line 126, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 131, src/scss/_shared/_main-setting-reset.scss */
+/* line 133, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 135, src/scss/_shared/_main-setting-reset.scss */
+/* line 137, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3456,6 +3485,445 @@ picture {
 /* line 505, src/scss/_components/solution/_plans.scss */
 .plans__subtitle strong {
   font-weight: 700;
+}
+
+/* line 3, src/scss/_components/all-services/_main.scss */
+.services-main {
+  position: relative;
+  padding-top: 202px;
+}
+
+/* line 7, src/scss/_components/all-services/_main.scss */
+.services-main__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 462px;
+  background-color: rgba(33, 191, 115, 0.1);
+}
+
+/* line 16, src/scss/_components/all-services/_main.scss */
+.services-main__bg span {
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 20, src/scss/_components/all-services/_main.scss */
+.services-main__bg span:nth-of-type(1) {
+  top: 218px;
+  left: 167px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(153, 243, 189, 0.5);
+}
+
+/* line 27, src/scss/_components/all-services/_main.scss */
+.services-main__bg span:nth-of-type(2) {
+  top: 88px;
+  right: 124px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(245, 222, 163, 0.5);
+}
+
+/* line 34, src/scss/_components/all-services/_main.scss */
+.services-main__bg span:nth-of-type(3) {
+  right: 110px;
+  top: 492px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(153, 243, 189, 0.5);
+}
+
+/* line 41, src/scss/_components/all-services/_main.scss */
+.services-main__bg span:nth-of-type(4) {
+  top: 482px;
+  left: 100px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(245, 222, 163, 0.5);
+}
+
+/* line 51, src/scss/_components/all-services/_main.scss */
+.services-main__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 55, src/scss/_components/all-services/_main.scss */
+.services-main__wrapper-1 {
+  padding-bottom: 80px;
+}
+
+/* line 58, src/scss/_components/all-services/_main.scss */
+.services-main__wrapper-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 150px;
+  border-bottom: 1px solid rgba(87, 100, 114, 0.2);
+}
+
+/* line 64, src/scss/_components/all-services/_main.scss */
+.services-main__wrapper-left {
+  width: 100%;
+  max-width: 180px;
+  padding-right: 15px;
+}
+
+/* line 70, src/scss/_components/all-services/_main.scss */
+.services-main__wrapper-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 77, src/scss/_components/all-services/_main.scss */
+.services-main__title {
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 85, src/scss/_components/all-services/_main.scss */
+.services-main__title span {
+  color: #21bf73;
+}
+
+/* line 90, src/scss/_components/all-services/_main.scss */
+.services-main__search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 840px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 101, src/scss/_components/all-services/_main.scss */
+.services-main__search > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 30px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 80px rgba(28, 202, 135, 0.2);
+          box-shadow: 0px 0px 80px rgba(28, 202, 135, 0.2);
+  background-color: #FFFFFF;
+}
+
+/* line 110, src/scss/_components/all-services/_main.scss */
+.services-main__search > div label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 10px;
+}
+
+/* line 117, src/scss/_components/all-services/_main.scss */
+.services-main__search > div label input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  padding: 0 25px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: rgba(241, 244, 248, 0.5);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.services-main__search > div label input.placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.services-main__search > div label input:-moz-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.services-main__search > div label input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.services-main__search > div label input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.services-main__search > div label input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 140, src/scss/_components/all-services/_main.scss */
+.services-main__search > div .c-btn {
+  width: 100%;
+}
+
+/* line 143, src/scss/_components/all-services/_main.scss */
+.services-main__search > div .c-btn__wrapper {
+  width: 100%;
+  max-width: 170px;
+}
+
+/* line 151, src/scss/_components/all-services/_main.scss */
+.services-main__subtitle {
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #163A5F;
+}
+
+/* line 159, src/scss/_components/all-services/_main.scss */
+.services-main__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 163, src/scss/_components/all-services/_main.scss */
+.services-main__link + .services-main__subtitle {
+  padding-top: 50px;
+}
+
+/* line 167, src/scss/_components/all-services/_main.scss */
+.services-main__link a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  line-height: 22px;
+  color: #576472;
+}
+
+/* line 173, src/scss/_components/all-services/_main.scss */
+.services-main__link a.is-active {
+  font-weight: bold;
+  color: #21BF73;
+}
+
+/* line 178, src/scss/_components/all-services/_main.scss */
+.services-main__link a:not(:last-of-type) {
+  padding-bottom: 15px;
+}
+
+/* line 184, src/scss/_components/all-services/_main.scss */
+.services-main__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: rgba(241, 244, 248, 0.7);
+}
+
+/* line 191, src/scss/_components/all-services/_main.scss */
+.services-main__box-wrapper {
+  position: relative;
+  left: -15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: -webkit-calc(100% + 15px);
+  width: calc(100% + 15px);
+  padding-bottom: 35px;
+}
+
+/* line 199, src/scss/_components/all-services/_main.scss */
+.services-main__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 207, src/scss/_components/all-services/_main.scss */
+.services-main__box-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+/* line 212, src/scss/_components/all-services/_main.scss */
+.services-main__box-head img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* line 219, src/scss/_components/all-services/_main.scss */
+.services-main__box-head p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #163A5F;
+}
+
+/* line 230, src/scss/_components/all-services/_main.scss */
+.services-main__see {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: rgba(33, 191, 115, 0.1);
+}
+
+/* line 237, src/scss/_components/all-services/_main.scss */
+.services-main__see > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 15px;
+}
+
+/* line 245, src/scss/_components/all-services/_main.scss */
+.services-main__see > div:nth-of-type(2) {
+  width: 100%;
+  max-width: 170px;
+}
+
+/* line 249, src/scss/_components/all-services/_main.scss */
+.services-main__see > div:nth-of-type(2) .c-btn {
+  width: 100%;
+}
+
+/* line 252, src/scss/_components/all-services/_main.scss */
+.services-main__see > div:nth-of-type(2) .c-btn__wrapper {
+  width: 100%;
+}
+
+/* line 259, src/scss/_components/all-services/_main.scss */
+.services-main__see-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+/* line 269, src/scss/_components/all-services/_main.scss */
+.services-main__see-icon .icon-font {
+  height: 15px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #21bf73;
+}
+
+/* line 277, src/scss/_components/all-services/_main.scss */
+.services-main__see p {
+  padding-left: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #163A5F;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
