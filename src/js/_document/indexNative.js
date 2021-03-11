@@ -36,7 +36,7 @@
 	};
 	
 	
-	var headerFixed = function headerFixed() {
+	const headerFixed = function headerFixed() {
 		var elSelector = 'header',
 			$element = $(elSelector);
 		
@@ -88,6 +88,24 @@
 			
 		});
 	};
+	
+	
+	const faqCollapse = () => {
+		$('.faq__collapse-head').on('click', (ev) => {
+			const el = $(ev.currentTarget);
+			
+			if(el.hasClass('is-active')) {
+				el.removeClass('is-active');
+				el.siblings('.faq__collapse-body').slideUp(350);
+			} else {
+				$('.faq__collapse-head').removeClass('is-active');
+				el.addClass('is-active');
+				
+				$('.faq__collapse-body').slideUp(350);
+				el.siblings('.faq__collapse-body').slideDown(350);
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -111,6 +129,7 @@
 		// callback
 		gatorAnimation();
 		headerFixed();
+		faqCollapse();
 		// ==========================================
 	};
 	initNative();
