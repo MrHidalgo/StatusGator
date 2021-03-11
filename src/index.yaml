@@ -12,7 +12,7 @@ PageList:
   ready: 0
 - file: plans.html
   titleName: Plans
-  ready: 0
+  ready: 55
 - file: all-services.html
   titleName: All Services
-  ready: 1
+  ready: 55

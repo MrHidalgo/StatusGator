@@ -12,6 +12,11 @@
      object-position: center;
 }
 
+/* line 36, src/scss/_utilities/_extend.scss */
+.highlights__header p, .highlights__table-price p {
+  font-family: 'Gogh', sans-serif;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1476,6 +1481,790 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
+/* line 3, src/scss/_components/common/_plans.scss */
+.plans {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/common/_plans.scss */
+  .plans {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 12, src/scss/_components/common/_plans.scss */
+.plans.plans--plans {
+  padding-top: 202px;
+}
+
+/* line 17, src/scss/_components/common/_plans.scss */
+.plans.plans--plans .plans__bg-overlay {
+  width: 100%;
+  height: 35%;
+}
+
+/* line 23, src/scss/_components/common/_plans.scss */
+.plans.plans--plans .plans__wrapper-1 {
+  padding-bottom: 0;
+}
+
+/* line 28, src/scss/_components/common/_plans.scss */
+.plans.plans--plans .plans__title {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 66px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 38, src/scss/_components/common/_plans.scss */
+.plans.plans--plans .plans__desc span {
+  color: #21bf73;
+}
+
+/* line 45, src/scss/_components/common/_plans.scss */
+.plans__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 55, src/scss/_components/common/_plans.scss */
+.plans__bg-overlay {
+  width: 100%;
+  height: -webkit-calc(100% - 525px);
+  height: calc(100% - 525px);
+  background-color: rgba(33, 191, 115, 0.2);
+}
+
+/* line 61, src/scss/_components/common/_plans.scss */
+.plans__bg-circle {
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 65, src/scss/_components/common/_plans.scss */
+.plans__bg-circle:nth-of-type(1) {
+  top: 15px;
+  right: 30%;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(245, 222, 163, 0.5);
+}
+
+/* line 72, src/scss/_components/common/_plans.scss */
+.plans__bg-circle:nth-of-type(2) {
+  top: 20%;
+  right: 110px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(153, 243, 189, 0.5);
+}
+
+/* line 82, src/scss/_components/common/_plans.scss */
+.plans__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 86, src/scss/_components/common/_plans.scss */
+.plans__wrapper-1 {
+  padding-bottom: 143px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 86, src/scss/_components/common/_plans.scss */
+  .plans__wrapper-1 {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 86, src/scss/_components/common/_plans.scss */
+  .plans__wrapper-1 {
+    padding-bottom: 15px;
+  }
+}
+
+/* line 96, src/scss/_components/common/_plans.scss */
+.plans__wrapper-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 102, src/scss/_components/common/_plans.scss */
+.plans__wrapper-left, .plans__wrapper-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 102, src/scss/_components/common/_plans.scss */
+  .plans__wrapper-left, .plans__wrapper-right {
+    width: 100%;
+  }
+}
+
+/* line 110, src/scss/_components/common/_plans.scss */
+.plans__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 114, src/scss/_components/common/_plans.scss */
+  .plans__wrapper-right .c-btn {
+    width: 100%;
+  }
+  /* line 118, src/scss/_components/common/_plans.scss */
+  .plans__wrapper-right .c-btn__wrapper {
+    width: 100%;
+  }
+}
+
+/* line 126, src/scss/_components/common/_plans.scss */
+.plans__desc {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: #576472;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 126, src/scss/_components/common/_plans.scss */
+  .plans__desc {
+    width: 100%;
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+  }
+}
+
+/* line 144, src/scss/_components/common/_plans.scss */
+.plans__option {
+  position: relative;
+}
+
+/* line 147, src/scss/_components/common/_plans.scss */
+.plans__option-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 147, src/scss/_components/common/_plans.scss */
+  .plans__option-wrapper {
+    padding-bottom: 35px;
+  }
+}
+
+/* line 157, src/scss/_components/common/_plans.scss */
+.plans__option input {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 165, src/scss/_components/common/_plans.scss */
+.plans__option input:checked + label span {
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 169, src/scss/_components/common/_plans.scss */
+.plans__option input:checked + label span:nth-of-type(2) {
+  color: #163a5f;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 176, src/scss/_components/common/_plans.scss */
+.plans__option input:checked + label u:after {
+  left: 60px;
+  -webkit-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+
+/* line 185, src/scss/_components/common/_plans.scss */
+.plans__option label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 189, src/scss/_components/common/_plans.scss */
+.plans__option label span {
+  position: relative;
+  display: block;
+  width: 95px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 199, src/scss/_components/common/_plans.scss */
+.plans__option label span:nth-of-type(1) {
+  color: #163a5f;
+  text-align: right;
+}
+
+/* line 204, src/scss/_components/common/_plans.scss */
+.plans__option label span i {
+  position: absolute;
+  top: -webkit-calc(100% + 1px);
+  top: calc(100% + 1px);
+  left: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #21bf73;
+}
+
+/* line 215, src/scss/_components/common/_plans.scss */
+.plans__option label u {
+  cursor: pointer;
+  position: relative;
+  width: 90px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  background-color: #21BF73;
+  text-decoration: none;
+}
+
+/* line 226, src/scss/_components/common/_plans.scss */
+.plans__option label u:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 10px #179558;
+          box-shadow: 1px 1px 10px #179558;
+  background-color: #FFFFFF;
+  -webkit-transition: left 0.3s ease-in-out;
+  -o-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+
+/* line 242, src/scss/_components/common/_plans.scss */
+.plans__box {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 30px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 1px solid rgba(45, 57, 88, 0.2);
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 242, src/scss/_components/common/_plans.scss */
+  .plans__box {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 242, src/scss/_components/common/_plans.scss */
+  .plans__box {
+    min-height: 480px;
+    padding: 30px;
+  }
+}
+
+/* line 259, src/scss/_components/common/_plans.scss */
+.plans__box.is-active {
+  top: -13px;
+  height: -webkit-calc(100% + 26px);
+  height: calc(100% + 26px);
+  border: 2px solid #21BF73;
+  -webkit-box-shadow: 0px 2px 10px rgba(45, 57, 88, 0.05);
+          box-shadow: 0px 2px 10px rgba(45, 57, 88, 0.05);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 259, src/scss/_components/common/_plans.scss */
+  .plans__box.is-active {
+    top: 0;
+    height: 100%;
+  }
+}
+
+/* line 270, src/scss/_components/common/_plans.scss */
+.plans__box.is-active .plans__box-price {
+  color: #21bf73;
+}
+
+/* line 276, src/scss/_components/common/_plans.scss */
+.plans__box-shadow {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -45px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 289, src/scss/_components/common/_plans.scss */
+.plans__box-dino {
+  z-index: -1;
+  position: absolute;
+  top: -44px;
+  right: -44px;
+}
+
+/* line 295, src/scss/_components/common/_plans.scss */
+.plans__box-dino svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 301, src/scss/_components/common/_plans.scss */
+.plans__box-dino-hand {
+  z-index: 2;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* line 307, src/scss/_components/common/_plans.scss */
+.plans__box-dino-hand svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 315, src/scss/_components/common/_plans.scss */
+.plans__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 315, src/scss/_components/common/_plans.scss */
+  .plans__box-wrapper {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 315, src/scss/_components/common/_plans.scss */
+  .plans__box-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 328, src/scss/_components/common/_plans.scss */
+.plans__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 45px) / 4);
+  max-width: calc((100% - 45px) / 4);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 328, src/scss/_components/common/_plans.scss */
+  .plans__box-wrapper > div {
+    max-width: -webkit-calc((100% - 15px) / 2);
+    max-width: calc((100% - 15px) / 2);
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 328, src/scss/_components/common/_plans.scss */
+  .plans__box-wrapper > div {
+    max-width: 100%;
+    padding-bottom: 35px;
+  }
+  /* line 339, src/scss/_components/common/_plans.scss */
+  .plans__box-wrapper > div:nth-of-type(2) {
+    padding-bottom: 75px;
+  }
+  /* line 343, src/scss/_components/common/_plans.scss */
+  .plans__box-wrapper > div:nth-of-type(3) {
+    padding-right: 50px;
+  }
+}
+
+/* line 350, src/scss/_components/common/_plans.scss */
+.plans__box-head, .plans__box-body, .plans__box-footer {
+  width: 100%;
+}
+
+/* line 356, src/scss/_components/common/_plans.scss */
+.plans__box-head {
+  position: relative;
+}
+
+/* line 360, src/scss/_components/common/_plans.scss */
+.plans__box-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 1px;
+  max-height: 100%;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  border-top: 1px solid rgba(45, 57, 88, 0.2);
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 360, src/scss/_components/common/_plans.scss */
+  .plans__box-body {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 373, src/scss/_components/common/_plans.scss */
+.plans__box-badge {
+  padding-bottom: 35px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #163A5F;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 373, src/scss/_components/common/_plans.scss */
+  .plans__box-badge {
+    font-size: 20px;
+  }
+}
+
+/* line 384, src/scss/_components/common/_plans.scss */
+.plans__box-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #163A5F;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 384, src/scss/_components/common/_plans.scss */
+  .plans__box-price {
+    font-size: 42px;
+  }
+}
+
+/* line 397, src/scss/_components/common/_plans.scss */
+.plans__box-price i {
+  padding-right: 5px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* line 405, src/scss/_components/common/_plans.scss */
+.plans__box-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 20px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: rgba(176, 234, 205, 0.2);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #21BF73;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 405, src/scss/_components/common/_plans.scss */
+  .plans__box-top {
+    font-size: 12px;
+  }
+}
+
+/* line 425, src/scss/_components/common/_plans.scss */
+.plans__box-info {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(87, 100, 114, 0.8);
+}
+
+/* line 432, src/scss/_components/common/_plans.scss */
+.plans__box-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 436, src/scss/_components/common/_plans.scss */
+.plans__box-list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 439, src/scss/_components/common/_plans.scss */
+.plans__box-list li:not(:last-of-type) {
+  padding-bottom: 16px;
+}
+
+/* line 444, src/scss/_components/common/_plans.scss */
+.plans__box-list li > div:nth-of-type(1) {
+  width: 30px;
+}
+
+/* line 447, src/scss/_components/common/_plans.scss */
+.plans__box-list li > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 455, src/scss/_components/common/_plans.scss */
+.plans__box-list span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #163A5F;
+}
+
+/* line 462, src/scss/_components/common/_plans.scss */
+.plans__box-link {
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 483, src/scss/_components/common/_plans.scss */
+.plans__box-link:before, .plans__box-link:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #163A5F;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 494, src/scss/_components/common/_plans.scss */
+.plans__box-link:before {
+  left: 50%;
+}
+
+/* line 497, src/scss/_components/common/_plans.scss */
+.plans__box-link:after {
+  right: 50%;
+}
+
+/* line 502, src/scss/_components/common/_plans.scss */
+.plans__box-link:hover:before, .plans__box-link:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 510, src/scss/_components/common/_plans.scss */
+.plans__box .c-btn {
+  width: 100%;
+}
+
+/* line 513, src/scss/_components/common/_plans.scss */
+.plans__box .c-btn-wrapper {
+  width: 100%;
+}
+
+/* line 519, src/scss/_components/common/_plans.scss */
+.plans__subtitle {
+  font-size: 64px;
+  line-height: 88px;
+  color: #21BF73;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 519, src/scss/_components/common/_plans.scss */
+  .plans__subtitle {
+    font-size: 54px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 519, src/scss/_components/common/_plans.scss */
+  .plans__subtitle {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 519, src/scss/_components/common/_plans.scss */
+  .plans__subtitle {
+    padding-bottom: 25px;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+/* line 538, src/scss/_components/common/_plans.scss */
+.plans__subtitle strong {
+  font-weight: 700;
+}
+
 /* line 3, src/scss/_components/solution/_main.scss */
 .main {
   position: relative;
@@ -2734,759 +3523,6 @@ picture {
   line-height: 17px;
 }
 
-/* line 3, src/scss/_components/solution/_plans.scss */
-.plans {
-  position: relative;
-  padding-top: 75px;
-  padding-bottom: 100px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 3, src/scss/_components/solution/_plans.scss */
-  .plans {
-    padding-top: 25px;
-    padding-bottom: 50px;
-  }
-}
-
-/* line 12, src/scss/_components/solution/_plans.scss */
-.plans__bg {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 22, src/scss/_components/solution/_plans.scss */
-.plans__bg-overlay {
-  width: 100%;
-  height: -webkit-calc(100% - 525px);
-  height: calc(100% - 525px);
-  background-color: rgba(33, 191, 115, 0.2);
-}
-
-/* line 28, src/scss/_components/solution/_plans.scss */
-.plans__bg-circle {
-  position: absolute;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-}
-
-/* line 32, src/scss/_components/solution/_plans.scss */
-.plans__bg-circle:nth-of-type(1) {
-  top: 15px;
-  right: 30%;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(245, 222, 163, 0.5);
-}
-
-/* line 39, src/scss/_components/solution/_plans.scss */
-.plans__bg-circle:nth-of-type(2) {
-  top: 20%;
-  right: 110px;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(153, 243, 189, 0.5);
-}
-
-/* line 49, src/scss/_components/solution/_plans.scss */
-.plans__wrapper {
-  z-index: 2;
-  position: relative;
-}
-
-/* line 53, src/scss/_components/solution/_plans.scss */
-.plans__wrapper-1 {
-  padding-bottom: 143px;
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 53, src/scss/_components/solution/_plans.scss */
-  .plans__wrapper-1 {
-    padding-bottom: 100px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 53, src/scss/_components/solution/_plans.scss */
-  .plans__wrapper-1 {
-    padding-bottom: 15px;
-  }
-}
-
-/* line 63, src/scss/_components/solution/_plans.scss */
-.plans__wrapper-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* line 69, src/scss/_components/solution/_plans.scss */
-.plans__wrapper-left, .plans__wrapper-right {
-  width: 50%;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/solution/_plans.scss */
-  .plans__wrapper-left, .plans__wrapper-right {
-    width: 100%;
-  }
-}
-
-/* line 77, src/scss/_components/solution/_plans.scss */
-.plans__wrapper-right {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 81, src/scss/_components/solution/_plans.scss */
-  .plans__wrapper-right .c-btn {
-    width: 100%;
-  }
-  /* line 85, src/scss/_components/solution/_plans.scss */
-  .plans__wrapper-right .c-btn__wrapper {
-    width: 100%;
-  }
-}
-
-/* line 93, src/scss/_components/solution/_plans.scss */
-.plans__desc {
-  padding-bottom: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 25px;
-  color: #576472;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 93, src/scss/_components/solution/_plans.scss */
-  .plans__desc {
-    width: 100%;
-    max-width: 175px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-  }
-}
-
-/* line 111, src/scss/_components/solution/_plans.scss */
-.plans__option {
-  position: relative;
-}
-
-/* line 114, src/scss/_components/solution/_plans.scss */
-.plans__option-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 80px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 114, src/scss/_components/solution/_plans.scss */
-  .plans__option-wrapper {
-    padding-bottom: 35px;
-  }
-}
-
-/* line 124, src/scss/_components/solution/_plans.scss */
-.plans__option input {
-  opacity: 0;
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-/* line 132, src/scss/_components/solution/_plans.scss */
-.plans__option input:checked + label span {
-  color: #576472;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
-/* line 136, src/scss/_components/solution/_plans.scss */
-.plans__option input:checked + label span:nth-of-type(2) {
-  color: #163a5f;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
-/* line 143, src/scss/_components/solution/_plans.scss */
-.plans__option input:checked + label u:after {
-  left: 60px;
-  -webkit-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out;
-}
-
-/* line 152, src/scss/_components/solution/_plans.scss */
-.plans__option label {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* line 156, src/scss/_components/solution/_plans.scss */
-.plans__option label span {
-  position: relative;
-  display: block;
-  width: 95px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1;
-  color: #576472;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
-/* line 166, src/scss/_components/solution/_plans.scss */
-.plans__option label span:nth-of-type(1) {
-  color: #163a5f;
-  text-align: right;
-}
-
-/* line 171, src/scss/_components/solution/_plans.scss */
-.plans__option label span i {
-  position: absolute;
-  top: -webkit-calc(100% + 1px);
-  top: calc(100% + 1px);
-  left: 0;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 400;
-  color: #21bf73;
-}
-
-/* line 182, src/scss/_components/solution/_plans.scss */
-.plans__option label u {
-  cursor: pointer;
-  position: relative;
-  width: 90px;
-  height: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
-  background-color: #21BF73;
-  text-decoration: none;
-}
-
-/* line 193, src/scss/_components/solution/_plans.scss */
-.plans__option label u:after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  -webkit-box-shadow: 1px 1px 10px #179558;
-          box-shadow: 1px 1px 10px #179558;
-  background-color: #FFFFFF;
-  -webkit-transition: left 0.3s ease-in-out;
-  -o-transition: left 0.3s ease-in-out;
-  transition: left 0.3s ease-in-out;
-}
-
-/* line 209, src/scss/_components/solution/_plans.scss */
-.plans__box {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  padding: 30px;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  border: 1px solid rgba(45, 57, 88, 0.2);
-  background-color: #FFFFFF;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 209, src/scss/_components/solution/_plans.scss */
-  .plans__box {
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 209, src/scss/_components/solution/_plans.scss */
-  .plans__box {
-    min-height: 480px;
-    padding: 30px;
-  }
-}
-
-/* line 226, src/scss/_components/solution/_plans.scss */
-.plans__box.is-active {
-  top: -13px;
-  height: -webkit-calc(100% + 26px);
-  height: calc(100% + 26px);
-  border: 2px solid #21BF73;
-  -webkit-box-shadow: 0px 2px 10px rgba(45, 57, 88, 0.05);
-          box-shadow: 0px 2px 10px rgba(45, 57, 88, 0.05);
-}
-
-@media screen and (max-width: 767px) {
-  /* line 226, src/scss/_components/solution/_plans.scss */
-  .plans__box.is-active {
-    top: 0;
-    height: 100%;
-  }
-}
-
-/* line 237, src/scss/_components/solution/_plans.scss */
-.plans__box.is-active .plans__box-price {
-  color: #21bf73;
-}
-
-/* line 243, src/scss/_components/solution/_plans.scss */
-.plans__box-shadow {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -45px;
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 256, src/scss/_components/solution/_plans.scss */
-.plans__box-dino {
-  z-index: -1;
-  position: absolute;
-  top: -44px;
-  right: -44px;
-}
-
-/* line 262, src/scss/_components/solution/_plans.scss */
-.plans__box-dino svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 268, src/scss/_components/solution/_plans.scss */
-.plans__box-dino-hand {
-  z-index: 2;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-}
-
-/* line 274, src/scss/_components/solution/_plans.scss */
-.plans__box-dino-hand svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 282, src/scss/_components/solution/_plans.scss */
-.plans__box-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 282, src/scss/_components/solution/_plans.scss */
-  .plans__box-wrapper {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 282, src/scss/_components/solution/_plans.scss */
-  .plans__box-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* line 295, src/scss/_components/solution/_plans.scss */
-.plans__box-wrapper > div {
-  width: 100%;
-  max-width: -webkit-calc((100% - 45px) / 4);
-  max-width: calc((100% - 45px) / 4);
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 295, src/scss/_components/solution/_plans.scss */
-  .plans__box-wrapper > div {
-    max-width: -webkit-calc((100% - 15px) / 2);
-    max-width: calc((100% - 15px) / 2);
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 295, src/scss/_components/solution/_plans.scss */
-  .plans__box-wrapper > div {
-    max-width: 100%;
-    padding-bottom: 35px;
-  }
-  /* line 306, src/scss/_components/solution/_plans.scss */
-  .plans__box-wrapper > div:nth-of-type(2) {
-    padding-bottom: 75px;
-  }
-  /* line 310, src/scss/_components/solution/_plans.scss */
-  .plans__box-wrapper > div:nth-of-type(3) {
-    padding-right: 50px;
-  }
-}
-
-/* line 317, src/scss/_components/solution/_plans.scss */
-.plans__box-head, .plans__box-body, .plans__box-footer {
-  width: 100%;
-}
-
-/* line 323, src/scss/_components/solution/_plans.scss */
-.plans__box-head {
-  position: relative;
-}
-
-/* line 327, src/scss/_components/solution/_plans.scss */
-.plans__box-body {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-height: 1px;
-  max-height: 100%;
-  padding-top: 30px;
-  margin-top: 30px;
-  padding-bottom: 50px;
-  border-top: 1px solid rgba(45, 57, 88, 0.2);
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 327, src/scss/_components/solution/_plans.scss */
-  .plans__box-body {
-    padding-bottom: 30px;
-  }
-}
-
-/* line 340, src/scss/_components/solution/_plans.scss */
-.plans__box-badge {
-  padding-bottom: 35px;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-  color: #163A5F;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 340, src/scss/_components/solution/_plans.scss */
-  .plans__box-badge {
-    font-size: 20px;
-  }
-}
-
-/* line 351, src/scss/_components/solution/_plans.scss */
-.plans__box-price {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 50px;
-  text-align: center;
-  color: #163A5F;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 351, src/scss/_components/solution/_plans.scss */
-  .plans__box-price {
-    font-size: 42px;
-  }
-}
-
-/* line 364, src/scss/_components/solution/_plans.scss */
-.plans__box-price i {
-  padding-right: 5px;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-/* line 372, src/scss/_components/solution/_plans.scss */
-.plans__box-top {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px 20px;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  background-color: rgba(176, 234, 205, 0.2);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #21BF73;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 372, src/scss/_components/solution/_plans.scss */
-  .plans__box-top {
-    font-size: 12px;
-  }
-}
-
-/* line 392, src/scss/_components/solution/_plans.scss */
-.plans__box-info {
-  text-align: center;
-  font-size: 14px;
-  line-height: 20px;
-  color: rgba(87, 100, 114, 0.8);
-}
-
-/* line 399, src/scss/_components/solution/_plans.scss */
-.plans__box-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-/* line 403, src/scss/_components/solution/_plans.scss */
-.plans__box-list li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* line 406, src/scss/_components/solution/_plans.scss */
-.plans__box-list li:not(:last-of-type) {
-  padding-bottom: 16px;
-}
-
-/* line 411, src/scss/_components/solution/_plans.scss */
-.plans__box-list li > div:nth-of-type(1) {
-  width: 30px;
-}
-
-/* line 414, src/scss/_components/solution/_plans.scss */
-.plans__box-list li > div:nth-of-type(2) {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-width: 100%;
-}
-
-/* line 422, src/scss/_components/solution/_plans.scss */
-.plans__box-list span {
-  font-size: 14px;
-  line-height: 20px;
-  color: #163A5F;
-}
-
-/* line 429, src/scss/_components/solution/_plans.scss */
-.plans__box-link {
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #163A5F;
-}
-
-/* line 450, src/scss/_components/solution/_plans.scss */
-.plans__box-link:before, .plans__box-link:after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  width: 0;
-  height: 1px;
-  background-color: #163A5F;
-  -webkit-transition: width 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
-}
-
-/* line 461, src/scss/_components/solution/_plans.scss */
-.plans__box-link:before {
-  left: 50%;
-}
-
-/* line 464, src/scss/_components/solution/_plans.scss */
-.plans__box-link:after {
-  right: 50%;
-}
-
-/* line 469, src/scss/_components/solution/_plans.scss */
-.plans__box-link:hover:before, .plans__box-link:hover:after {
-  width: 50%;
-  -webkit-transition: width 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
-}
-
-/* line 477, src/scss/_components/solution/_plans.scss */
-.plans__box .c-btn {
-  width: 100%;
-}
-
-/* line 480, src/scss/_components/solution/_plans.scss */
-.plans__box .c-btn-wrapper {
-  width: 100%;
-}
-
-/* line 486, src/scss/_components/solution/_plans.scss */
-.plans__subtitle {
-  font-size: 64px;
-  line-height: 88px;
-  color: #21BF73;
-}
-
-@media screen and (max-width: 1439px) {
-  /* line 486, src/scss/_components/solution/_plans.scss */
-  .plans__subtitle {
-    font-size: 54px;
-    line-height: 80px;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 486, src/scss/_components/solution/_plans.scss */
-  .plans__subtitle {
-    font-size: 50px;
-    line-height: 65px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 486, src/scss/_components/solution/_plans.scss */
-  .plans__subtitle {
-    padding-bottom: 25px;
-    font-size: 36px;
-    line-height: 50px;
-    text-align: center;
-  }
-}
-
-/* line 505, src/scss/_components/solution/_plans.scss */
-.plans__subtitle strong {
-  font-weight: 700;
-}
-
 /* line 3, src/scss/_components/all-services/_main.scss */
 .services-main {
   position: relative;
@@ -3924,6 +3960,298 @@ picture {
   font-size: 18px;
   line-height: 22px;
   color: #163A5F;
+}
+
+/* line 3, src/scss/_components/plans/_highlights.scss */
+.highlights {
+  position: relative;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/plans/_highlights.scss */
+.highlights__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(33, 191, 115, 0.2);
+}
+
+/* line 17, src/scss/_components/plans/_highlights.scss */
+.highlights__wrapper {
+  z-index: 2;
+  position: relative;
+  padding: 60px 50px 50px;
+  border: 1px solid #F8FAFF;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0px 20px 50px rgba(22, 58, 95, 0.05);
+          box-shadow: 0px 20px 50px rgba(22, 58, 95, 0.05);
+  background-color: #FFFFFF;
+}
+
+/* line 27, src/scss/_components/plans/_highlights.scss */
+.highlights__title {
+  padding-bottom: 50px;
+}
+
+/* line 31, src/scss/_components/plans/_highlights.scss */
+.highlights__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #F8FAFF;
+}
+
+/* line 39, src/scss/_components/plans/_highlights.scss */
+.highlights__header > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 49, src/scss/_components/plans/_highlights.scss */
+.highlights__header > div.is-top p {
+  color: #21bf73;
+}
+
+/* line 55, src/scss/_components/plans/_highlights.scss */
+.highlights__header span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: rgba(176, 234, 205, 0.2);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #21BF73;
+}
+
+/* line 70, src/scss/_components/plans/_highlights.scss */
+.highlights__header p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 80, src/scss/_components/plans/_highlights.scss */
+.highlights__table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 91, src/scss/_components/plans/_highlights.scss */
+.highlights__table-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 94, src/scss/_components/plans/_highlights.scss */
+.highlights__table-row:not(:last-of-type) {
+  border-bottom: 1px solid #e6edff;
+}
+
+/* line 99, src/scss/_components/plans/_highlights.scss */
+.highlights__table-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  min-height: 100px;
+  padding: 20px 30px;
+}
+
+/* line 110, src/scss/_components/plans/_highlights.scss */
+.highlights__table-col--top {
+  background-color: rgba(153, 243, 189, 0.2);
+}
+
+/* line 114, src/scss/_components/plans/_highlights.scss */
+.highlights__table-col p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 122, src/scss/_components/plans/_highlights.scss */
+.highlights__table-col p strong {
+  font-weight: 700;
+}
+
+/* line 126, src/scss/_components/plans/_highlights.scss */
+.highlights__table-col p img {
+  display: block;
+  width: 100%;
+  max-width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* line 136, src/scss/_components/plans/_highlights.scss */
+.highlights__table-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 75px;
+  padding-bottom: 25px;
+}
+
+/* line 144, src/scss/_components/plans/_highlights.scss */
+.highlights__table-price p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 154, src/scss/_components/plans/_highlights.scss */
+.highlights__table-price p i {
+  margin-right: 5px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  color: #163A5F;
+}
+
+/* line 163, src/scss/_components/plans/_highlights.scss */
+.highlights__table-price span {
+  font-size: 14px;
+  line-height: 1;
+  color: rgba(87, 100, 114, 0.8);
+}
+
+/* line 170, src/scss/_components/plans/_highlights.scss */
+.highlights__table-info {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #576472;
+}
+
+/* line 178, src/scss/_components/plans/_highlights.scss */
+.highlights__table .c-btn {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 183, src/scss/_components/plans/_highlights.scss */
+.highlights__table .c-btn__wrapper {
+  width: 100%;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
