@@ -125,6 +125,7 @@
 
 	&__desc {
 		padding-bottom: 40px;
+		@extend %fontGogh;
 		text-align: center;
 		font-size: 18px;
 		line-height: 25px;
@@ -517,6 +518,7 @@
 	}
 
 	&__subtitle {
+		@extend %fontGogh;
 		font-size: 64px;
 		line-height: 88px;
 		color: #21BF73;

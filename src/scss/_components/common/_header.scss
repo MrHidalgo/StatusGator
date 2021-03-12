@@ -22,7 +22,7 @@
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		height: 80px;
+		min-height: 80px;
 		@include adaptive(767) {
 			height: auto;
 			padding-top: 10px;
@@ -117,11 +117,11 @@
 					}
 				}
 				&:nth-of-type(2) {
-					overflow-y: auto;
 					flex: 1;
 					min-width: 1px;
 					max-width: 100%;
 					@include adaptive(1023) {
+						overflow-y: auto;
 						display: flex;
 						align-items: center;
 						justify-content: center;
@@ -153,10 +153,12 @@
 
 				&.c-btn__border {
 					border-color: #B0EACD;
+					@include transition(border-color, background-color);
 
 					&:hover {
 						border-color: #21BF73;
 						background-color: #21BF73;
+						@include transition(border-color, background-color);
 
 						span {
 							color: #ffffff;
@@ -207,8 +209,8 @@
 			margin-left: 20px;
 			margin-right: 20px;
 			font-size: 16px;
-			font-weight: 500;
-			line-height: 20px;
+			font-weight: 400;
+			//line-height: 20px;
 			text-align: center;
 			color: #163A5F;
 			@include adaptive(1279) {

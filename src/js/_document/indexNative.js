@@ -90,6 +90,13 @@
 	};
 	
 	
+	const expandFilters = () => {
+		$('[expand-all-js]').on('click', (ev) => {
+			$(ev.currentTarget).closest('.services-main__link').find('> div').slideToggle(350);
+		});
+	};
+	
+	
 	const faqCollapse = () => {
 		$('.faq__collapse-head').on('click', (ev) => {
 			const el = $(ev.currentTarget);
@@ -129,6 +136,7 @@
 		// callback
 		gatorAnimation();
 		headerFixed();
+		expandFilters();
 		faqCollapse();
 		// ==========================================
 	};

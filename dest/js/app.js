@@ -28,25 +28,27 @@ var initHamburger = function initHamburger() {
 	/**
    * @description
   */
-	btn.addEventListener("click", function (ev) {
-		var elem = ev.currentTarget;
+	if (btn) {
+		btn.addEventListener("click", function (ev) {
+			var elem = ev.currentTarget;
 
-		elem.classList.add("is-active");
-		mobileContainer.classList.add("is-open");
+			elem.classList.add("is-active");
+			mobileContainer.classList.add("is-open");
 
-		hideScrollContainer.forEach(function (val, idx) {
-			val.classList.add("is-hideScroll");
+			hideScrollContainer.forEach(function (val, idx) {
+				val.classList.add("is-hideScroll");
+			});
 		});
-	});
 
-	btnClose.addEventListener("click", function (ev) {
-		btn.classList.remove("is-active");
-		mobileContainer.classList.remove("is-open");
+		btnClose.addEventListener("click", function (ev) {
+			btn.classList.remove("is-active");
+			mobileContainer.classList.remove("is-open");
 
-		hideScrollContainer.forEach(function (val, idx) {
-			val.classList.remove("is-hideScroll");
+			hideScrollContainer.forEach(function (val, idx) {
+				val.classList.remove("is-hideScroll");
+			});
 		});
-	});
+	}
 };
 
 /**
@@ -223,6 +225,12 @@ var initSwiper = function initSwiper() {
 		});
 	};
 
+	var expandFilters = function expandFilters() {
+		$('[expand-all-js]').on('click', function (ev) {
+			$(ev.currentTarget).closest('.services-main__link').find('> div').slideToggle(350);
+		});
+	};
+
 	var faqCollapse = function faqCollapse() {
 		$('.faq__collapse-head').on('click', function (ev) {
 			var el = $(ev.currentTarget);
@@ -261,6 +269,7 @@ var initSwiper = function initSwiper() {
 		// callback
 		gatorAnimation();
 		headerFixed();
+		expandFilters();
 		faqCollapse();
 		// ==========================================
 	};

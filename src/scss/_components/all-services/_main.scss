@@ -164,11 +164,22 @@
 			padding-top: 50px;
 		}
 
+		> div {
+			display: none;
+			padding-bottom: 15px;
+		}
+
 		a {
 			display: flex;
 			font-size: 18px;
 			line-height: 22px;
 			color: #576472;
+			@include transition(color);
+
+			&:hover {
+				color: #21BF73;
+				@include transition(color);
+			}
 
 			&.is-active {
 				font-weight: bold;

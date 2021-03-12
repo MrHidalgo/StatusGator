@@ -13,7 +13,7 @@
 }
 
 /* line 36, src/scss/_utilities/_extend.scss */
-.highlights__header p, .highlights__table-price p {
+.c-title, .plans__desc, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p {
   font-family: 'Gogh', sans-serif;
 }
 
@@ -283,39 +283,7 @@
 
 @font-face {
   font-family: "Kinetika";
-  src: url("../fonts/Kinetika-Light.woff2") format("woff2"), url("../fonts/Kinetika-Light.woff") format("woff"), url("../fonts/Kinetika-Light.ttf") format("truetype"), url("../fonts/Kinetika-Light.svg#Kinetika") format("svg");
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kinetika";
-  src: url("../fonts/Kinetika-Kinetika.woff2") format("woff2"), url("../fonts/Kinetika-Kinetika.woff") format("woff"), url("../fonts/Kinetika-Kinetika.ttf") format("truetype"), url("../fonts/Kinetika-Kinetika.svg#Kinetika") format("svg");
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kinetika";
   src: url("../fonts/Kinetika-Regular.woff2") format("woff2"), url("../fonts/Kinetika-Regular.woff") format("woff"), url("../fonts/Kinetika-Regular.ttf") format("truetype"), url("../fonts/Kinetika-Regular.svg#Kinetika") format("svg");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "KinetikaBook";
-  src: url("../fonts/KinetikaBook.woff2") format("woff2"), url("../fonts/KinetikaBook.woff") format("woff"), url("../fonts/KinetikaBook.ttf") format("truetype"), url("../fonts/KinetikaBook.svg#KinetikaBook") format("svg");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "KinetikaUltra";
-  src: url("../fonts/KinetikaUltra.woff2") format("woff2"), url("../fonts/KinetikaUltra.woff") format("woff"), url("../fonts/KinetikaUltra.ttf") format("truetype"), url("../fonts/KinetikaUltra.svg#KinetikaUltra") format("svg");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
@@ -358,22 +326,6 @@
   src: url("../fonts/Gogh-Medium.woff2") format("woff2"), url("../fonts/Gogh-Medium.woff") format("woff"), url("../fonts/Gogh-Medium.ttf") format("truetype"), url("../fonts/Gogh-Medium.svg#Gogh") format("svg");
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GoghBook";
-  src: url("../fonts/GoghBook.woff2") format("woff2"), url("../fonts/GoghBook.woff") format("woff"), url("../fonts/GoghBook.ttf") format("truetype"), url("../fonts/GoghBook.svg#GoghBook") format("svg");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GoghHairline";
-  src: url("../fonts/GoghHairline.woff2") format("woff2"), url("../fonts/GoghHairline.woff") format("woff"), url("../fonts/GoghHairline.ttf") format("truetype"), url("../fonts/GoghHairline.svg#GoghHairline") format("svg");
-  font-style: normal;
-  font-weight: normal;
   font-display: swap;
 }
 
@@ -431,14 +383,12 @@ body {
   line-height: 1.42857143;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Kinetika", sans-serif;
-  font-smoothing: auto;
-  text-rendering: auto;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 35, src/scss/_shared/_main-setting-reset.scss */
+/* line 33, src/scss/_shared/_main-setting-reset.scss */
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -452,7 +402,7 @@ body {
   min-height: 100vh;
 }
 
-/* line 40, src/scss/_shared/_main-setting-reset.scss */
+/* line 38, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -473,7 +423,7 @@ body > .body {
           flex: 1 0 auto;
 }
 
-/* line 46, src/scss/_shared/_main-setting-reset.scss */
+/* line 44, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -481,19 +431,19 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 53, src/scss/_shared/_main-setting-reset.scss */
+/* line 51, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 56, src/scss/_shared/_main-setting-reset.scss */
+/* line 54, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 63, src/scss/_shared/_main-setting-reset.scss */
+/* line 61, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -503,36 +453,36 @@ textarea {
   margin: 0;
 }
 
-/* line 73, src/scss/_shared/_main-setting-reset.scss */
+/* line 71, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 79, src/scss/_shared/_main-setting-reset.scss */
+/* line 77, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 85, src/scss/_shared/_main-setting-reset.scss */
+/* line 83, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 91, src/scss/_shared/_main-setting-reset.scss */
+/* line 89, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 97, src/scss/_shared/_main-setting-reset.scss */
+/* line 95, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 102, src/scss/_shared/_main-setting-reset.scss */
+/* line 100, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -540,36 +490,36 @@ hr {
   padding: 0;
 }
 
-/* line 110, src/scss/_shared/_main-setting-reset.scss */
+/* line 108, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 115, src/scss/_shared/_main-setting-reset.scss */
+/* line 113, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 121, src/scss/_shared/_main-setting-reset.scss */
+/* line 119, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 126, src/scss/_shared/_main-setting-reset.scss */
+/* line 124, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 133, src/scss/_shared/_main-setting-reset.scss */
+/* line 131, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 137, src/scss/_shared/_main-setting-reset.scss */
+/* line 135, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -639,7 +589,12 @@ picture {
   }
 }
 
-/* line 28, src/scss/_macros/_logotype.scss */
+/* line 27, src/scss/_macros/_logotype.scss */
+.logo.logo--sign {
+  padding-bottom: 90px;
+}
+
+/* line 31, src/scss/_macros/_logotype.scss */
 .logo__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -651,7 +606,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 33, src/scss/_macros/_logotype.scss */
+/* line 36, src/scss/_macros/_logotype.scss */
 .logo__img {
   display: block;
   max-width: 100%;
@@ -851,7 +806,7 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  min-height: 80px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1037,7 +992,6 @@ picture {
 
 /* line 119, src/scss/_components/common/_header.scss */
 .header__wrapper-right > div:nth-of-type(2) {
-  overflow-y: auto;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -1049,6 +1003,7 @@ picture {
 @media screen and (max-width: 1023px) {
   /* line 119, src/scss/_components/common/_header.scss */
   .header__wrapper-right > div:nth-of-type(2) {
+    overflow-y: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1106,26 +1061,32 @@ picture {
 /* line 154, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border {
   border-color: #B0EACD;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 157, src/scss/_components/common/_header.scss */
+/* line 158, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border:hover {
   border-color: #21BF73;
   background-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 161, src/scss/_components/common/_header.scss */
+/* line 163, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border:hover span {
   color: #ffffff;
 }
 
-/* line 166, src/scss/_components/common/_header.scss */
+/* line 168, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn.c-btn__border span {
   color: #21BF73;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 171, src/scss/_components/common/_header.scss */
+  /* line 173, src/scss/_components/common/_header.scss */
   .header__wrapper-right .c-btn__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1136,25 +1097,25 @@ picture {
   }
 }
 
-/* line 178, src/scss/_components/common/_header.scss */
+/* line 180, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn:not(:last-of-type) {
   margin-right: 10px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 178, src/scss/_components/common/_header.scss */
+  /* line 180, src/scss/_components/common/_header.scss */
   .header__wrapper-right .c-btn:not(:last-of-type) {
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
 
-/* line 186, src/scss/_components/common/_header.scss */
+/* line 188, src/scss/_components/common/_header.scss */
 .header__wrapper-right .c-btn span {
   font-size: 14px;
 }
 
-/* line 193, src/scss/_components/common/_header.scss */
+/* line 195, src/scss/_components/common/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1171,7 +1132,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 193, src/scss/_components/common/_header.scss */
+  /* line 195, src/scss/_components/common/_header.scss */
   .header__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1181,7 +1142,7 @@ picture {
   }
 }
 
-/* line 201, src/scss/_components/common/_header.scss */
+/* line 203, src/scss/_components/common/_header.scss */
 .header__nav a {
   position: relative;
   display: -webkit-box;
@@ -1197,14 +1158,13 @@ picture {
   margin-left: 20px;
   margin-right: 20px;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
+  font-weight: 400;
   text-align: center;
   color: #163A5F;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 201, src/scss/_components/common/_header.scss */
+  /* line 203, src/scss/_components/common/_header.scss */
   .header__nav a {
     margin-left: 15px;
     margin-right: 15px;
@@ -1212,17 +1172,17 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 201, src/scss/_components/common/_header.scss */
+  /* line 203, src/scss/_components/common/_header.scss */
   .header__nav a {
     font-size: 18px;
   }
-  /* line 221, src/scss/_components/common/_header.scss */
+  /* line 223, src/scss/_components/common/_header.scss */
   .header__nav a:not(:last-of-type) {
     margin-bottom: 40px;
   }
 }
 
-/* line 226, src/scss/_components/common/_header.scss */
+/* line 228, src/scss/_components/common/_header.scss */
 .header__nav a:before, .header__nav a:after {
   content: '';
   position: absolute;
@@ -1235,17 +1195,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 237, src/scss/_components/common/_header.scss */
+/* line 239, src/scss/_components/common/_header.scss */
 .header__nav a:before {
   left: 50%;
 }
 
-/* line 240, src/scss/_components/common/_header.scss */
+/* line 242, src/scss/_components/common/_header.scss */
 .header__nav a:after {
   right: 50%;
 }
 
-/* line 245, src/scss/_components/common/_header.scss */
+/* line 247, src/scss/_components/common/_header.scss */
 .header__nav a:hover:before, .header__nav a:hover:after {
   width: 50%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -1253,7 +1213,7 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 254, src/scss/_components/common/_header.scss */
+/* line 256, src/scss/_components/common/_header.scss */
 .header__close {
   position: relative;
   display: -webkit-box;
@@ -1275,7 +1235,7 @@ picture {
   background-color: rgba(108, 108, 113, 0.1);
 }
 
-/* line 264, src/scss/_components/common/_header.scss */
+/* line 266, src/scss/_components/common/_header.scss */
 .header__close .icon-font {
   color: #6c6c71;
   height: 8px;
@@ -1676,12 +1636,12 @@ picture {
   }
 }
 
-/* line 144, src/scss/_components/common/_plans.scss */
+/* line 145, src/scss/_components/common/_plans.scss */
 .plans__option {
   position: relative;
 }
 
-/* line 147, src/scss/_components/common/_plans.scss */
+/* line 148, src/scss/_components/common/_plans.scss */
 .plans__option-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1699,13 +1659,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 147, src/scss/_components/common/_plans.scss */
+  /* line 148, src/scss/_components/common/_plans.scss */
   .plans__option-wrapper {
     padding-bottom: 35px;
   }
 }
 
-/* line 157, src/scss/_components/common/_plans.scss */
+/* line 158, src/scss/_components/common/_plans.scss */
 .plans__option input {
   opacity: 0;
   position: absolute;
@@ -1713,7 +1673,7 @@ picture {
   height: 0;
 }
 
-/* line 165, src/scss/_components/common/_plans.scss */
+/* line 166, src/scss/_components/common/_plans.scss */
 .plans__option input:checked + label span {
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1721,7 +1681,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 169, src/scss/_components/common/_plans.scss */
+/* line 170, src/scss/_components/common/_plans.scss */
 .plans__option input:checked + label span:nth-of-type(2) {
   color: #163a5f;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1729,7 +1689,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 176, src/scss/_components/common/_plans.scss */
+/* line 177, src/scss/_components/common/_plans.scss */
 .plans__option input:checked + label u:after {
   left: 60px;
   -webkit-transition: left 0.3s ease-in-out;
@@ -1737,7 +1697,7 @@ picture {
   transition: left 0.3s ease-in-out;
 }
 
-/* line 185, src/scss/_components/common/_plans.scss */
+/* line 186, src/scss/_components/common/_plans.scss */
 .plans__option label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1749,7 +1709,7 @@ picture {
           align-items: center;
 }
 
-/* line 189, src/scss/_components/common/_plans.scss */
+/* line 190, src/scss/_components/common/_plans.scss */
 .plans__option label span {
   position: relative;
   display: block;
@@ -1763,13 +1723,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 199, src/scss/_components/common/_plans.scss */
+/* line 200, src/scss/_components/common/_plans.scss */
 .plans__option label span:nth-of-type(1) {
   color: #163a5f;
   text-align: right;
 }
 
-/* line 204, src/scss/_components/common/_plans.scss */
+/* line 205, src/scss/_components/common/_plans.scss */
 .plans__option label span i {
   position: absolute;
   top: -webkit-calc(100% + 1px);
@@ -1781,7 +1741,7 @@ picture {
   color: #21bf73;
 }
 
-/* line 215, src/scss/_components/common/_plans.scss */
+/* line 216, src/scss/_components/common/_plans.scss */
 .plans__option label u {
   cursor: pointer;
   position: relative;
@@ -1795,7 +1755,7 @@ picture {
   text-decoration: none;
 }
 
-/* line 226, src/scss/_components/common/_plans.scss */
+/* line 227, src/scss/_components/common/_plans.scss */
 .plans__option label u:after {
   content: '';
   position: absolute;
@@ -1813,7 +1773,7 @@ picture {
   transition: left 0.3s ease-in-out;
 }
 
-/* line 242, src/scss/_components/common/_plans.scss */
+/* line 243, src/scss/_components/common/_plans.scss */
 .plans__box {
   position: relative;
   display: -webkit-box;
@@ -1834,21 +1794,21 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 242, src/scss/_components/common/_plans.scss */
+  /* line 243, src/scss/_components/common/_plans.scss */
   .plans__box {
     padding: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 242, src/scss/_components/common/_plans.scss */
+  /* line 243, src/scss/_components/common/_plans.scss */
   .plans__box {
     min-height: 480px;
     padding: 30px;
   }
 }
 
-/* line 259, src/scss/_components/common/_plans.scss */
+/* line 260, src/scss/_components/common/_plans.scss */
 .plans__box.is-active {
   top: -13px;
   height: -webkit-calc(100% + 26px);
@@ -1859,19 +1819,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 259, src/scss/_components/common/_plans.scss */
+  /* line 260, src/scss/_components/common/_plans.scss */
   .plans__box.is-active {
     top: 0;
     height: 100%;
   }
 }
 
-/* line 270, src/scss/_components/common/_plans.scss */
+/* line 271, src/scss/_components/common/_plans.scss */
 .plans__box.is-active .plans__box-price {
   color: #21bf73;
 }
 
-/* line 276, src/scss/_components/common/_plans.scss */
+/* line 277, src/scss/_components/common/_plans.scss */
 .plans__box-shadow {
   z-index: -1;
   position: absolute;
@@ -1885,7 +1845,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 289, src/scss/_components/common/_plans.scss */
+/* line 290, src/scss/_components/common/_plans.scss */
 .plans__box-dino {
   z-index: -1;
   position: absolute;
@@ -1893,14 +1853,14 @@ picture {
   right: -44px;
 }
 
-/* line 295, src/scss/_components/common/_plans.scss */
+/* line 296, src/scss/_components/common/_plans.scss */
 .plans__box-dino svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 301, src/scss/_components/common/_plans.scss */
+/* line 302, src/scss/_components/common/_plans.scss */
 .plans__box-dino-hand {
   z-index: 2;
   position: absolute;
@@ -1908,14 +1868,14 @@ picture {
   right: -10px;
 }
 
-/* line 307, src/scss/_components/common/_plans.scss */
+/* line 308, src/scss/_components/common/_plans.scss */
 .plans__box-dino-hand svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 315, src/scss/_components/common/_plans.scss */
+/* line 316, src/scss/_components/common/_plans.scss */
 .plans__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1931,7 +1891,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 315, src/scss/_components/common/_plans.scss */
+  /* line 316, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper {
     padding-left: 35px;
     padding-right: 35px;
@@ -1939,14 +1899,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 315, src/scss/_components/common/_plans.scss */
+  /* line 316, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 328, src/scss/_components/common/_plans.scss */
+/* line 329, src/scss/_components/common/_plans.scss */
 .plans__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 45px) / 4);
@@ -1954,7 +1914,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 328, src/scss/_components/common/_plans.scss */
+  /* line 329, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div {
     max-width: -webkit-calc((100% - 15px) / 2);
     max-width: calc((100% - 15px) / 2);
@@ -1963,32 +1923,32 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 328, src/scss/_components/common/_plans.scss */
+  /* line 329, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div {
     max-width: 100%;
     padding-bottom: 35px;
   }
-  /* line 339, src/scss/_components/common/_plans.scss */
+  /* line 340, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div:nth-of-type(2) {
     padding-bottom: 75px;
   }
-  /* line 343, src/scss/_components/common/_plans.scss */
+  /* line 344, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div:nth-of-type(3) {
     padding-right: 50px;
   }
 }
 
-/* line 350, src/scss/_components/common/_plans.scss */
+/* line 351, src/scss/_components/common/_plans.scss */
 .plans__box-head, .plans__box-body, .plans__box-footer {
   width: 100%;
 }
 
-/* line 356, src/scss/_components/common/_plans.scss */
+/* line 357, src/scss/_components/common/_plans.scss */
 .plans__box-head {
   position: relative;
 }
 
-/* line 360, src/scss/_components/common/_plans.scss */
+/* line 361, src/scss/_components/common/_plans.scss */
 .plans__box-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2003,13 +1963,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 360, src/scss/_components/common/_plans.scss */
+  /* line 361, src/scss/_components/common/_plans.scss */
   .plans__box-body {
     padding-bottom: 30px;
   }
 }
 
-/* line 373, src/scss/_components/common/_plans.scss */
+/* line 374, src/scss/_components/common/_plans.scss */
 .plans__box-badge {
   padding-bottom: 35px;
   font-weight: bold;
@@ -2019,13 +1979,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 373, src/scss/_components/common/_plans.scss */
+  /* line 374, src/scss/_components/common/_plans.scss */
   .plans__box-badge {
     font-size: 20px;
   }
 }
 
-/* line 384, src/scss/_components/common/_plans.scss */
+/* line 385, src/scss/_components/common/_plans.scss */
 .plans__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2047,13 +2007,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 384, src/scss/_components/common/_plans.scss */
+  /* line 385, src/scss/_components/common/_plans.scss */
   .plans__box-price {
     font-size: 42px;
   }
 }
 
-/* line 397, src/scss/_components/common/_plans.scss */
+/* line 398, src/scss/_components/common/_plans.scss */
 .plans__box-price i {
   padding-right: 5px;
   font-weight: 800;
@@ -2061,7 +2021,7 @@ picture {
   line-height: 28px;
 }
 
-/* line 405, src/scss/_components/common/_plans.scss */
+/* line 406, src/scss/_components/common/_plans.scss */
 .plans__box-top {
   position: absolute;
   top: 0;
@@ -2090,13 +2050,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 405, src/scss/_components/common/_plans.scss */
+  /* line 406, src/scss/_components/common/_plans.scss */
   .plans__box-top {
     font-size: 12px;
   }
 }
 
-/* line 425, src/scss/_components/common/_plans.scss */
+/* line 426, src/scss/_components/common/_plans.scss */
 .plans__box-info {
   text-align: center;
   font-size: 14px;
@@ -2104,7 +2064,7 @@ picture {
   color: rgba(87, 100, 114, 0.8);
 }
 
-/* line 432, src/scss/_components/common/_plans.scss */
+/* line 433, src/scss/_components/common/_plans.scss */
 .plans__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2117,7 +2077,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 436, src/scss/_components/common/_plans.scss */
+/* line 437, src/scss/_components/common/_plans.scss */
 .plans__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2125,17 +2085,17 @@ picture {
   display: flex;
 }
 
-/* line 439, src/scss/_components/common/_plans.scss */
+/* line 440, src/scss/_components/common/_plans.scss */
 .plans__box-list li:not(:last-of-type) {
   padding-bottom: 16px;
 }
 
-/* line 444, src/scss/_components/common/_plans.scss */
+/* line 445, src/scss/_components/common/_plans.scss */
 .plans__box-list li > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 447, src/scss/_components/common/_plans.scss */
+/* line 448, src/scss/_components/common/_plans.scss */
 .plans__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2145,14 +2105,14 @@ picture {
   max-width: 100%;
 }
 
-/* line 455, src/scss/_components/common/_plans.scss */
+/* line 456, src/scss/_components/common/_plans.scss */
 .plans__box-list span {
   font-size: 14px;
   line-height: 20px;
   color: #163A5F;
 }
 
-/* line 462, src/scss/_components/common/_plans.scss */
+/* line 463, src/scss/_components/common/_plans.scss */
 .plans__box-link {
   cursor: pointer;
   outline: none;
@@ -2186,7 +2146,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 483, src/scss/_components/common/_plans.scss */
+/* line 484, src/scss/_components/common/_plans.scss */
 .plans__box-link:before, .plans__box-link:after {
   content: '';
   position: absolute;
@@ -2199,17 +2159,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 494, src/scss/_components/common/_plans.scss */
+/* line 495, src/scss/_components/common/_plans.scss */
 .plans__box-link:before {
   left: 50%;
 }
 
-/* line 497, src/scss/_components/common/_plans.scss */
+/* line 498, src/scss/_components/common/_plans.scss */
 .plans__box-link:after {
   right: 50%;
 }
 
-/* line 502, src/scss/_components/common/_plans.scss */
+/* line 503, src/scss/_components/common/_plans.scss */
 .plans__box-link:hover:before, .plans__box-link:hover:after {
   width: 50%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -2217,17 +2177,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 510, src/scss/_components/common/_plans.scss */
+/* line 511, src/scss/_components/common/_plans.scss */
 .plans__box .c-btn {
   width: 100%;
 }
 
-/* line 513, src/scss/_components/common/_plans.scss */
+/* line 514, src/scss/_components/common/_plans.scss */
 .plans__box .c-btn-wrapper {
   width: 100%;
 }
 
-/* line 519, src/scss/_components/common/_plans.scss */
+/* line 520, src/scss/_components/common/_plans.scss */
 .plans__subtitle {
   font-size: 64px;
   line-height: 88px;
@@ -2235,7 +2195,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 519, src/scss/_components/common/_plans.scss */
+  /* line 520, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     font-size: 54px;
     line-height: 80px;
@@ -2243,7 +2203,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 519, src/scss/_components/common/_plans.scss */
+  /* line 520, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     font-size: 50px;
     line-height: 65px;
@@ -2251,7 +2211,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 519, src/scss/_components/common/_plans.scss */
+  /* line 520, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     padding-bottom: 25px;
     font-size: 36px;
@@ -2260,7 +2220,7 @@ picture {
   }
 }
 
-/* line 538, src/scss/_components/common/_plans.scss */
+/* line 540, src/scss/_components/common/_plans.scss */
 .plans__subtitle strong {
   font-weight: 700;
 }
@@ -2371,6 +2331,7 @@ picture {
 
 /* line 80, src/scss/_components/solution/_main.scss */
 .main__title {
+  padding-bottom: 10px;
   font-size: 48px;
   font-weight: 800;
   line-height: 66px;
@@ -2398,13 +2359,14 @@ picture {
   }
 }
 
-/* line 100, src/scss/_components/solution/_main.scss */
+/* line 102, src/scss/_components/solution/_main.scss */
 .main__desc {
   width: 100%;
-  max-width: 505px;
+  max-width: 535px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -2412,7 +2374,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 100, src/scss/_components/solution/_main.scss */
+  /* line 102, src/scss/_components/solution/_main.scss */
   .main__desc {
     width: 100%;
     max-width: 300px;
@@ -2422,33 +2384,33 @@ picture {
   }
 }
 
-/* line 119, src/scss/_components/solution/_main.scss */
+/* line 122, src/scss/_components/solution/_main.scss */
 .main__btn {
   padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 119, src/scss/_components/solution/_main.scss */
+  /* line 122, src/scss/_components/solution/_main.scss */
   .main__btn {
     padding-bottom: 32px;
   }
 }
 
-/* line 125, src/scss/_components/solution/_main.scss */
+/* line 128, src/scss/_components/solution/_main.scss */
 .main__btn .c-btn {
   -webkit-box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
           box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/solution/_main.scss */
+  /* line 128, src/scss/_components/solution/_main.scss */
   .main__btn .c-btn {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 
-/* line 133, src/scss/_components/solution/_main.scss */
+/* line 136, src/scss/_components/solution/_main.scss */
 .main__video {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2460,7 +2422,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 137, src/scss/_components/solution/_main.scss */
+/* line 140, src/scss/_components/solution/_main.scss */
 .main__video video {
   display: block;
   max-width: 100%;
@@ -2775,7 +2737,7 @@ picture {
   }
 }
 
-/* line 121, src/scss/_components/solution/_feature.scss */
+/* line 122, src/scss/_components/solution/_feature.scss */
 .feature__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2792,13 +2754,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 121, src/scss/_components/solution/_feature.scss */
+  /* line 122, src/scss/_components/solution/_feature.scss */
   .feature__box-list {
     padding-bottom: 20px;
   }
 }
 
-/* line 131, src/scss/_components/solution/_feature.scss */
+/* line 132, src/scss/_components/solution/_feature.scss */
 .feature__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2810,12 +2772,12 @@ picture {
           align-items: center;
 }
 
-/* line 135, src/scss/_components/solution/_feature.scss */
+/* line 136, src/scss/_components/solution/_feature.scss */
 .feature__box-list li:not(:last-of-type) {
   padding-bottom: 20px;
 }
 
-/* line 140, src/scss/_components/solution/_feature.scss */
+/* line 141, src/scss/_components/solution/_feature.scss */
 .feature__box-list li > div:nth-of-type(1) {
   position: relative;
   display: -webkit-box;
@@ -2841,14 +2803,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 140, src/scss/_components/solution/_feature.scss */
+  /* line 141, src/scss/_components/solution/_feature.scss */
   .feature__box-list li > div:nth-of-type(1) {
     width: 40px;
     height: 40px;
   }
 }
 
-/* line 156, src/scss/_components/solution/_feature.scss */
+/* line 157, src/scss/_components/solution/_feature.scss */
 .feature__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2859,7 +2821,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 164, src/scss/_components/solution/_feature.scss */
+/* line 165, src/scss/_components/solution/_feature.scss */
 .feature__box-list li .icon-font {
   font-size: 18px;
   height: 18px;
@@ -2868,29 +2830,29 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 164, src/scss/_components/solution/_feature.scss */
+  /* line 165, src/scss/_components/solution/_feature.scss */
   .feature__box-list li .icon-font {
     font-size: 15px;
   }
 }
 
-/* line 174, src/scss/_components/solution/_feature.scss */
+/* line 175, src/scss/_components/solution/_feature.scss */
 .feature__box-list li p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
   color: #576472;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 174, src/scss/_components/solution/_feature.scss */
+  /* line 175, src/scss/_components/solution/_feature.scss */
   .feature__box-list li p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 174, src/scss/_components/solution/_feature.scss */
+  /* line 175, src/scss/_components/solution/_feature.scss */
   .feature__box-list li p {
     font-size: 14px;
     line-height: 22px;
@@ -2898,7 +2860,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 192, src/scss/_components/solution/_feature.scss */
+  /* line 193, src/scss/_components/solution/_feature.scss */
   .feature__box-btn .c-btn {
     width: 100%;
   }
@@ -3125,23 +3087,23 @@ picture {
   }
 }
 
-/* line 135, src/scss/_components/solution/_additional.scss */
+/* line 136, src/scss/_components/solution/_additional.scss */
 .additional__box p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #576472;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 135, src/scss/_components/solution/_additional.scss */
+  /* line 136, src/scss/_components/solution/_additional.scss */
   .additional__box p {
     font-size: 14px;
     line-height: 22px;
   }
 }
 
-/* line 145, src/scss/_components/solution/_additional.scss */
+/* line 146, src/scss/_components/solution/_additional.scss */
 .additional__box p a {
   color: #21bf73;
   text-decoration: underline;
@@ -3407,7 +3369,7 @@ picture {
 /* line 143, src/scss/_components/solution/_reviews.scss */
 .reviews__box-title {
   padding-bottom: 60px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   line-height: 30px;
   text-align: center;
@@ -3785,6 +3747,12 @@ picture {
 }
 
 /* line 167, src/scss/_components/all-services/_main.scss */
+.services-main__link > div {
+  display: none;
+  padding-bottom: 15px;
+}
+
+/* line 172, src/scss/_components/all-services/_main.scss */
 .services-main__link a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3793,20 +3761,31 @@ picture {
   font-size: 18px;
   line-height: 22px;
   color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-/* line 173, src/scss/_components/all-services/_main.scss */
+/* line 179, src/scss/_components/all-services/_main.scss */
+.services-main__link a:hover {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 184, src/scss/_components/all-services/_main.scss */
 .services-main__link a.is-active {
   font-weight: bold;
   color: #21BF73;
 }
 
-/* line 178, src/scss/_components/all-services/_main.scss */
+/* line 189, src/scss/_components/all-services/_main.scss */
 .services-main__link a:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 184, src/scss/_components/all-services/_main.scss */
+/* line 195, src/scss/_components/all-services/_main.scss */
 .services-main__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3823,7 +3802,7 @@ picture {
   background-color: rgba(241, 244, 248, 0.7);
 }
 
-/* line 191, src/scss/_components/all-services/_main.scss */
+/* line 202, src/scss/_components/all-services/_main.scss */
 .services-main__box-wrapper {
   position: relative;
   left: -15px;
@@ -3839,7 +3818,7 @@ picture {
   padding-bottom: 35px;
 }
 
-/* line 199, src/scss/_components/all-services/_main.scss */
+/* line 210, src/scss/_components/all-services/_main.scss */
 .services-main__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 3);
@@ -3848,7 +3827,7 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 207, src/scss/_components/all-services/_main.scss */
+/* line 218, src/scss/_components/all-services/_main.scss */
 .services-main__box-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3861,7 +3840,7 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 212, src/scss/_components/all-services/_main.scss */
+/* line 223, src/scss/_components/all-services/_main.scss */
 .services-main__box-head img {
   display: block;
   max-width: 100%;
@@ -3869,7 +3848,7 @@ picture {
   margin-right: 10px;
 }
 
-/* line 219, src/scss/_components/all-services/_main.scss */
+/* line 230, src/scss/_components/all-services/_main.scss */
 .services-main__box-head p {
   font-weight: bold;
   font-size: 18px;
@@ -3877,7 +3856,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 230, src/scss/_components/all-services/_main.scss */
+/* line 241, src/scss/_components/all-services/_main.scss */
 .services-main__see {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3889,7 +3868,7 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 237, src/scss/_components/all-services/_main.scss */
+/* line 248, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3908,23 +3887,23 @@ picture {
   padding-right: 15px;
 }
 
-/* line 245, src/scss/_components/all-services/_main.scss */
+/* line 256, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(2) {
   width: 100%;
   max-width: 170px;
 }
 
-/* line 249, src/scss/_components/all-services/_main.scss */
+/* line 260, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(2) .c-btn {
   width: 100%;
 }
 
-/* line 252, src/scss/_components/all-services/_main.scss */
+/* line 263, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(2) .c-btn__wrapper {
   width: 100%;
 }
 
-/* line 259, src/scss/_components/all-services/_main.scss */
+/* line 270, src/scss/_components/all-services/_main.scss */
 .services-main__see-icon {
   position: relative;
   display: -webkit-box;
@@ -3946,7 +3925,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 269, src/scss/_components/all-services/_main.scss */
+/* line 280, src/scss/_components/all-services/_main.scss */
 .services-main__see-icon .icon-font {
   height: 15px;
   font-size: 15px;
@@ -3954,7 +3933,7 @@ picture {
   color: #21bf73;
 }
 
-/* line 277, src/scss/_components/all-services/_main.scss */
+/* line 288, src/scss/_components/all-services/_main.scss */
 .services-main__see p {
   padding-left: 25px;
   font-size: 18px;
@@ -4441,6 +4420,342 @@ picture {
 .faq__desc a {
   color: #21bf73;
   text-decoration: underline;
+}
+
+/* line 3, src/scss/_components/sign/_sign.scss */
+.sign {
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+
+/* line 7, src/scss/_components/sign/_sign.scss */
+.sign__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: -webkit-calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
+}
+
+/* line 11, src/scss/_components/sign/_sign.scss */
+.sign__wrapper-left, .sign__wrapper-right {
+  min-height: 100%;
+}
+
+/* line 16, src/scss/_components/sign/_sign.scss */
+.sign__wrapper-left {
+  width: 100%;
+  max-width: 600px;
+  padding: 50px 50px 70px;
+  background-color: #21bf73;
+}
+
+/* line 23, src/scss/_components/sign/_sign.scss */
+.sign__wrapper-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding: 80px 0 20px 20px;
+}
+
+/* line 29, src/scss/_components/sign/_sign.scss */
+.sign__wrapper-right > div {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 38, src/scss/_components/sign/_sign.scss */
+.sign__title {
+  padding-bottom: 40px;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* line 44, src/scss/_components/sign/_sign.scss */
+.sign__subtitle {
+  padding-bottom: 50px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* line 50, src/scss/_components/sign/_sign.scss */
+.sign__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 56, src/scss/_components/sign/_sign.scss */
+.sign__list li {
+  list-style: disc;
+  font-size: 20px;
+  line-height: 0;
+  color: #ffffff;
+}
+
+/* line 62, src/scss/_components/sign/_sign.scss */
+.sign__list li:not(:last-of-type) {
+  padding-bottom: 20px;
+}
+
+/* line 66, src/scss/_components/sign/_sign.scss */
+.sign__list li p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+/* line 74, src/scss/_components/sign/_sign.scss */
+.sign__video {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 14px;
+          border-radius: 14px;
+}
+
+/* line 84, src/scss/_components/sign/_sign.scss */
+.sign__video video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 93, src/scss/_components/sign/_sign.scss */
+.sign__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 97, src/scss/_components/sign/_sign.scss */
+.sign__form-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 101, src/scss/_components/sign/_sign.scss */
+.sign__form-field:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+/* line 106, src/scss/_components/sign/_sign.scss */
+.sign__form-field--divider i {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 117, src/scss/_components/sign/_sign.scss */
+.sign__form-field--info {
+  padding-bottom: 4px;
+}
+
+/* line 120, src/scss/_components/sign/_sign.scss */
+.sign__form-field--info span {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(87, 100, 114, 0.7);
+}
+
+/* line 126, src/scss/_components/sign/_sign.scss */
+.sign__form-field--info p {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #576472;
+}
+
+/* line 133, src/scss/_components/sign/_sign.scss */
+.sign__form-field--info p a {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #21BF73;
+}
+
+/* line 144, src/scss/_components/sign/_sign.scss */
+.sign__form-field--btn {
+  margin-bottom: 10px;
+}
+
+/* line 147, src/scss/_components/sign/_sign.scss */
+.sign__form-field--btn .c-btn {
+  width: 100%;
+}
+
+/* line 150, src/scss/_components/sign/_sign.scss */
+.sign__form-field--btn .c-btn__wrapper {
+  width: 100%;
+}
+
+/* line 156, src/scss/_components/sign/_sign.scss */
+.sign__form-field label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 164, src/scss/_components/sign/_sign.scss */
+.sign__form-field input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 57px;
+  padding: 0 30px;
+  border: 1px solid #CBDBE3;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  color: #182135;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.sign__form-field input.placeholder {
+  color: rgba(24, 33, 53, 0.5);
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.sign__form-field input:-moz-placeholder {
+  color: rgba(24, 33, 53, 0.5);
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.sign__form-field input::-moz-placeholder {
+  color: rgba(24, 33, 53, 0.5);
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.sign__form-field input:-ms-input-placeholder {
+  color: rgba(24, 33, 53, 0.5);
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.sign__form-field input::-webkit-input-placeholder {
+  color: rgba(24, 33, 53, 0.5);
+}
+
+/* line 182, src/scss/_components/sign/_sign.scss */
+.sign__form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* line 187, src/scss/_components/sign/_sign.scss */
+.sign__form-group > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 20px) / 2);
+  max-width: calc((100% - 20px) / 2);
+}
+
+/* line 192, src/scss/_components/sign/_sign.scss */
+.sign__form-group .sign__form-field {
+  margin-bottom: 0;
+}
+
+/* line 197, src/scss/_components/sign/_sign.scss */
+.sign__form-btn {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 57px;
+  padding: 0 84px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+/* line 209, src/scss/_components/sign/_sign.scss */
+.sign__form-btn img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30px;
+  display: block;
+  width: 100%;
+  max-width: 24px;
+  height: auto;
+}
+
+/* line 220, src/scss/_components/sign/_sign.scss */
+.sign__form-btn span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #163A5F;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

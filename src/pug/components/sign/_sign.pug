@@ -1,0 +1,72 @@
+// SECTION :: START
+
+section#sign.sign
+
+	.sign__wrapper
+		.sign__wrapper-left
+
+			.logo.logo--sign
+				a.logo__btn(href="#")
+					img.logo__img(src="img/logo-white.svg" alt="")
+
+			p.sign__title.c-title!= "Instant enriched data <br>from 1020 status pages"
+
+			ul.sign__list
+				li
+					p Instant notification to email, Slack, Teams, etc
+				li
+					p Unified dashboards for your team or clients
+				li
+					p Zero obligations. No Credit Card require
+				li
+					p Get premium features or use a Free plan (forever)
+
+			.sign__video
+				video(autoplay muted loop)
+					source(src='img/feature_solution_education-1.mp4' type='video/mp4')
+
+		.sign__wrapper-right
+
+			div
+
+				p.sign__subtitle.c-title Create an Account
+
+				form.sign__form(action='' method='' autocomplete='off')
+					.sign__form-field.sign__form-field--input
+						label(for='email') Work email
+						input(type='email' id='email' name='' placeholder="myemail@com" required)
+					.sign__form-field.sign__form-field--input
+						label(for='company') Company or Project name
+						input(type='text' id='company' name='' placeholder="company" required)
+					.sign__form-field.sign__form-field--input
+						label(for='password') Password
+						input(type='password' id='password' name='' placeholder="Enter you password" required)
+					.sign__form-group
+						div
+							.sign__form-field.sign__form-field--input
+								label(for='first_name') First name
+								input(type='text' id='first_name' name='' placeholder="Adam" required)
+						div
+							.sign__form-field.sign__form-field--input
+								label(for='last_name') Last name
+								input(type='text' id='last_name' name='' placeholder="Cruse" required)
+					.sign__form-field.sign__form-field--info
+						span By clicking below, you agree to Terms of Service and Privacy Policy.
+					.sign__form-field.sign__form-field--btn
+						.c-btn__wrapper
+							button.c-btn.c-btn__bg.c-btn__bg--green.c-btn--medium(type='submit')
+								span Sign up
+					.sign__form-field.sign__form-field--divider
+						i OR
+					.sign__form-field.sign__form-field--btn
+						a.sign__form-btn(href='#')
+							img(src="img/img-google.svg" alt="")
+							span Sign up with Google
+					.sign__form-field.sign__form-field--btn
+						a.sign__form-btn(href='#')
+							img(src="img/img-microsoft.png" alt="")
+							span Sign up with Microsoft
+					.sign__form-field.sign__form-field--info(style='padding-bottom: 0;')
+						p!= "Already have an account? <a href='#'>Log in</a>"
+
+// SECTION :: END
