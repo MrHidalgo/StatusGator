@@ -13,7 +13,7 @@
 }
 
 /* line 36, src/scss/_utilities/_extend.scss */
-.c-title, .plans__desc, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p, .service__wrapper p {
+.c-title, .plans__desc, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p, .service__wrapper p, .suite__title {
   font-family: 'Gogh', sans-serif;
 }
 
@@ -4236,7 +4236,7 @@ picture {
 
 /* line 8, src/scss/_components/plans/_faq.scss */
 .faq.faq--service .faq__wrapper {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   border: none;
 }
 
@@ -5234,6 +5234,72 @@ picture {
 /* line 55, src/scss/_components/service/_service.scss */
 .service__wrapper span a {
   color: #21bf73;
+}
+
+/* line 3, src/scss/_components/service/_suite.scss */
+.suite {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(33, 191, 115, 0.1);
+}
+
+/* line 8, src/scss/_components/service/_suite.scss */
+.suite__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, src/scss/_components/service/_suite.scss */
+.suite__wrapper-left {
+  width: 100%;
+  max-width: 465px;
+}
+
+/* line 21, src/scss/_components/service/_suite.scss */
+.suite__wrapper-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 26, src/scss/_components/service/_suite.scss */
+.suite__wrapper-right .c-btn {
+  width: 100%;
+}
+
+/* line 29, src/scss/_components/service/_suite.scss */
+.suite__wrapper-right .c-btn__wrapper {
+  width: 100%;
+  max-width: 250px;
+  margin-left: auto;
+}
+
+/* line 38, src/scss/_components/service/_suite.scss */
+.suite__title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 88px;
+  color: #21BF73;
+}
+
+/* line 46, src/scss/_components/service/_suite.scss */
+.suite__desc {
+  font-size: 18px;
+  line-height: 28px;
+  color: #576472;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
