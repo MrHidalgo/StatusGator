@@ -113,6 +113,24 @@
 			}
 		});
 	};
+	
+	
+	const supportCollapse = () => {
+		$('.support__collapse-toggle').on('click', (ev) => {
+			const el = $(ev.currentTarget);
+			
+			if(el.hasClass('is-active')) {
+				el.removeClass('is-active');
+				el.closest('.support__collapse-head').siblings('.support__collapse-body').slideUp(350);
+			} else {
+				$('.support__collapse-toggle').removeClass('is-active');
+				el.addClass('is-active');
+				
+				$('.support__collapse-body').slideUp(350);
+				el.closest('.support__collapse-head').siblings('.support__collapse-body').slideDown(350);
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -128,7 +146,7 @@
 		// ==========================================
 
 		// lib
-		initSwiper();
+		// initSwiper();
 		initStellar();
 		initHamburger();
 		// ==========================================
@@ -138,6 +156,7 @@
 		headerFixed();
 		expandFilters();
 		faqCollapse();
+		supportCollapse();
 		// ==========================================
 	};
 	initNative();

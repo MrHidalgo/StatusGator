@@ -131,62 +131,71 @@ var initStellar = function initStellar() {
  */
 var initSwiper = function initSwiper() {
 
-	new Swiper('.reviewsSlider', {
-		loop: false,
-		effect: 'flip',
-		flipEffect: {
-			slideShadows: false
-		},
-		speed: 1000,
-		slidesPerView: 1,
-		spaceBetween: 30,
-		navigation: {
-			nextEl: '.reviews__btn--next',
-			prevEl: '.reviews__btn--prev'
-		}
-	});
+	if ($('.reviewsSlider').length > 0) {
 
-	new Swiper('.solutionsSwiper', {
-		loop: false,
-		effect: 'slide',
-		speed: 1000,
-		slidesPerView: 3,
-		spaceBetween: 50,
-		navigation: {
-			nextEl: '.solutions__btn--next',
-			prevEl: '.solutions__btn--prev'
-		}
-	});
+		new Swiper('.reviewsSlider', {
+			loop: false,
+			effect: 'flip',
+			flipEffect: {
+				slideShadows: false
+			},
+			speed: 1000,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.reviews__btn--next',
+				prevEl: '.reviews__btn--prev'
+			}
+		});
+	}
+	if ($('.solutionsSwiper').length > 0) {
 
-	new Swiper('.trustSwiper', {
-		loop: false,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
-		effect: 'slide',
-		speed: 1000,
-		slidesPerView: 5,
-		slidesPerGroup: 5,
-		spaceBetween: 50,
-		pagination: {
-			el: '.trust__pagination',
-			clickable: true
-		}
-	});
+		new Swiper('.solutionsSwiper', {
+			loop: false,
+			effect: 'slide',
+			speed: 1000,
+			slidesPerView: 3,
+			spaceBetween: 50,
+			navigation: {
+				nextEl: '.solutions__btn--next',
+				prevEl: '.solutions__btn--prev'
+			}
+		});
+	}
+	if ($('.trustSwiper').length > 0) {
 
-	new Swiper('.twitterSwiper', {
-		loop: true,
-		autoplay: {
-			delay: 10000,
-			disableOnInteraction: false
-		},
-		effect: 'slide',
-		speed: 1000,
-		slidesPerView: 'auto',
-		spaceBetween: 30
-		// centeredSlides: true,
-	});
+		new Swiper('.trustSwiper', {
+			loop: false,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
+			effect: 'slide',
+			speed: 1000,
+			slidesPerView: 5,
+			slidesPerGroup: 5,
+			spaceBetween: 50,
+			pagination: {
+				el: '.trust__pagination',
+				clickable: true
+			}
+		});
+	}
+	if ($('.twitterSwiper').length > 0) {
+
+		new Swiper('.twitterSwiper', {
+			loop: true,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false
+			},
+			effect: 'slide',
+			speed: 1000,
+			slidesPerView: 'auto',
+			spaceBetween: 30
+			// centeredSlides: true,
+		});
+	}
 };
 
 /**
@@ -289,6 +298,23 @@ var initSwiper = function initSwiper() {
 			}
 		});
 	};
+
+	var supportCollapse = function supportCollapse() {
+		$('.support__collapse-toggle').on('click', function (ev) {
+			var el = $(ev.currentTarget);
+
+			if (el.hasClass('is-active')) {
+				el.removeClass('is-active');
+				el.closest('.support__collapse-head').siblings('.support__collapse-body').slideUp(350);
+			} else {
+				$('.support__collapse-toggle').removeClass('is-active');
+				el.addClass('is-active');
+
+				$('.support__collapse-body').slideUp(350);
+				el.closest('.support__collapse-head').siblings('.support__collapse-body').slideDown(350);
+			}
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -303,7 +329,7 @@ var initSwiper = function initSwiper() {
 		// ==========================================
 
 		// lib
-		initSwiper();
+		// initSwiper();
 		initStellar();
 		initHamburger();
 		// ==========================================
@@ -313,6 +339,7 @@ var initSwiper = function initSwiper() {
 		headerFixed();
 		expandFilters();
 		faqCollapse();
+		supportCollapse();
 		// ==========================================
 	};
 	initNative();

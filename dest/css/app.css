@@ -5236,6 +5236,251 @@ picture {
   color: #21bf73;
 }
 
+/* line 3, src/scss/_components/service/_support.scss */
+.support {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/service/_support.scss */
+.support__desc {
+  width: 100%;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: #576472;
+}
+
+/* line 19, src/scss/_components/service/_support.scss */
+.support__collapse {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 23, src/scss/_components/service/_support.scss */
+.support__collapse-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 32, src/scss/_components/service/_support.scss */
+.support__collapse-wrapper > div:not(:last-of-type) {
+  padding-bottom: 10px;
+}
+
+/* line 38, src/scss/_components/service/_support.scss */
+.support__collapse-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70px;
+  padding: 5px 25px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
+          box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
+  background-color: #FFFFFF;
+}
+
+/* line 49, src/scss/_components/service/_support.scss */
+.support__collapse-head.is-active .support__collapse-toggle i {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+/* line 56, src/scss/_components/service/_support.scss */
+.support__collapse-head > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 25px;
+}
+
+/* line 62, src/scss/_components/service/_support.scss */
+.support__collapse-head > div:nth-of-type(2) {
+  width: 50px;
+}
+
+/* line 67, src/scss/_components/service/_support.scss */
+.support__collapse-head label {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 73, src/scss/_components/service/_support.scss */
+.support__collapse-head label input {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 81, src/scss/_components/service/_support.scss */
+.support__collapse-head label input:checked + span u {
+  border-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 85, src/scss/_components/service/_support.scss */
+.support__collapse-head label input:checked + span u:before {
+  background-color: #21bf73;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 94, src/scss/_components/service/_support.scss */
+.support__collapse-head label span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 98, src/scss/_components/service/_support.scss */
+.support__collapse-head label span u {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid rgba(22, 58, 95, 0.5);
+  background-color: #fff;
+  text-decoration: none;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 111, src/scss/_components/service/_support.scss */
+.support__collapse-head label span u:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 121, src/scss/_components/service/_support.scss */
+.support__collapse-head label span u + i {
+  margin-left: 13px;
+}
+
+/* line 126, src/scss/_components/service/_support.scss */
+.support__collapse-head label span i {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #163A5F;
+}
+
+/* line 137, src/scss/_components/service/_support.scss */
+.support__collapse-body {
+  display: none;
+}
+
+/* line 140, src/scss/_components/service/_support.scss */
+.support__collapse-body > div {
+  padding: 20px;
+}
+
+/* line 144, src/scss/_components/service/_support.scss */
+.support__collapse-body p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #576472;
+}
+
+/* line 151, src/scss/_components/service/_support.scss */
+.support__collapse-toggle {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 159, src/scss/_components/service/_support.scss */
+.support__collapse-toggle i {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #163A5F;
+  border-bottom: 2px solid #163A5F;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 /* line 3, src/scss/_components/service/_twitter.scss */
 .twitter {
   padding-top: 75px;
