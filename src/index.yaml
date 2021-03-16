@@ -1,9 +1,9 @@
 ProjectTitle: StatusGator
 
 PageList:
-- file: homepage.html
+- file: index.html
   titleName: Homepage
-  ready: 0
+  ready: 1
 - file: solution.html
   titleName: Solution - Education
   ready: 90
@@ -21,7 +21,7 @@ PageList:
   ready: 55
 - file: signup.html
   titleName: Sign Up
-  ready: 1
+  ready: 55
 - file: service.html
   titleName: Service
   ready: 0
