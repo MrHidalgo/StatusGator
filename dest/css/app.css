@@ -4234,18 +4234,24 @@ picture {
   padding-top: 75px;
 }
 
-/* line 6, src/scss/_components/plans/_faq.scss */
+/* line 8, src/scss/_components/plans/_faq.scss */
+.faq.faq--service .faq__wrapper {
+  padding-bottom: 100px;
+  border: none;
+}
+
+/* line 15, src/scss/_components/plans/_faq.scss */
 .faq__wrapper {
   padding-bottom: 150px;
   border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 11, src/scss/_components/plans/_faq.scss */
+/* line 20, src/scss/_components/plans/_faq.scss */
 .faq__title {
   padding-bottom: 50px;
 }
 
-/* line 15, src/scss/_components/plans/_faq.scss */
+/* line 24, src/scss/_components/plans/_faq.scss */
 .faq__collapse {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4258,7 +4264,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 19, src/scss/_components/plans/_faq.scss */
+/* line 28, src/scss/_components/plans/_faq.scss */
 .faq__collapse-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4276,12 +4282,12 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 29, src/scss/_components/plans/_faq.scss */
+/* line 38, src/scss/_components/plans/_faq.scss */
 .faq__collapse-wrapper > div:not(:last-of-type) {
   padding-bottom: 10px;
 }
 
-/* line 35, src/scss/_components/plans/_faq.scss */
+/* line 44, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head {
   cursor: pointer;
   display: -webkit-box;
@@ -4303,7 +4309,7 @@ picture {
   background-color: #F8FAFF;
 }
 
-/* line 46, src/scss/_components/plans/_faq.scss */
+/* line 55, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head.is-active i {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -4315,7 +4321,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 50, src/scss/_components/plans/_faq.scss */
+/* line 59, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head.is-active i:before {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -4327,7 +4333,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 57, src/scss/_components/plans/_faq.scss */
+/* line 66, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head p {
   font-weight: 600;
   font-size: 16px;
@@ -4335,7 +4341,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 64, src/scss/_components/plans/_faq.scss */
+/* line 73, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i {
   position: relative;
   display: -webkit-box;
@@ -4351,7 +4357,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 71, src/scss/_components/plans/_faq.scss */
+/* line 80, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i:before, .faq__collapse-head i:after {
   content: '';
   position: absolute;
@@ -4365,7 +4371,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 80, src/scss/_components/plans/_faq.scss */
+/* line 89, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i:before {
   top: 0;
   left: 50%;
@@ -4376,7 +4382,7 @@ picture {
           transform: translateX(-50%);
 }
 
-/* line 87, src/scss/_components/plans/_faq.scss */
+/* line 96, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i:after {
   top: 50%;
   left: 0;
@@ -4387,24 +4393,24 @@ picture {
           transform: translateY(-50%);
 }
 
-/* line 97, src/scss/_components/plans/_faq.scss */
+/* line 106, src/scss/_components/plans/_faq.scss */
 .faq__collapse-body {
   display: none;
 }
 
-/* line 100, src/scss/_components/plans/_faq.scss */
+/* line 109, src/scss/_components/plans/_faq.scss */
 .faq__collapse-body > div {
   padding: 20px 30px;
 }
 
-/* line 104, src/scss/_components/plans/_faq.scss */
+/* line 113, src/scss/_components/plans/_faq.scss */
 .faq__collapse-body p {
   font-size: 16px;
   line-height: 24px;
   color: #163A5F;
 }
 
-/* line 112, src/scss/_components/plans/_faq.scss */
+/* line 121, src/scss/_components/plans/_faq.scss */
 .faq__desc {
   font-size: 16px;
   line-height: 20px;
@@ -4412,7 +4418,7 @@ picture {
   color: #576472;
 }
 
-/* line 118, src/scss/_components/plans/_faq.scss */
+/* line 127, src/scss/_components/plans/_faq.scss */
 .faq__desc a {
   color: #21bf73;
   text-decoration: underline;
