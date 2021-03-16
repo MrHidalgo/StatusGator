@@ -12,6 +12,22 @@
 		padding-bottom: 25px;
 	}
 
+	&.main--service {
+		padding-top: 50px;
+		@include adaptive(1279) {
+			padding-top: 50px;
+		}
+		@include adaptive(767) {
+			padding-top: 20px;
+		}
+
+		.main {
+			&__title {
+				padding-bottom: 50px;
+			}
+		}
+	}
+
 	&__bg {
 		z-index: 0;
 		position: absolute;

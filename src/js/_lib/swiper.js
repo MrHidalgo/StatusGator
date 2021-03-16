@@ -13,7 +13,7 @@ const initSwiper = () => {
     flipEffect: {
       slideShadows: false,
     },
-    speed: 800,
+    speed: 1000,
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
@@ -25,7 +25,7 @@ const initSwiper = () => {
   new Swiper('.solutionsSwiper', {
     loop: false,
     effect: 'slide',
-    speed: 800,
+    speed: 1000,
     slidesPerView: 3,
     spaceBetween: 50,
     navigation: {
@@ -36,9 +36,14 @@ const initSwiper = () => {
 
   new Swiper('.trustSwiper', {
     loop: false,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false
+    },
     effect: 'slide',
-    speed: 800,
+    speed: 1000,
     slidesPerView: 5,
+    slidesPerGroup: 5,
     spaceBetween: 50,
     pagination: {
       el: '.trust__pagination',

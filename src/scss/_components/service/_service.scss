@@ -1,0 +1,62 @@
+// SECTION :: START
+
+.service {
+	padding-top: 152px;
+	padding-bottom: 50px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 1240px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 50px 40px;
+		border-radius: 6px;
+		background-color: rgba(#21BF73, 0.1);
+
+		> div {
+			&:nth-of-type(1) {
+				width: 50px;
+
+				.icon-font {
+					font-size: 50px;
+					color: #21bf73;
+				}
+			}
+			&:nth-of-type(2) {
+				flex: 1;
+				min-width: 1px;
+				max-width: 100%;
+				padding-left: 35px;
+			}
+		}
+
+		p {
+			@extend %fontGogh;
+			font-weight: 800;
+			color: #163A5F;
+
+			&.short {
+				font-size: 48px;
+				line-height: 60px;
+			}
+			&.long {
+				font-size: 32px;
+				line-height: 44px;
+			}
+		}
+
+		span {
+			font-size: 18px;
+			line-height: 22px;
+			color: #163A5F;
+
+			a {
+				color: #21bf73;
+			}
+		}
+	}
+}
+
+// SECTION :: END

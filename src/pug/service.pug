@@ -1,0 +1,15 @@
+---
+title: StatusGator | Service
+
+pageClassName: p-service
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/service/_service
+		include components/service/_main
+
+		include components/homepage/_solutions
+		include components/homepage/_instant
