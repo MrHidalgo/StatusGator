@@ -4980,4 +4980,42 @@ picture {
   color: #576472;
 }
 
+/* line 3, src/scss/_components/homepage/_instant.scss */
+.instant {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(33, 191, 115, 0.1);
+}
+
+/* line 8, src/scss/_components/homepage/_instant.scss */
+.instant__title {
+  padding-bottom: 50px;
+}
+
+/* line 11, src/scss/_components/homepage/_instant.scss */
+.instant__title span {
+  color: #21bf73;
+}
+
+/* line 16, src/scss/_components/homepage/_instant.scss */
+.instant__img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 20, src/scss/_components/homepage/_instant.scss */
+.instant__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
