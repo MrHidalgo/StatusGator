@@ -161,7 +161,7 @@ var initSwiper = function initSwiper() {
 	new Swiper('.trustSwiper', {
 		loop: false,
 		autoplay: {
-			delay: 7500,
+			delay: 5000,
 			disableOnInteraction: false
 		},
 		effect: 'slide',
@@ -173,6 +173,19 @@ var initSwiper = function initSwiper() {
 			el: '.trust__pagination',
 			clickable: true
 		}
+	});
+
+	new Swiper('.twitterSwiper', {
+		loop: true,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false
+		},
+		effect: 'slide',
+		speed: 1000,
+		slidesPerView: 'auto',
+		spaceBetween: 30
+		// centeredSlides: true,
 	});
 };
 

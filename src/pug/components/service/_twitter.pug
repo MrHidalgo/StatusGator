@@ -1,0 +1,75 @@
+// SECTION :: START
+
+section#twitter.twitter
+	.c-grid-fluid
+
+		h2.twitter__title.c-title Twitter Mentions
+
+		.twitter__wrapper
+
+			.twitter__slider
+
+				.swiper-container.twitterSwiper
+					.swiper-wrapper
+						each val, idx in [1,2,3]
+							.swiper-slide
+								.twitter__box
+									.twitter__box-head
+										div
+											.twitter__box-user
+												img(src="img/img-user-1.png" alt="")
+										div
+											div
+												p @mmodiop
+											div
+												span 8 mins ago
+									.twitter__box-body
+										div
+											p Errbody needs a password manager. Trouble is: which one? I spent days reading reviews.. we all know those aren’t always objective. But it simply came down to @Bitwarden vs @1Password
+
+							.swiper-slide
+								.twitter__box
+									.twitter__box-head
+										div
+											.twitter__box-user
+												img(src="img/img-user-2.png" alt="")
+										div
+											div
+												p @SeanWrightSec
+											div
+												span 13 mins ago
+									.twitter__box-body
+										div
+											p I wish more tools would call me fantastic the way that @1password does
+
+							.swiper-slide
+								.twitter__box
+									.twitter__box-head
+										div
+											.twitter__box-user
+												img(src="img/img-user-3.png" alt="")
+										div
+											div
+												p @thomasankcorn
+											div
+												span 16 mins ago
+									.twitter__box-body
+										div
+											p Didn’t know @1Password had this. I however won’t be using it 😀 I believe in the product and don’t need a financial incentive to recommend others to use it. But that’s my take, others may feel differently (and that’s totally fine). Also keep up the great work!
+
+							.swiper-slide
+								.twitter__box
+									.twitter__box-head
+										div
+											.twitter__box-user.twitter__box-user--empty
+												img(src="img/img-user-empty.png" alt="")
+										div
+											div
+												p @thomasankcorn
+											div
+												span 1 mins ago
+									.twitter__box-body
+										div
+											p goodbye @1Password after 10 Years, welcome @Bitwarden. #NoSubscription
+
+// SECTION :: END
