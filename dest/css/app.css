@@ -5018,4 +5018,109 @@ picture {
   margin-right: auto;
 }
 
+/* line 3, src/scss/_components/homepage/_trust.scss */
+.trust {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* line 7, src/scss/_components/homepage/_trust.scss */
+.trust__title {
+  padding-bottom: 80px;
+}
+
+/* line 10, src/scss/_components/homepage/_trust.scss */
+.trust__title span {
+  color: #21bf73;
+}
+
+/* line 15, src/scss/_components/homepage/_trust.scss */
+.trust__pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 22, src/scss/_components/homepage/_trust.scss */
+.trust__pagination .swiper-pagination-bullet {
+  outline: none;
+  opacity: 1;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(87, 100, 114, 0.2);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 35, src/scss/_components/homepage/_trust.scss */
+.trust__pagination .swiper-pagination-bullet-active {
+  background-color: #21bf73;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 46, src/scss/_components/homepage/_trust.scss */
+.trust .swiper-container {
+  padding-bottom: 50px;
+}
+
+/* line 50, src/scss/_components/homepage/_trust.scss */
+.trust .swiper-wrapper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 54, src/scss/_components/homepage/_trust.scss */
+.trust .swiper-slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 61, src/scss/_components/homepage/_trust.scss */
+.trust .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

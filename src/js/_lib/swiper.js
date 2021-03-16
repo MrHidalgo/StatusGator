@@ -33,5 +33,17 @@ const initSwiper = () => {
       prevEl: '.solutions__btn--prev',
     }
   });
+
+  new Swiper('.trustSwiper', {
+    loop: false,
+    effect: 'slide',
+    speed: 800,
+    slidesPerView: 5,
+    spaceBetween: 50,
+    pagination: {
+      el: '.trust__pagination',
+      clickable: true,
+    }
+  });
   
 };
