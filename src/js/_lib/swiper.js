@@ -21,4 +21,17 @@ const initSwiper = () => {
       prevEl: '.reviews__btn--prev',
     }
   });
+
+  new Swiper('.solutionsSwiper', {
+    loop: false,
+    effect: 'slide',
+    speed: 800,
+    slidesPerView: 3,
+    spaceBetween: 50,
+    navigation: {
+      nextEl: '.solutions__btn--next',
+      prevEl: '.solutions__btn--prev',
+    }
+  });
+  
 };

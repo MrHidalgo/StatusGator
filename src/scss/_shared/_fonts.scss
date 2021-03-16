@@ -64,17 +64,6 @@
 /// @include mixinFontFace("SF-Pro-Text", "-Heavy", "../fonts/", 800, otf);
 ///
 /// ===============
-@include mixinFontFace("Kinetika", "-Black", "../fonts/", 900, woff2 woff ttf svg);
-@include mixinFontFace("KinetikaHeavy", "", "../fonts/", 900, woff2 woff ttf svg);
-@include mixinFontFace("Kinetika", "-Bold", "../fonts/", bold, woff2 woff ttf svg);
-@include mixinFontFace("Kinetika", "-SemiBold", "../fonts/", 600, woff2 woff ttf svg);
-@include mixinFontFace("Kinetika", "-Medium", "../fonts/", 500, woff2 woff ttf svg);
-//@include mixinFontFace("Kinetika", "-Light", "../fonts/", 300, woff2 woff ttf svg);
-//@include mixinFontFace("Kinetika", "-Thin", "../fonts/", 100, woff2 woff ttf svg);
-@include mixinFontFace("Kinetika", "-Regular", "../fonts/", normal, woff2 woff ttf svg);
-//@include mixinFontFace("KinetikaBook", "", "../fonts/", normal, woff2 woff ttf svg);
-//@include mixinFontFace("KinetikaUltra", "", "../fonts/", normal, woff2 woff ttf svg);
-
 @include mixinFontFace("Gogh", "-Black", "../fonts/", 900, woff2 woff ttf svg);
 @include mixinFontFace("GoghHeavy", "", "../fonts/", 900, woff2 woff ttf svg);
 @include mixinFontFace("Gogh", "-ExtraBold", "../fonts/", 800, woff2 woff ttf svg);

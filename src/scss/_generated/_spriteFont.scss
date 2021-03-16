@@ -36,26 +36,35 @@
 	@if $filename == bell {
 		$char: "\E003";
 	}
-	@if $filename == checked-sq {
+	@if $filename == book {
 		$char: "\E004";
 	}
-	@if $filename == close {
+	@if $filename == checked-sq {
 		$char: "\E005";
 	}
-	@if $filename == eye {
+	@if $filename == close {
 		$char: "\E006";
 	}
-	@if $filename == image {
+	@if $filename == code {
 		$char: "\E007";
 	}
-	@if $filename == list {
+	@if $filename == eye {
 		$char: "\E008";
 	}
-	@if $filename == plus-sq {
+	@if $filename == image {
 		$char: "\E009";
 	}
-	@if $filename == toggle {
+	@if $filename == list {
 		$char: "\E00A";
+	}
+	@if $filename == message-q {
+		$char: "\E00B";
+	}
+	@if $filename == plus-sq {
+		$char: "\E00C";
+	}
+	@if $filename == toggle {
+		$char: "\E00D";
 	}
 
 	@return $char;
@@ -84,12 +93,20 @@
 	@include icon(bell);
 
 }
+.icon-book {
+	@include icon(book);
+
+}
 .icon-checked-sq {
 	@include icon(checked-sq);
 
 }
 .icon-close {
 	@include icon(close);
+
+}
+.icon-code {
+	@include icon(code);
 
 }
 .icon-eye {
@@ -102,6 +119,10 @@
 }
 .icon-list {
 	@include icon(list);
+
+}
+.icon-message-q {
+	@include icon(message-q);
 
 }
 .icon-plus-sq {
