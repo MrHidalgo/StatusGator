@@ -25,10 +25,6 @@
 			&-3 {
 				.feature__box {
 					&-left {
-						order: 2;
-					}
-					&-right {
-						order: 1;
 						padding-bottom: 25px;
 					}
 				}
@@ -38,14 +34,15 @@
 		&--reverse {
 			.feature__box {
 				&-left {
-					order: 2;
+					//order: 2;
+					padding-bottom: 25px;
 
 					video {
 						margin-left: auto;
 					}
 				}
 				&-right {
-					order: 1;
+					//order: 1;
 					padding-left: 0;
 				}
 			}
@@ -70,6 +67,24 @@
 			@include adaptive(767) {
 				width: 100%;
 			}
+
+			.feature__box-title {
+				display: none;
+				@include adaptive(767) {
+					display: block;
+				}
+			}
+
+			video {
+				display: block;
+				max-width: 80%;
+				height: auto;
+				@include adaptive(767) {
+					max-width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
 		}
 
 		&-right {
@@ -87,17 +102,10 @@
 			@include adaptive(767) {
 				width: 100%;
 			}
-		}
 
-		&-left {
-			video {
-				display: block;
-				max-width: 80%;
-				height: auto;
+			.feature__box-title {
 				@include adaptive(767) {
-					max-width: 100%;
-					margin-left: auto;
-					margin-right: auto;
+					display: none;
 				}
 			}
 		}

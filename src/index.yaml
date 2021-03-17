@@ -6,7 +6,7 @@ PageList:
   ready: 55
 - file: solution.html
   titleName: Solution
-  ready: 55
+  ready: 90
 - file: plans.html
   titleName: Plans
   ready: 90

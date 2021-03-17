@@ -145,6 +145,42 @@ var initSwiper = function initSwiper() {
 			navigation: {
 				nextEl: '.reviews__btn--next',
 				prevEl: '.reviews__btn--prev'
+			},
+			pagination: {
+				el: '.reviews__pagination',
+				clickable: true
+			}
+		});
+	}
+	if ($('.partnersSwiper').length > 0) {
+
+		new Swiper('.partnersSwiper', {
+			loop: false,
+			effect: 'slide',
+			speed: 1000,
+			slidesPerView: 5,
+			spaceBetween: 30,
+			breakpoints: {
+				320: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+					slidesOffsetAfter: 15,
+					slidesOffsetBefore: 15
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+					slidesOffsetAfter: 0,
+					slidesOffsetBefore: 0
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 30
+				}
+			},
+			pagination: {
+				el: '.partners__pagination',
+				clickable: true
 			}
 		});
 	}

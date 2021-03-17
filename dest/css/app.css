@@ -2531,23 +2531,31 @@ picture {
   /* line 3, src/scss/_components/solution/_partners.scss */
   .partners {
     padding-top: 25px;
-    padding-bottom: 0;
   }
 }
 
-/* line 11, src/scss/_components/solution/_partners.scss */
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/solution/_partners.scss */
+  .partners__wrapper {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(87, 100, 114, 0.2);
+  }
+}
+
+/* line 18, src/scss/_components/solution/_partners.scss */
 .partners__title {
   padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/solution/_partners.scss */
+  /* line 18, src/scss/_components/solution/_partners.scss */
   .partners__title {
     padding-bottom: 40px;
   }
 }
 
-/* line 18, src/scss/_components/solution/_partners.scss */
+/* line 25, src/scss/_components/solution/_partners.scss */
 .partners__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2557,76 +2565,95 @@ picture {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-/* line 22, src/scss/_components/solution/_partners.scss */
-.partners__box-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 22, src/scss/_components/solution/_partners.scss */
-  .partners__box-wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 /* line 31, src/scss/_components/solution/_partners.scss */
-.partners__box-wrapper > div {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 31, src/scss/_components/solution/_partners.scss */
-  .partners__box-wrapper > div {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 31, src/scss/_components/solution/_partners.scss */
-  .partners__box-wrapper > div {
-    width: 100%;
-    max-width: -webkit-calc(100% / 3);
-    max-width: calc(100% / 3);
-    padding-bottom: 25px;
-  }
-}
-
-/* line 44, src/scss/_components/solution/_partners.scss */
-.partners__box-wrapper > div:first-of-type {
-  padding-left: 0;
-}
-
-/* line 47, src/scss/_components/solution/_partners.scss */
-.partners__box-wrapper > div:last-of-type {
-  padding-right: 0;
-}
-
-/* line 53, src/scss/_components/solution/_partners.scss */
 .partners__box img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* line 39, src/scss/_components/solution/_partners.scss */
+.partners .swiper-wrapper {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 42, src/scss/_components/solution/_partners.scss */
+  .partners .swiper-container {
+    left: -15px;
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+  }
+}
+
+/* line 50, src/scss/_components/solution/_partners.scss */
+.partners__pagination {
+  display: none;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 50, src/scss/_components/solution/_partners.scss */
+  .partners__pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 62, src/scss/_components/solution/_partners.scss */
+.partners__pagination .swiper-pagination-bullet {
+  outline: none;
+  opacity: 1;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(87, 100, 114, 0.2);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 75, src/scss/_components/solution/_partners.scss */
+.partners__pagination .swiper-pagination-bullet-active {
+  background-color: #21bf73;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/solution/_feature.scss */
@@ -2676,44 +2703,26 @@ picture {
   }
   /* line 27, src/scss/_components/solution/_feature.scss */
   .feature__box-1 .feature__box-left, .feature__box-3 .feature__box-left {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  /* line 30, src/scss/_components/solution/_feature.scss */
-  .feature__box-1 .feature__box-right, .feature__box-3 .feature__box-right {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
     padding-bottom: 25px;
   }
 }
 
-/* line 40, src/scss/_components/solution/_feature.scss */
+/* line 36, src/scss/_components/solution/_feature.scss */
 .feature__box--reverse .feature__box-left {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
+  padding-bottom: 25px;
 }
 
-/* line 43, src/scss/_components/solution/_feature.scss */
+/* line 40, src/scss/_components/solution/_feature.scss */
 .feature__box--reverse .feature__box-left video {
   margin-left: auto;
 }
 
-/* line 47, src/scss/_components/solution/_feature.scss */
+/* line 44, src/scss/_components/solution/_feature.scss */
 .feature__box--reverse .feature__box-right {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
   padding-left: 0;
 }
 
-/* line 54, src/scss/_components/solution/_feature.scss */
+/* line 51, src/scss/_components/solution/_feature.scss */
 .feature__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2726,67 +2735,44 @@ picture {
           flex-direction: column;
 }
 
-/* line 59, src/scss/_components/solution/_feature.scss */
+/* line 56, src/scss/_components/solution/_feature.scss */
 .feature__box-wrapper > div:not(:last-of-type) {
   padding-bottom: 100px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 59, src/scss/_components/solution/_feature.scss */
+  /* line 56, src/scss/_components/solution/_feature.scss */
   .feature__box-wrapper > div:not(:last-of-type) {
     padding-bottom: 50px;
   }
 }
 
-/* line 68, src/scss/_components/solution/_feature.scss */
+/* line 65, src/scss/_components/solution/_feature.scss */
 .feature__box-left {
   width: -webkit-calc((100% / 2) + 40px);
   width: calc((100% / 2) + 40px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 68, src/scss/_components/solution/_feature.scss */
+  /* line 65, src/scss/_components/solution/_feature.scss */
   .feature__box-left {
     width: 100%;
   }
 }
 
-/* line 75, src/scss/_components/solution/_feature.scss */
-.feature__box-right {
-  width: -webkit-calc((100% / 2) - 40px);
-  width: calc((100% / 2) - 40px);
-  padding-left: 100px;
-}
-
-@media screen and (max-width: 1439px) {
-  /* line 75, src/scss/_components/solution/_feature.scss */
-  .feature__box-right {
-    padding-left: 75px;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 75, src/scss/_components/solution/_feature.scss */
-  .feature__box-right {
-    padding-left: 25px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  /* line 75, src/scss/_components/solution/_feature.scss */
-  .feature__box-right {
-    padding-left: 0;
-  }
+/* line 71, src/scss/_components/solution/_feature.scss */
+.feature__box-left .feature__box-title {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 75, src/scss/_components/solution/_feature.scss */
-  .feature__box-right {
-    width: 100%;
+  /* line 71, src/scss/_components/solution/_feature.scss */
+  .feature__box-left .feature__box-title {
+    display: block;
   }
 }
 
-/* line 93, src/scss/_components/solution/_feature.scss */
+/* line 78, src/scss/_components/solution/_feature.scss */
 .feature__box-left video {
   display: block;
   max-width: 80%;
@@ -2794,7 +2780,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 93, src/scss/_components/solution/_feature.scss */
+  /* line 78, src/scss/_components/solution/_feature.scss */
   .feature__box-left video {
     max-width: 100%;
     margin-left: auto;
@@ -2802,7 +2788,49 @@ picture {
   }
 }
 
-/* line 105, src/scss/_components/solution/_feature.scss */
+/* line 90, src/scss/_components/solution/_feature.scss */
+.feature__box-right {
+  width: -webkit-calc((100% / 2) - 40px);
+  width: calc((100% / 2) - 40px);
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 90, src/scss/_components/solution/_feature.scss */
+  .feature__box-right {
+    padding-left: 75px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 90, src/scss/_components/solution/_feature.scss */
+  .feature__box-right {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 90, src/scss/_components/solution/_feature.scss */
+  .feature__box-right {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 90, src/scss/_components/solution/_feature.scss */
+  .feature__box-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 106, src/scss/_components/solution/_feature.scss */
+  .feature__box-right .feature__box-title {
+    display: none;
+  }
+}
+
+/* line 113, src/scss/_components/solution/_feature.scss */
 .feature__box-title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -2812,14 +2840,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 105, src/scss/_components/solution/_feature.scss */
+  /* line 113, src/scss/_components/solution/_feature.scss */
   .feature__box-title {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 105, src/scss/_components/solution/_feature.scss */
+  /* line 113, src/scss/_components/solution/_feature.scss */
   .feature__box-title {
     padding-bottom: 20px;
     font-size: 20px;
@@ -2827,7 +2855,7 @@ picture {
   }
 }
 
-/* line 122, src/scss/_components/solution/_feature.scss */
+/* line 130, src/scss/_components/solution/_feature.scss */
 .feature__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2844,13 +2872,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 122, src/scss/_components/solution/_feature.scss */
+  /* line 130, src/scss/_components/solution/_feature.scss */
   .feature__box-list {
     padding-bottom: 20px;
   }
 }
 
-/* line 132, src/scss/_components/solution/_feature.scss */
+/* line 140, src/scss/_components/solution/_feature.scss */
 .feature__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2862,12 +2890,12 @@ picture {
           align-items: center;
 }
 
-/* line 136, src/scss/_components/solution/_feature.scss */
+/* line 144, src/scss/_components/solution/_feature.scss */
 .feature__box-list li:not(:last-of-type) {
   padding-bottom: 20px;
 }
 
-/* line 141, src/scss/_components/solution/_feature.scss */
+/* line 149, src/scss/_components/solution/_feature.scss */
 .feature__box-list li > div:nth-of-type(1) {
   position: relative;
   display: -webkit-box;
@@ -2893,14 +2921,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 141, src/scss/_components/solution/_feature.scss */
+  /* line 149, src/scss/_components/solution/_feature.scss */
   .feature__box-list li > div:nth-of-type(1) {
     width: 40px;
     height: 40px;
   }
 }
 
-/* line 157, src/scss/_components/solution/_feature.scss */
+/* line 165, src/scss/_components/solution/_feature.scss */
 .feature__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2911,7 +2939,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 165, src/scss/_components/solution/_feature.scss */
+/* line 173, src/scss/_components/solution/_feature.scss */
 .feature__box-list li .icon-font {
   font-size: 18px;
   height: 18px;
@@ -2920,13 +2948,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 165, src/scss/_components/solution/_feature.scss */
+  /* line 173, src/scss/_components/solution/_feature.scss */
   .feature__box-list li .icon-font {
     font-size: 15px;
   }
 }
 
-/* line 175, src/scss/_components/solution/_feature.scss */
+/* line 183, src/scss/_components/solution/_feature.scss */
 .feature__box-list li p {
   font-size: 18px;
   font-weight: 400;
@@ -2935,14 +2963,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 175, src/scss/_components/solution/_feature.scss */
+  /* line 183, src/scss/_components/solution/_feature.scss */
   .feature__box-list li p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 175, src/scss/_components/solution/_feature.scss */
+  /* line 183, src/scss/_components/solution/_feature.scss */
   .feature__box-list li p {
     font-size: 14px;
     line-height: 22px;
@@ -2950,7 +2978,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 193, src/scss/_components/solution/_feature.scss */
+  /* line 201, src/scss/_components/solution/_feature.scss */
   .feature__box-btn .c-btn {
     width: 100%;
   }
@@ -3291,24 +3319,11 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 53, src/scss/_components/solution/_reviews.scss */
   .reviews__wrapper-left {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 50%;
-    padding-right: 10px;
+    display: none;
   }
 }
 
-/* line 64, src/scss/_components/solution/_reviews.scss */
+/* line 60, src/scss/_components/solution/_reviews.scss */
 .reviews__wrapper-middle {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3319,7 +3334,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 64, src/scss/_components/solution/_reviews.scss */
+  /* line 60, src/scss/_components/solution/_reviews.scss */
   .reviews__wrapper-middle {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -3333,7 +3348,7 @@ picture {
   }
 }
 
-/* line 75, src/scss/_components/solution/_reviews.scss */
+/* line 71, src/scss/_components/solution/_reviews.scss */
 .reviews__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3347,22 +3362,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 75, src/scss/_components/solution/_reviews.scss */
+  /* line 71, src/scss/_components/solution/_reviews.scss */
   .reviews__wrapper-right {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 50%;
-    padding-left: 10px;
+    display: none;
   }
 }
 
-/* line 88, src/scss/_components/solution/_reviews.scss */
+/* line 81, src/scss/_components/solution/_reviews.scss */
 .reviews__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3390,7 +3396,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 99, src/scss/_components/solution/_reviews.scss */
+/* line 92, src/scss/_components/solution/_reviews.scss */
 .reviews__btn:hover {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
@@ -3400,7 +3406,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 103, src/scss/_components/solution/_reviews.scss */
+/* line 96, src/scss/_components/solution/_reviews.scss */
 .reviews__btn:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -3408,7 +3414,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 109, src/scss/_components/solution/_reviews.scss */
+/* line 102, src/scss/_components/solution/_reviews.scss */
 .reviews__btn.swiper-button-disabled {
   pointer-events: none;
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
@@ -3421,7 +3427,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 115, src/scss/_components/solution/_reviews.scss */
+/* line 108, src/scss/_components/solution/_reviews.scss */
 .reviews__btn.swiper-button-disabled .icon-font {
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
@@ -3429,14 +3435,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 122, src/scss/_components/solution/_reviews.scss */
+/* line 115, src/scss/_components/solution/_reviews.scss */
 .reviews__btn--next .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 127, src/scss/_components/solution/_reviews.scss */
+/* line 120, src/scss/_components/solution/_reviews.scss */
 .reviews__btn .icon-font {
   width: 14px;
   height: 14px;
@@ -3448,7 +3454,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 137, src/scss/_components/solution/_reviews.scss */
+/* line 130, src/scss/_components/solution/_reviews.scss */
 .reviews__box {
   width: 100%;
   max-width: 800px;
@@ -3456,7 +3462,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 143, src/scss/_components/solution/_reviews.scss */
+/* line 136, src/scss/_components/solution/_reviews.scss */
 .reviews__box-title {
   padding-bottom: 60px;
   font-weight: 400;
@@ -3467,26 +3473,26 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 143, src/scss/_components/solution/_reviews.scss */
+  /* line 136, src/scss/_components/solution/_reviews.scss */
   .reviews__box-title {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 143, src/scss/_components/solution/_reviews.scss */
+  /* line 136, src/scss/_components/solution/_reviews.scss */
   .reviews__box-title {
     padding-bottom: 30px;
     font-size: 14px;
     line-height: 22px;
   }
-  /* line 158, src/scss/_components/solution/_reviews.scss */
+  /* line 151, src/scss/_components/solution/_reviews.scss */
   .reviews__box-title br {
     display: none;
   }
 }
 
-/* line 164, src/scss/_components/solution/_reviews.scss */
+/* line 157, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3504,13 +3510,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 164, src/scss/_components/solution/_reviews.scss */
+  /* line 157, src/scss/_components/solution/_reviews.scss */
   .reviews__box-author {
     margin-bottom: 40px;
   }
 }
 
-/* line 177, src/scss/_components/solution/_reviews.scss */
+/* line 170, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div:nth-of-type(1) {
   overflow: hidden;
   position: relative;
@@ -3520,7 +3526,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 188, src/scss/_components/solution/_reviews.scss */
+/* line 181, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3531,7 +3537,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 195, src/scss/_components/solution/_reviews.scss */
+/* line 188, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div p {
   font-weight: 600;
   font-size: 16px;
@@ -3540,14 +3546,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 195, src/scss/_components/solution/_reviews.scss */
+  /* line 188, src/scss/_components/solution/_reviews.scss */
   .reviews__box-author > div p {
     font-size: 14px;
     line-height: 18px;
   }
 }
 
-/* line 206, src/scss/_components/solution/_reviews.scss */
+/* line 199, src/scss/_components/solution/_reviews.scss */
 .reviews__box-author > div span {
   font-size: 14px;
   line-height: 22px;
@@ -3555,7 +3561,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 214, src/scss/_components/solution/_reviews.scss */
+  /* line 207, src/scss/_components/solution/_reviews.scss */
   .reviews__box-btn {
     width: 100%;
     padding-top: 30px;
@@ -3563,16 +3569,75 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 220, src/scss/_components/solution/_reviews.scss */
+  /* line 213, src/scss/_components/solution/_reviews.scss */
   .reviews__box-btn .c-btn {
     width: 100%;
   }
 }
 
-/* line 224, src/scss/_components/solution/_reviews.scss */
+/* line 217, src/scss/_components/solution/_reviews.scss */
 .reviews__box-btn .c-btn span {
   font-size: 14px;
   line-height: 17px;
+}
+
+/* line 225, src/scss/_components/solution/_reviews.scss */
+.reviews__pagination {
+  display: none;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 225, src/scss/_components/solution/_reviews.scss */
+  .reviews__pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 236, src/scss/_components/solution/_reviews.scss */
+.reviews__pagination .swiper-pagination-bullet {
+  outline: none;
+  opacity: 1;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(87, 100, 114, 0.2);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 249, src/scss/_components/solution/_reviews.scss */
+.reviews__pagination .swiper-pagination-bullet-active {
+  background-color: #21bf73;
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/all-services/_main.scss */

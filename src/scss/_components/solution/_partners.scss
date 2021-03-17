@@ -5,7 +5,14 @@
 	padding-bottom: 75px;
 	@include adaptive(767) {
 		padding-top: 25px;
-		padding-bottom: 0;
+	}
+
+	&__wrapper {
+		@include adaptive(767) {
+			padding-bottom: 50px;
+			margin-bottom: 50px;
+			border-bottom: 1px solid rgba(#576472, 0.2);
+		}
 	}
 
 	&__title {
@@ -18,42 +25,60 @@
 	&__box {
 		display: flex;
 		align-items: flex-start;
-
-		&-wrapper {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			@include adaptive(767) {
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-
-			> div {
-				padding-left: 15px;
-				padding-right: 15px;
-				@include adaptive(1279) {
-					padding-left: 20px;
-					padding-right: 20px;
-				}
-				@include adaptive(767) {
-					width: 100%;
-					max-width: calc(100% / 3);
-					padding-bottom: 25px;
-				}
-
-				&:first-of-type {
-					padding-left: 0;
-				}
-				&:last-of-type {
-					padding-right: 0;
-				}
-			}
-		}
+		justify-content: center;
+		width: 100%;
 
 		img {
 			display: block;
 			max-width: 100%;
 			height: auto;
+		}
+	}
+
+	.swiper {
+		&-wrapper {
+			align-items: center;
+		}
+		&-container {
+			@include adaptive(767) {
+				left: -15px;
+				width: calc(100% + 30px);
+			}
+		}
+	}
+
+	&__pagination {
+		display: none;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		padding-top: 40px;
+		@include adaptive(767) {
+			display: flex;
+		}
+
+		.swiper {
+			&-pagination {
+				&-bullet {
+					outline: none;
+					opacity: 1;
+					position: relative;
+					width: 8px;
+					height: 8px;
+					margin-left: 5px;
+					margin-right: 5px;
+					background-color: rgba(#576472, 0.2);
+					transform-origin: center;
+					backface-visibility: hidden;
+					@include transition(background-color, transform);
+
+					&-active {
+						background-color: #21bf73;
+						transform: scale(1.25);
+						@include transition(background-color, transform);
+					}
+				}
+			}
 		}
 	}
 }
