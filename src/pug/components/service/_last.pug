@@ -1,0 +1,47 @@
+// SECTION :: START
+
+section#last.last
+	.c-grid
+
+		h2.last__title.c-title 3 status changes in the last 24 hours
+		p.last__desc Amazon Web Services Status, Last 24 Hours
+
+		.last__wrapper
+
+			.status__box
+				.status__box-head
+
+					.status__box-line-wrapper
+						div(style="display: none;")
+						div
+							.status__box-line
+								span(style='left: 22px; width: 10px; background-color: #BBBFCA;')
+								span(style='left: 129px; width: 100px; background-color: #FFB26B;')
+								span(style='left: 55%; width: 10px; background-color: #FD5E53;')
+
+				.status__box-time
+					div
+						span 5:00 PM
+					div
+						span 9:00 PM
+					div
+						span 1:00 AM
+					div
+						span 5:00 AM
+					div
+						span 9:00 AM
+					div
+						span 1:00 PM
+
+				.status__box-body
+					ul
+						li.warning0
+							p!= "<strong>Up:</strong> 23 hours"
+						li.warning2
+							p!= "<strong>Warn:</strong> 10 minutes"
+						li.warning5
+							p!= "<strong>Down:</strong> 45 minutes"
+						li.warning01
+							p!= "<strong>Maintenance:</strong> None"
+
+// SECTION :: END
