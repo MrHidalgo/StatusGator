@@ -2,11 +2,11 @@
 
 section#services-main.services-main
 
-	.services-main__bg
-		span
-		span
-		span
-		span
+	.services-main__bg(parallax-js)
+		span(data-stellar-ratio="1.1")
+		span(data-stellar-ratio="0.9")
+		span(data-stellar-ratio="1.05")
+		span(data-stellar-ratio="0.95")
 
 	.c-grid
 		.services-main__wrapper.services-main__wrapper-1
@@ -21,6 +21,17 @@ section#services-main.services-main
 						a.c-btn.c-btn__bg.c-btn__bg--green(href="#")
 							span Search
 
+			.services-main__category
+				div
+					span Apps Category
+					p All Apps
+				div
+					a(href="#" filters-toggle-js)
+						i.icon-font.icon-arrow
+						i.icon-font.icon-arrow
+
+			.services-main__filters
+				span!= "1 - 10 of 3 000+ apps by <a href='#' filters-toggle-js>most popular</a>"
 
 		.services-main__wrapper.services-main__wrapper-2
 			.services-main__wrapper-left

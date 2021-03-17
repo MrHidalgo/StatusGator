@@ -109,6 +109,33 @@
 	};
 	
 	
+	const filtersCB = () => {
+		$('[filters-toggle-js]').on('click', (ev) => {
+			$('#filters').addClass('is-open');
+		});
+		
+		$('[filters-close-js]').on('click', (ev) => {
+			$('#filters').removeClass('is-open');
+		});
+		
+		$('[filters-expand-js]').on('click', (ev) => {
+			const el = $(ev.currentTarget),
+				elExpandAttrVal = el.attr('data-expand'),
+				elCollapseAttrVal = el.attr('data-collapse');
+			
+			if(el.hasClass('is-collapse')) {
+				el.removeClass('is-collapse');
+				el.find('span').text(elExpandAttrVal);
+			} else {
+				el.addClass('is-collapse');
+				el.find('span').text(elCollapseAttrVal);
+			}
+			
+			$('[filters-node-js]').slideToggle(350);
+		});
+	};
+	
+	
 	const faqCollapse = () => {
 		$('.faq__collapse-head').on('click', (ev) => {
 			const el = $(ev.currentTarget);
@@ -169,6 +196,7 @@
 		expandFilters();
 		faqCollapse();
 		supportCollapse();
+		filtersCB();
 		// ==========================================
 	};
 	initNative();

@@ -55,7 +55,7 @@
     <div class="body body--start p-all-services">
       <!-- SECTION :: START-->
       <section class="services-main" id="services-main">
-        <div class="services-main__bg"><span></span><span></span><span></span><span></span></div>
+        <div class="services-main__bg" parallax-js><span data-stellar-ratio="1.1"></span><span data-stellar-ratio="0.9"></span><span data-stellar-ratio="1.05"></span><span data-stellar-ratio="0.95"></span></div>
         <div class="c-grid">
           <div class="services-main__wrapper services-main__wrapper-1">
             <h1 class="services-main__title">Now Monitoring and Normalizing Data <br>from <span>1020 Services!</span></h1>
@@ -67,6 +67,13 @@
                 <div class="c-btn__wrapper"><a class="c-btn c-btn__bg c-btn__bg--green" href="#"><span>Search</span></a></div>
               </div>
             </div>
+            <div class="services-main__category">
+              <div><span>Apps Category</span>
+                <p>All Apps</p>
+              </div>
+              <div><a href="#" filters-toggle-js><i class="icon-font icon-arrow"></i><i class="icon-font icon-arrow"></i></a></div>
+            </div>
+            <div class="services-main__filters"><span>1 - 10 of 3 000+ apps by <a href='#' filters-toggle-js>most popular</a></span></div>
           </div>
           <div class="services-main__wrapper services-main__wrapper-2">
             <div class="services-main__wrapper-left">
@@ -216,6 +223,28 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+      <!-- SECTION :: START-->
+      <section class="filters" id="filters"><a class="filters__close" href="#" filters-close-js><i class="icon-font icon-close"></i></a>
+        <div class="filters__body">
+          <div class="filters__title-wrapper">
+            <div>
+              <p class="filters__title">Sort Apps by:</p>
+            </div>
+            <div></div>
+          </div>
+          <div class="filters__link-wrapper"><a class="filters__link is-active" href="#">Most Popular</a><a class="filters__link" href="#">Recently Added</a><a class="filters__link" href="#">For DevOps</a><a class="filters__link" href="#">For HelpDesk</a><a class="filters__link" href="#">For Education</a></div>
+          <div class="filters__title-wrapper">
+            <div>
+              <p class="filters__title">Apps Category</p>
+            </div>
+            <div><a href="#" data-expand="Expand" data-collapse="Collapse" filters-expand-js><span>Expand</span> All</a></div>
+          </div>
+          <div class="filters__link-wrapper"><a class="filters__link" href="#">Advertising</a><a class="filters__link" href="#">Analytics</a><a class="filters__link" href="#">API</a><a class="filters__link" href="#">Audio</a>
+            <div filters-node-js><a class="filters__link" href="#">Advertising</a><a class="filters__link" href="#">Analytics</a><a class="filters__link" href="#">API</a><a class="filters__link" href="#">Audio</a><a class="filters__link" href="#">Advertising</a><a class="filters__link" href="#">Analytics</a><a class="filters__link" href="#">API</a><a class="filters__link" href="#">Audio</a></div>
           </div>
         </div>
       </section>

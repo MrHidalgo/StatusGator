@@ -3,6 +3,9 @@
 .services-main {
 	position: relative;
 	padding-top: 202px;
+	@include adaptive(1279) {
+		padding-top: 172px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -12,6 +15,9 @@
 		width: 100%;
 		height: 462px;
 		background-color: rgba(#21BF73, 0.1);
+		@include adaptive(1279) {
+			height: 432px;
+		}
 
 		span {
 			position: absolute;
@@ -65,6 +71,9 @@
 			width: 100%;
 			max-width: 180px;
 			padding-right: 15px;
+			@include adaptive(1023) {
+				display: none;
+			}
 		}
 
 		&-right {
@@ -81,6 +90,13 @@
 		line-height: 50px;
 		text-align: center;
 		color: #163A5F;
+		@include adaptive(1439) {
+			font-size: 33px;
+		}
+		@include adaptive(767) {
+			font-size: 24px;
+			line-height: 33px;
+		}
 
 		span {
 			color: #21bf73;
@@ -148,12 +164,92 @@
 		}
 	}
 
+	&__category {
+		display: none;
+		align-items: center;
+		padding: 6px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 8px;
+		box-shadow: 0 4px 60px 0 rgba(24, 33, 53, 0.07);
+		background-color: #FFFFFF;
+		@include adaptive(1023) {
+			display: flex;
+		}
+
+		> div {
+			&:nth-of-type(1) {
+				flex: 1;
+				min-width: 1px;
+				max-width: 100%;
+				padding-left: 4px;
+				padding-right: 6px;
+			}
+			&:nth-of-type(1) {}
+		}
+
+		span {
+			font-size: 10px;
+			line-height: 12px;
+			color: #576472;
+		}
+
+		p {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+			color: #163A5F;
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 8px;
+			background-color: rgba(#576472, 0.1);
+
+			.icon-font {
+				font-size: 8px;
+				color: #163a5f;
+				transform: rotate(90deg);
+
+				&:nth-of-type(2) {
+					transform: rotate(90deg) scaleX(-1);
+				}
+			}
+		}
+	}
+
+	&__filters {
+		display: none;
+		@include adaptive(1023) {
+			display: flex;
+		}
+
+		span {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+			color: #576472;
+
+			a {
+				color: #21bf73;
+			}
+		}
+	}
+
 	&__subtitle {
 		padding-bottom: 30px;
 		font-weight: bold;
 		font-size: 24px;
 		line-height: 30px;
 		color: #163A5F;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
 	}
 
 	&__link {
@@ -203,6 +299,9 @@
 		border-radius: 8px;
 		background-color: rgba(#F1F4F8, 0.7);
 		@include transition(background-color, transform);
+		@include adaptive(1279) {
+			padding: 30px 20px;
+		}
 
 		&:hover {
 			background-color: rgba(#F1F4F8, 1);
@@ -308,9 +407,9 @@
 			background-color: #FFFFFF;
 
 			.icon-font {
-				height: 15px;
-				font-size: 15px;
-				line-height: 15px;
+				height: 18px;
+				font-size: 18px;
+				line-height: 18px;
 				color: #21bf73;
 			}
 		}

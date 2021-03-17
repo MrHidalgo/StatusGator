@@ -1,0 +1,43 @@
+// SECTION :: START
+
+section#filters.filters
+
+	a.filters__close(href="#" filters-close-js)
+		i.icon-font.icon-close
+
+	.filters__body
+
+		.filters__title-wrapper
+			div
+				p.filters__title Sort Apps by:
+			div
+				
+		.filters__link-wrapper
+			a.filters__link.is-active(href="#") Most Popular
+			a.filters__link(href="#") Recently Added
+			a.filters__link(href="#") For DevOps
+			a.filters__link(href="#") For HelpDesk
+			a.filters__link(href="#") For Education
+	
+		.filters__title-wrapper
+			div
+				p.filters__title Apps Category
+			div
+				a(href="#" data-expand="Expand" data-collapse="Collapse" filters-expand-js)!= "<span>Expand</span> All"
+
+		.filters__link-wrapper
+			a.filters__link(href="#") Advertising
+			a.filters__link(href="#") Analytics
+			a.filters__link(href="#") API
+			a.filters__link(href="#") Audio
+			div(filters-node-js)
+				a.filters__link(href="#") Advertising
+				a.filters__link(href="#") Analytics
+				a.filters__link(href="#") API
+				a.filters__link(href="#") Audio
+				a.filters__link(href="#") Advertising
+				a.filters__link(href="#") Analytics
+				a.filters__link(href="#") API
+				a.filters__link(href="#") Audio
+
+// SECTION :: END
