@@ -66,8 +66,11 @@
 	@if $filename == plus-sq {
 		$char: "\E00D";
 	}
-	@if $filename == toggle {
+	@if $filename == search {
 		$char: "\E00E";
+	}
+	@if $filename == toggle {
+		$char: "\E00F";
 	}
 
 	@return $char;
@@ -134,6 +137,10 @@
 }
 .icon-plus-sq {
 	@include icon(plus-sq);
+
+}
+.icon-search {
+	@include icon(search);
 
 }
 .icon-toggle {

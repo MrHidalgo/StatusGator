@@ -6,6 +6,9 @@
 	@include adaptive(1279) {
 		padding-top: 172px;
 	}
+	@include adaptive(767) {
+		padding-top: 100px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -18,10 +21,16 @@
 		@include adaptive(1279) {
 			height: 432px;
 		}
+		@include adaptive(767) {
+			height: 140px;
+		}
 
 		span {
 			position: absolute;
 			border-radius: 50%;
+			@include adaptive(767) {
+				display: none !important;
+			}
 
 			&:nth-of-type(1) {
 				top: 218px;
@@ -60,11 +69,17 @@
 
 		&-1 {
 			padding-bottom: 80px;
+			@include adaptive(767) {
+				padding-bottom: 40px;
+			}
 		}
 		&-2 {
 			display: flex;
 			padding-bottom: 150px;
 			border-bottom: 1px solid rgba(#576472, 0.2);
+			@include adaptive(767) {
+				padding-bottom: 100px;
+			}
 		}
 
 		&-left {
@@ -94,8 +109,7 @@
 			font-size: 33px;
 		}
 		@include adaptive(767) {
-			font-size: 24px;
-			line-height: 33px;
+			display: none;
 		}
 
 		span {
@@ -113,6 +127,9 @@
 		border: 2px solid #FFFFFF;
 		border-radius: 10px;
 		background-color: rgba(255, 255, 255, 0.5);
+		@include adaptive(767) {
+			padding: 10px;
+		}
 
 		> div {
 			display: flex;
@@ -120,15 +137,22 @@
 			width: 100%;
 			padding: 20px;
 			border-radius: 10px;
-			box-shadow: 0px 0px 80px rgba(28, 202, 135, 0.2);
+			box-shadow: 0 0 80px 0 rgba(28, 202, 135, 0.2);
 			background-color: #FFFFFF;
+			@include adaptive(767) {
+				padding: 4px;
+			}
 
 			label {
+				position: relative;
 				display: flex;
 				flex: 1;
 				min-width: 1px;
 				max-width: 100%;
 				padding-right: 10px;
+				@include adaptive(767) {
+					padding-right: 0;
+				}
 
 				input {
 					outline: none;
@@ -150,6 +174,21 @@
 						line-height: 20px;
 						color: rgba(#163A5F, 0.5);
 					}
+					@include adaptive(767) {
+						height: 56px;
+						padding: 0 40px 0 20px;
+					}
+				}
+
+				a {
+					position: absolute;
+					top: 0;
+					right: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 100%;
 				}
 			}
 
@@ -159,6 +198,9 @@
 				&__wrapper {
 					width: 100%;
 					max-width: 170px;
+					@include adaptive(767) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -302,6 +344,10 @@
 		@include adaptive(1279) {
 			padding: 30px 20px;
 		}
+		@include adaptive(767) {
+			padding: 15px;
+			background-color: transparent;
+		}
 
 		&:hover {
 			background-color: rgba(#F1F4F8, 1);
@@ -316,12 +362,22 @@
 			flex-wrap: wrap;
 			width: calc(100% + 15px);
 			padding-bottom: 35px;
+			@include adaptive(767) {
+				left: 0;
+				width: 100%;
+				padding-bottom: 25px;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 3);
 				padding-left: 15px;
 				padding-bottom: 15px;
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-left: 0;
+					padding-bottom: 0;
+				}
 			}
 		}
 
@@ -346,6 +402,10 @@
 		}
 
 		&-body {
+			@include adaptive(767) {
+				padding-left: 33px;
+			}
+
 			ul {
 				display: flex;
 				flex-direction: column;
@@ -372,6 +432,10 @@
 		padding: 15px;
 		border-radius: 6px;
 		background-color: rgba(#21BF73, 0.1);
+		@include adaptive(767) {
+		  flex-direction: column;
+			padding: 20px;
+		}
 
 		> div {
 			&:nth-of-type(1) {
@@ -385,6 +449,10 @@
 			&:nth-of-type(2) {
 				width: 100%;
 				max-width: 170px;
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-top: 20px;
+				}
 
 				.c-btn {
 					width: 100%;
@@ -415,10 +483,17 @@
 		}
 
 		p {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
 			padding-left: 25px;
 			font-size: 18px;
 			line-height: 22px;
 			color: #163A5F;
+			@include adaptive(767) {
+				font-size: 13px;
+				line-height: 20px;
+			}
 		}
 	}
 }

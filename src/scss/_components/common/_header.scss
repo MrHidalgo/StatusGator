@@ -7,8 +7,20 @@
 	left: 0;
 	width: 100%;
 	border-bottom: 2px solid rgba(#E1E6F9, 0.5);
-	box-shadow: 0px 4px 60px rgba(24, 33, 53, 0.07);
+	box-shadow: 0 4px 60px 0 rgba(24, 33, 53, 0.07);
 	background-color: #FFFFFF;
+	@include adaptive(767) {
+		border-bottom: 2px solid rgba(#E1E6F9, 0);
+		box-shadow: 0 4px 60px 0 rgba(24, 33, 53, 0);
+		background-color: transparent;
+
+		&.is-color {
+			border-color: rgba(#E1E6F9, 0.5);
+			box-shadow: 0 4px 60px 0 rgba(24, 33, 53, 0.07);
+			background-color: #FFFFFF;
+			@include transition();
+		}
+	}
 
 	.c-grid-fluid {
 		padding-left: 50px;
@@ -24,7 +36,7 @@
 		align-items: center;
 		min-height: 80px;
 		@include adaptive(767) {
-			height: auto;
+			min-height: auto;
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
