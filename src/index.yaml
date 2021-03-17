@@ -9,7 +9,7 @@ PageList:
   ready: 55
 - file: plans.html
   titleName: Plans
-  ready: 55
+  ready: 90
 - file: all-services.html
   titleName: All Services
   ready: 90

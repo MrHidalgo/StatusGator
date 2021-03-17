@@ -3,6 +3,9 @@
 .highlights {
 	position: relative;
 	padding-bottom: 75px;
+	@include adaptive(767) {
+		display: none;
+	}
 
 	&__bg {
 		z-index: 0;

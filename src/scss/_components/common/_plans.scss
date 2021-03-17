@@ -11,12 +11,20 @@
 
 	&.plans--plans {
 		padding-top: 202px;
+		@include adaptive(767) {
+			padding-top: 92px;
+		}
 
 		.plans {
 			&__bg {
 				&-overlay {
 					width: 100%;
 					height: 35%;
+					@include adaptive(767) {
+						position: relative;
+						bottom: 15%;
+						height: 60%;
+					}
 				}
 			}
 			&__wrapper {
@@ -43,9 +51,19 @@
 				@include adaptive(1023) {
 					font-size: 36px;
 				}
+				@include adaptive(767) {
+					padding-bottom: 10px;
+					font-size: 24px;
+					line-height: 33px;
+				}
 			}
 
 			&__desc {
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-bottom: 50px;
+				}
+
 				span {
 					color: #21bf73;
 				}
@@ -303,6 +321,10 @@
 			position: absolute;
 			top: -44px;
 			right: -44px;
+			@include adaptive(767) {
+				top: -54px;
+				right: -40px;
+			}
 
 			svg {
 				display: block;
@@ -352,9 +374,9 @@
 						padding-bottom: 75px;
 					}
 
-					&:nth-of-type(3) {
-						padding-right: 50px;
-					}
+					//&:nth-of-type(3) {
+					//	padding-right: 0;
+					//}
 				}
 			}
 		}

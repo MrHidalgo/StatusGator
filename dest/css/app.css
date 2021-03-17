@@ -622,6 +622,7 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 3, src/scss/_macros/_title.scss */
   .c-title {
+    font-weight: 700;
     font-size: 24px;
     line-height: 33px;
   }
@@ -1467,18 +1468,34 @@ picture {
   padding-top: 202px;
 }
 
-/* line 17, src/scss/_components/common/_plans.scss */
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_components/common/_plans.scss */
+  .plans.plans--plans {
+    padding-top: 92px;
+  }
+}
+
+/* line 20, src/scss/_components/common/_plans.scss */
 .plans.plans--plans .plans__bg-overlay {
   width: 100%;
   height: 35%;
 }
 
-/* line 23, src/scss/_components/common/_plans.scss */
+@media screen and (max-width: 767px) {
+  /* line 20, src/scss/_components/common/_plans.scss */
+  .plans.plans--plans .plans__bg-overlay {
+    position: relative;
+    bottom: 15%;
+    height: 60%;
+  }
+}
+
+/* line 31, src/scss/_components/common/_plans.scss */
 .plans.plans--plans .plans__wrapper-1 {
   padding-bottom: 0;
 }
 
-/* line 28, src/scss/_components/common/_plans.scss */
+/* line 36, src/scss/_components/common/_plans.scss */
 .plans.plans--plans .plans__title {
   padding-bottom: 20px;
   font-weight: bold;
@@ -1489,14 +1506,14 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 28, src/scss/_components/common/_plans.scss */
+  /* line 36, src/scss/_components/common/_plans.scss */
   .plans.plans--plans .plans__title {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 28, src/scss/_components/common/_plans.scss */
+  /* line 36, src/scss/_components/common/_plans.scss */
   .plans.plans--plans .plans__title {
     font-size: 40px;
     line-height: 60px;
@@ -1504,18 +1521,35 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 28, src/scss/_components/common/_plans.scss */
+  /* line 36, src/scss/_components/common/_plans.scss */
   .plans.plans--plans .plans__title {
     font-size: 36px;
   }
 }
 
-/* line 49, src/scss/_components/common/_plans.scss */
+@media screen and (max-width: 767px) {
+  /* line 36, src/scss/_components/common/_plans.scss */
+  .plans.plans--plans .plans__title {
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 61, src/scss/_components/common/_plans.scss */
+  .plans.plans--plans .plans__desc {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 67, src/scss/_components/common/_plans.scss */
 .plans.plans--plans .plans__desc span {
   color: #21bf73;
 }
 
-/* line 56, src/scss/_components/common/_plans.scss */
+/* line 74, src/scss/_components/common/_plans.scss */
 .plans__bg {
   z-index: 0;
   position: absolute;
@@ -1533,7 +1567,7 @@ picture {
   height: 100%;
 }
 
-/* line 66, src/scss/_components/common/_plans.scss */
+/* line 84, src/scss/_components/common/_plans.scss */
 .plans__bg-overlay {
   width: 100%;
   height: -webkit-calc(100% - 525px);
@@ -1541,14 +1575,14 @@ picture {
   background-color: rgba(33, 191, 115, 0.2);
 }
 
-/* line 72, src/scss/_components/common/_plans.scss */
+/* line 90, src/scss/_components/common/_plans.scss */
 .plans__bg-circle {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 76, src/scss/_components/common/_plans.scss */
+/* line 94, src/scss/_components/common/_plans.scss */
 .plans__bg-circle:nth-of-type(1) {
   top: 15px;
   right: 30%;
@@ -1557,7 +1591,7 @@ picture {
   background-color: rgba(245, 222, 163, 0.5);
 }
 
-/* line 83, src/scss/_components/common/_plans.scss */
+/* line 101, src/scss/_components/common/_plans.scss */
 .plans__bg-circle:nth-of-type(2) {
   top: 20%;
   right: 110px;
@@ -1566,32 +1600,32 @@ picture {
   background-color: rgba(153, 243, 189, 0.5);
 }
 
-/* line 93, src/scss/_components/common/_plans.scss */
+/* line 111, src/scss/_components/common/_plans.scss */
 .plans__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 97, src/scss/_components/common/_plans.scss */
+/* line 115, src/scss/_components/common/_plans.scss */
 .plans__wrapper-1 {
   padding-bottom: 143px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 97, src/scss/_components/common/_plans.scss */
+  /* line 115, src/scss/_components/common/_plans.scss */
   .plans__wrapper-1 {
     padding-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 97, src/scss/_components/common/_plans.scss */
+  /* line 115, src/scss/_components/common/_plans.scss */
   .plans__wrapper-1 {
     padding-bottom: 15px;
   }
 }
 
-/* line 107, src/scss/_components/common/_plans.scss */
+/* line 125, src/scss/_components/common/_plans.scss */
 .plans__wrapper-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1606,19 +1640,19 @@ picture {
           align-items: center;
 }
 
-/* line 113, src/scss/_components/common/_plans.scss */
+/* line 131, src/scss/_components/common/_plans.scss */
 .plans__wrapper-left, .plans__wrapper-right {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 113, src/scss/_components/common/_plans.scss */
+  /* line 131, src/scss/_components/common/_plans.scss */
   .plans__wrapper-left, .plans__wrapper-right {
     width: 100%;
   }
 }
 
-/* line 121, src/scss/_components/common/_plans.scss */
+/* line 139, src/scss/_components/common/_plans.scss */
 .plans__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1631,17 +1665,17 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/common/_plans.scss */
+  /* line 143, src/scss/_components/common/_plans.scss */
   .plans__wrapper-right .c-btn {
     width: 100%;
   }
-  /* line 129, src/scss/_components/common/_plans.scss */
+  /* line 147, src/scss/_components/common/_plans.scss */
   .plans__wrapper-right .c-btn__wrapper {
     width: 100%;
   }
 }
 
-/* line 137, src/scss/_components/common/_plans.scss */
+/* line 155, src/scss/_components/common/_plans.scss */
 .plans__desc {
   padding-bottom: 40px;
   text-align: center;
@@ -1651,7 +1685,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 137, src/scss/_components/common/_plans.scss */
+  /* line 155, src/scss/_components/common/_plans.scss */
   .plans__desc {
     width: 100%;
     max-width: 175px;
@@ -1664,12 +1698,12 @@ picture {
   }
 }
 
-/* line 156, src/scss/_components/common/_plans.scss */
+/* line 174, src/scss/_components/common/_plans.scss */
 .plans__option {
   position: relative;
 }
 
-/* line 159, src/scss/_components/common/_plans.scss */
+/* line 177, src/scss/_components/common/_plans.scss */
 .plans__option-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1687,13 +1721,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 159, src/scss/_components/common/_plans.scss */
+  /* line 177, src/scss/_components/common/_plans.scss */
   .plans__option-wrapper {
     padding-bottom: 35px;
   }
 }
 
-/* line 169, src/scss/_components/common/_plans.scss */
+/* line 187, src/scss/_components/common/_plans.scss */
 .plans__option input {
   opacity: 0;
   position: absolute;
@@ -1701,7 +1735,7 @@ picture {
   height: 0;
 }
 
-/* line 177, src/scss/_components/common/_plans.scss */
+/* line 195, src/scss/_components/common/_plans.scss */
 .plans__option input:checked + label span {
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1709,7 +1743,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 181, src/scss/_components/common/_plans.scss */
+/* line 199, src/scss/_components/common/_plans.scss */
 .plans__option input:checked + label span:nth-of-type(2) {
   color: #163a5f;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1717,7 +1751,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 188, src/scss/_components/common/_plans.scss */
+/* line 206, src/scss/_components/common/_plans.scss */
 .plans__option input:checked + label u:after {
   left: 60px;
   -webkit-transition: left 0.3s ease-in-out;
@@ -1725,7 +1759,7 @@ picture {
   transition: left 0.3s ease-in-out;
 }
 
-/* line 197, src/scss/_components/common/_plans.scss */
+/* line 215, src/scss/_components/common/_plans.scss */
 .plans__option label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1737,7 +1771,7 @@ picture {
           align-items: center;
 }
 
-/* line 201, src/scss/_components/common/_plans.scss */
+/* line 219, src/scss/_components/common/_plans.scss */
 .plans__option label span {
   position: relative;
   display: block;
@@ -1751,13 +1785,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 211, src/scss/_components/common/_plans.scss */
+/* line 229, src/scss/_components/common/_plans.scss */
 .plans__option label span:nth-of-type(1) {
   color: #163a5f;
   text-align: right;
 }
 
-/* line 216, src/scss/_components/common/_plans.scss */
+/* line 234, src/scss/_components/common/_plans.scss */
 .plans__option label span i {
   position: absolute;
   top: -webkit-calc(100% + 1px);
@@ -1769,7 +1803,7 @@ picture {
   color: #21bf73;
 }
 
-/* line 227, src/scss/_components/common/_plans.scss */
+/* line 245, src/scss/_components/common/_plans.scss */
 .plans__option label u {
   cursor: pointer;
   position: relative;
@@ -1783,7 +1817,7 @@ picture {
   text-decoration: none;
 }
 
-/* line 238, src/scss/_components/common/_plans.scss */
+/* line 256, src/scss/_components/common/_plans.scss */
 .plans__option label u:after {
   content: '';
   position: absolute;
@@ -1801,7 +1835,7 @@ picture {
   transition: left 0.3s ease-in-out;
 }
 
-/* line 254, src/scss/_components/common/_plans.scss */
+/* line 272, src/scss/_components/common/_plans.scss */
 .plans__box {
   position: relative;
   display: -webkit-box;
@@ -1822,21 +1856,21 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 254, src/scss/_components/common/_plans.scss */
+  /* line 272, src/scss/_components/common/_plans.scss */
   .plans__box {
     padding: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 254, src/scss/_components/common/_plans.scss */
+  /* line 272, src/scss/_components/common/_plans.scss */
   .plans__box {
     min-height: 480px;
     padding: 30px;
   }
 }
 
-/* line 271, src/scss/_components/common/_plans.scss */
+/* line 289, src/scss/_components/common/_plans.scss */
 .plans__box.is-active {
   top: -13px;
   height: -webkit-calc(100% + 26px);
@@ -1847,19 +1881,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 271, src/scss/_components/common/_plans.scss */
+  /* line 289, src/scss/_components/common/_plans.scss */
   .plans__box.is-active {
     top: 0;
     height: 100%;
   }
 }
 
-/* line 282, src/scss/_components/common/_plans.scss */
+/* line 300, src/scss/_components/common/_plans.scss */
 .plans__box.is-active .plans__box-price {
   color: #21bf73;
 }
 
-/* line 288, src/scss/_components/common/_plans.scss */
+/* line 306, src/scss/_components/common/_plans.scss */
 .plans__box-shadow {
   z-index: -1;
   position: absolute;
@@ -1873,7 +1907,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 301, src/scss/_components/common/_plans.scss */
+/* line 319, src/scss/_components/common/_plans.scss */
 .plans__box-dino {
   z-index: -1;
   position: absolute;
@@ -1881,14 +1915,22 @@ picture {
   right: -44px;
 }
 
-/* line 307, src/scss/_components/common/_plans.scss */
+@media screen and (max-width: 767px) {
+  /* line 319, src/scss/_components/common/_plans.scss */
+  .plans__box-dino {
+    top: -54px;
+    right: -40px;
+  }
+}
+
+/* line 329, src/scss/_components/common/_plans.scss */
 .plans__box-dino svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 313, src/scss/_components/common/_plans.scss */
+/* line 335, src/scss/_components/common/_plans.scss */
 .plans__box-dino-hand {
   z-index: 2;
   position: absolute;
@@ -1896,14 +1938,14 @@ picture {
   right: -10px;
 }
 
-/* line 319, src/scss/_components/common/_plans.scss */
+/* line 341, src/scss/_components/common/_plans.scss */
 .plans__box-dino-hand svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 327, src/scss/_components/common/_plans.scss */
+/* line 349, src/scss/_components/common/_plans.scss */
 .plans__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1919,7 +1961,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 327, src/scss/_components/common/_plans.scss */
+  /* line 349, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper {
     padding-left: 35px;
     padding-right: 35px;
@@ -1927,14 +1969,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 327, src/scss/_components/common/_plans.scss */
+  /* line 349, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 340, src/scss/_components/common/_plans.scss */
+/* line 362, src/scss/_components/common/_plans.scss */
 .plans__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 45px) / 4);
@@ -1942,7 +1984,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 340, src/scss/_components/common/_plans.scss */
+  /* line 362, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div {
     max-width: -webkit-calc((100% - 15px) / 2);
     max-width: calc((100% - 15px) / 2);
@@ -1951,32 +1993,28 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 340, src/scss/_components/common/_plans.scss */
+  /* line 362, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div {
     max-width: 100%;
     padding-bottom: 35px;
   }
-  /* line 351, src/scss/_components/common/_plans.scss */
+  /* line 373, src/scss/_components/common/_plans.scss */
   .plans__box-wrapper > div:nth-of-type(2) {
     padding-bottom: 75px;
   }
-  /* line 355, src/scss/_components/common/_plans.scss */
-  .plans__box-wrapper > div:nth-of-type(3) {
-    padding-right: 50px;
-  }
 }
 
-/* line 362, src/scss/_components/common/_plans.scss */
+/* line 384, src/scss/_components/common/_plans.scss */
 .plans__box-head, .plans__box-body, .plans__box-footer {
   width: 100%;
 }
 
-/* line 368, src/scss/_components/common/_plans.scss */
+/* line 390, src/scss/_components/common/_plans.scss */
 .plans__box-head {
   position: relative;
 }
 
-/* line 372, src/scss/_components/common/_plans.scss */
+/* line 394, src/scss/_components/common/_plans.scss */
 .plans__box-body {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1991,13 +2029,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 372, src/scss/_components/common/_plans.scss */
+  /* line 394, src/scss/_components/common/_plans.scss */
   .plans__box-body {
     padding-bottom: 30px;
   }
 }
 
-/* line 385, src/scss/_components/common/_plans.scss */
+/* line 407, src/scss/_components/common/_plans.scss */
 .plans__box-badge {
   padding-bottom: 35px;
   font-weight: bold;
@@ -2007,13 +2045,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 385, src/scss/_components/common/_plans.scss */
+  /* line 407, src/scss/_components/common/_plans.scss */
   .plans__box-badge {
     font-size: 20px;
   }
 }
 
-/* line 396, src/scss/_components/common/_plans.scss */
+/* line 418, src/scss/_components/common/_plans.scss */
 .plans__box-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2035,13 +2073,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 396, src/scss/_components/common/_plans.scss */
+  /* line 418, src/scss/_components/common/_plans.scss */
   .plans__box-price {
     font-size: 42px;
   }
 }
 
-/* line 410, src/scss/_components/common/_plans.scss */
+/* line 432, src/scss/_components/common/_plans.scss */
 .plans__box-price i {
   padding-right: 5px;
   font-weight: 800;
@@ -2049,7 +2087,7 @@ picture {
   line-height: 28px;
 }
 
-/* line 418, src/scss/_components/common/_plans.scss */
+/* line 440, src/scss/_components/common/_plans.scss */
 .plans__box-top {
   position: absolute;
   top: 0;
@@ -2078,13 +2116,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 418, src/scss/_components/common/_plans.scss */
+  /* line 440, src/scss/_components/common/_plans.scss */
   .plans__box-top {
     font-size: 12px;
   }
 }
 
-/* line 438, src/scss/_components/common/_plans.scss */
+/* line 460, src/scss/_components/common/_plans.scss */
 .plans__box-info {
   text-align: center;
   font-size: 14px;
@@ -2092,7 +2130,7 @@ picture {
   color: rgba(87, 100, 114, 0.8);
 }
 
-/* line 445, src/scss/_components/common/_plans.scss */
+/* line 467, src/scss/_components/common/_plans.scss */
 .plans__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2105,7 +2143,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 449, src/scss/_components/common/_plans.scss */
+/* line 471, src/scss/_components/common/_plans.scss */
 .plans__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2113,17 +2151,17 @@ picture {
   display: flex;
 }
 
-/* line 452, src/scss/_components/common/_plans.scss */
+/* line 474, src/scss/_components/common/_plans.scss */
 .plans__box-list li:not(:last-of-type) {
   padding-bottom: 16px;
 }
 
-/* line 457, src/scss/_components/common/_plans.scss */
+/* line 479, src/scss/_components/common/_plans.scss */
 .plans__box-list li > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 460, src/scss/_components/common/_plans.scss */
+/* line 482, src/scss/_components/common/_plans.scss */
 .plans__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2133,14 +2171,14 @@ picture {
   max-width: 100%;
 }
 
-/* line 468, src/scss/_components/common/_plans.scss */
+/* line 490, src/scss/_components/common/_plans.scss */
 .plans__box-list span {
   font-size: 14px;
   line-height: 20px;
   color: #163A5F;
 }
 
-/* line 475, src/scss/_components/common/_plans.scss */
+/* line 497, src/scss/_components/common/_plans.scss */
 .plans__box-link {
   cursor: pointer;
   outline: none;
@@ -2174,7 +2212,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 496, src/scss/_components/common/_plans.scss */
+/* line 518, src/scss/_components/common/_plans.scss */
 .plans__box-link:before, .plans__box-link:after {
   content: '';
   position: absolute;
@@ -2187,17 +2225,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 507, src/scss/_components/common/_plans.scss */
+/* line 529, src/scss/_components/common/_plans.scss */
 .plans__box-link:before {
   left: 50%;
 }
 
-/* line 510, src/scss/_components/common/_plans.scss */
+/* line 532, src/scss/_components/common/_plans.scss */
 .plans__box-link:after {
   right: 50%;
 }
 
-/* line 515, src/scss/_components/common/_plans.scss */
+/* line 537, src/scss/_components/common/_plans.scss */
 .plans__box-link:hover:before, .plans__box-link:hover:after {
   width: 50%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -2205,17 +2243,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 523, src/scss/_components/common/_plans.scss */
+/* line 545, src/scss/_components/common/_plans.scss */
 .plans__box .c-btn {
   width: 100%;
 }
 
-/* line 526, src/scss/_components/common/_plans.scss */
+/* line 548, src/scss/_components/common/_plans.scss */
 .plans__box .c-btn-wrapper {
   width: 100%;
 }
 
-/* line 532, src/scss/_components/common/_plans.scss */
+/* line 554, src/scss/_components/common/_plans.scss */
 .plans__subtitle {
   font-size: 64px;
   line-height: 88px;
@@ -2223,7 +2261,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 532, src/scss/_components/common/_plans.scss */
+  /* line 554, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     font-size: 54px;
     line-height: 80px;
@@ -2231,7 +2269,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 532, src/scss/_components/common/_plans.scss */
+  /* line 554, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     font-size: 50px;
     line-height: 65px;
@@ -2239,7 +2277,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 532, src/scss/_components/common/_plans.scss */
+  /* line 554, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     padding-bottom: 25px;
     font-size: 36px;
@@ -2248,7 +2286,7 @@ picture {
   }
 }
 
-/* line 552, src/scss/_components/common/_plans.scss */
+/* line 574, src/scss/_components/common/_plans.scss */
 .plans__subtitle strong {
   font-weight: 700;
 }
@@ -4554,7 +4592,14 @@ picture {
   padding-bottom: 75px;
 }
 
-/* line 7, src/scss/_components/plans/_highlights.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/plans/_highlights.scss */
+  .highlights {
+    display: none;
+  }
+}
+
+/* line 10, src/scss/_components/plans/_highlights.scss */
 .highlights__bg {
   z-index: 0;
   position: absolute;
@@ -4565,7 +4610,7 @@ picture {
   background-color: rgba(33, 191, 115, 0.2);
 }
 
-/* line 17, src/scss/_components/plans/_highlights.scss */
+/* line 20, src/scss/_components/plans/_highlights.scss */
 .highlights__wrapper {
   z-index: 2;
   position: relative;
@@ -4579,18 +4624,18 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 17, src/scss/_components/plans/_highlights.scss */
+  /* line 20, src/scss/_components/plans/_highlights.scss */
   .highlights__wrapper {
     padding: 40px 20px;
   }
 }
 
-/* line 30, src/scss/_components/plans/_highlights.scss */
+/* line 33, src/scss/_components/plans/_highlights.scss */
 .highlights__title {
   padding-bottom: 50px;
 }
 
-/* line 34, src/scss/_components/plans/_highlights.scss */
+/* line 37, src/scss/_components/plans/_highlights.scss */
 .highlights__header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4611,7 +4656,7 @@ picture {
   border-bottom: 2px solid #e6edff;
 }
 
-/* line 43, src/scss/_components/plans/_highlights.scss */
+/* line 46, src/scss/_components/plans/_highlights.scss */
 .highlights__header > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4639,22 +4684,22 @@ picture {
   height: 100%;
 }
 
-/* line 53, src/scss/_components/plans/_highlights.scss */
+/* line 56, src/scss/_components/plans/_highlights.scss */
 .highlights__header > div:first-of-type {
   border-right: 2px solid #e6edff;
 }
 
-/* line 56, src/scss/_components/plans/_highlights.scss */
+/* line 59, src/scss/_components/plans/_highlights.scss */
 .highlights__header > div:nth-of-type(2), .highlights__header > div:nth-of-type(3) {
   border-right: 2px solid transparent;
 }
 
-/* line 62, src/scss/_components/plans/_highlights.scss */
+/* line 65, src/scss/_components/plans/_highlights.scss */
 .highlights__header > div.is-top p {
   color: #21bf73;
 }
 
-/* line 68, src/scss/_components/plans/_highlights.scss */
+/* line 71, src/scss/_components/plans/_highlights.scss */
 .highlights__header span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4680,7 +4725,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 83, src/scss/_components/plans/_highlights.scss */
+/* line 86, src/scss/_components/plans/_highlights.scss */
 .highlights__header p {
   font-weight: 600;
   font-size: 19px;
@@ -4690,14 +4735,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 83, src/scss/_components/plans/_highlights.scss */
+  /* line 86, src/scss/_components/plans/_highlights.scss */
   .highlights__header p {
     font-size: 18px;
     line-height: 25px;
   }
 }
 
-/* line 97, src/scss/_components/plans/_highlights.scss */
+/* line 100, src/scss/_components/plans/_highlights.scss */
 .highlights__table {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4710,7 +4755,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 108, src/scss/_components/plans/_highlights.scss */
+/* line 111, src/scss/_components/plans/_highlights.scss */
 .highlights__table-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4718,12 +4763,12 @@ picture {
   display: flex;
 }
 
-/* line 111, src/scss/_components/plans/_highlights.scss */
+/* line 114, src/scss/_components/plans/_highlights.scss */
 .highlights__table-row:not(:last-of-type) {
   border-bottom: 2px solid #e6edff;
 }
 
-/* line 116, src/scss/_components/plans/_highlights.scss */
+/* line 119, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4753,30 +4798,30 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 116, src/scss/_components/plans/_highlights.scss */
+  /* line 119, src/scss/_components/plans/_highlights.scss */
   .highlights__table-col {
     min-height: 90px;
     padding: 15px 20px;
   }
 }
 
-/* line 131, src/scss/_components/plans/_highlights.scss */
+/* line 134, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col:not(:last-of-type) {
   border-right: 2px solid #e6edff;
 }
 
-/* line 135, src/scss/_components/plans/_highlights.scss */
+/* line 138, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col:nth-of-type(2) {
   border-color: rgba(153, 243, 189, 0.2) !important;
 }
 
-/* line 139, src/scss/_components/plans/_highlights.scss */
+/* line 142, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col--top {
   border-color: transparent !important;
   background-color: rgba(153, 243, 189, 0.2);
 }
 
-/* line 144, src/scss/_components/plans/_highlights.scss */
+/* line 147, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col p {
   font-size: 16px;
   line-height: 20px;
@@ -4785,14 +4830,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 144, src/scss/_components/plans/_highlights.scss */
+  /* line 147, src/scss/_components/plans/_highlights.scss */
   .highlights__table-col p {
     font-size: 14px;
     line-height: 18px;
   }
 }
 
-/* line 154, src/scss/_components/plans/_highlights.scss */
+/* line 157, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col p.img {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4804,18 +4849,18 @@ picture {
           align-items: center;
 }
 
-/* line 159, src/scss/_components/plans/_highlights.scss */
+/* line 162, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col p strong {
   font-weight: 700;
 }
 
-/* line 163, src/scss/_components/plans/_highlights.scss */
+/* line 166, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col p .icon-font {
   font-size: 2px;
   color: #2d3958;
 }
 
-/* line 168, src/scss/_components/plans/_highlights.scss */
+/* line 171, src/scss/_components/plans/_highlights.scss */
 .highlights__table-col p img {
   display: block;
   width: 100%;
@@ -4824,7 +4869,7 @@ picture {
   margin-right: 10px;
 }
 
-/* line 178, src/scss/_components/plans/_highlights.scss */
+/* line 181, src/scss/_components/plans/_highlights.scss */
 .highlights__table-price {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4847,7 +4892,7 @@ picture {
   padding-bottom: 25px;
 }
 
-/* line 186, src/scss/_components/plans/_highlights.scss */
+/* line 189, src/scss/_components/plans/_highlights.scss */
 .highlights__table-price p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4865,13 +4910,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 186, src/scss/_components/plans/_highlights.scss */
+  /* line 189, src/scss/_components/plans/_highlights.scss */
   .highlights__table-price p {
     font-size: 33px;
   }
 }
 
-/* line 199, src/scss/_components/plans/_highlights.scss */
+/* line 202, src/scss/_components/plans/_highlights.scss */
 .highlights__table-price p i {
   margin-right: 5px;
   font-size: 16px;
@@ -4880,14 +4925,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 208, src/scss/_components/plans/_highlights.scss */
+/* line 211, src/scss/_components/plans/_highlights.scss */
 .highlights__table-price span {
   font-size: 14px;
   line-height: 1;
   color: rgba(87, 100, 114, 0.8);
 }
 
-/* line 215, src/scss/_components/plans/_highlights.scss */
+/* line 218, src/scss/_components/plans/_highlights.scss */
 .highlights__table-info {
   padding-top: 10px;
   font-size: 12px;
@@ -4896,14 +4941,14 @@ picture {
   color: #576472;
 }
 
-/* line 223, src/scss/_components/plans/_highlights.scss */
+/* line 226, src/scss/_components/plans/_highlights.scss */
 .highlights__table .c-btn {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 228, src/scss/_components/plans/_highlights.scss */
+/* line 231, src/scss/_components/plans/_highlights.scss */
 .highlights__table .c-btn__wrapper {
   width: 100%;
   max-width: 150px;
@@ -4916,24 +4961,45 @@ picture {
   padding-top: 75px;
 }
 
-/* line 8, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/plans/_faq.scss */
+  .faq {
+    padding-top: 50px;
+  }
+}
+
+/* line 11, src/scss/_components/plans/_faq.scss */
 .faq.faq--service .faq__wrapper {
   padding-bottom: 50px;
   border: none;
 }
 
-/* line 15, src/scss/_components/plans/_faq.scss */
+/* line 18, src/scss/_components/plans/_faq.scss */
 .faq__wrapper {
   padding-bottom: 150px;
   border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 }
 
-/* line 20, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 18, src/scss/_components/plans/_faq.scss */
+  .faq__wrapper {
+    padding-bottom: 100px;
+  }
+}
+
+/* line 26, src/scss/_components/plans/_faq.scss */
 .faq__title {
   padding-bottom: 50px;
 }
 
-/* line 24, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 26, src/scss/_components/plans/_faq.scss */
+  .faq__title {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 33, src/scss/_components/plans/_faq.scss */
 .faq__collapse {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4946,7 +5012,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 28, src/scss/_components/plans/_faq.scss */
+/* line 37, src/scss/_components/plans/_faq.scss */
 .faq__collapse-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4964,12 +5030,19 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 38, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 37, src/scss/_components/plans/_faq.scss */
+  .faq__collapse-wrapper {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 50, src/scss/_components/plans/_faq.scss */
 .faq__collapse-wrapper > div:not(:last-of-type) {
   padding-bottom: 10px;
 }
 
-/* line 44, src/scss/_components/plans/_faq.scss */
+/* line 56, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head {
   cursor: pointer;
   display: -webkit-box;
@@ -4988,11 +5061,23 @@ picture {
   padding: 10px 25px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  background-color: #F8FAFF;
   background-color: #f3f6ff;
 }
 
-/* line 56, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 67, src/scss/_components/plans/_faq.scss */
+  .faq__collapse-head > div:nth-of-type(1) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 1px;
+    max-width: 100%;
+    padding-right: 25px;
+  }
+}
+
+/* line 77, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head.is-active i {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -5004,7 +5089,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 60, src/scss/_components/plans/_faq.scss */
+/* line 81, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head.is-active i:before {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -5016,7 +5101,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 67, src/scss/_components/plans/_faq.scss */
+/* line 88, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head p {
   font-weight: 500;
   font-size: 16px;
@@ -5024,7 +5109,15 @@ picture {
   color: #163A5F;
 }
 
-/* line 74, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 88, src/scss/_components/plans/_faq.scss */
+  .faq__collapse-head p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+/* line 99, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i {
   position: relative;
   display: -webkit-box;
@@ -5040,7 +5133,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 81, src/scss/_components/plans/_faq.scss */
+/* line 106, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i:before, .faq__collapse-head i:after {
   content: '';
   position: absolute;
@@ -5054,7 +5147,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 90, src/scss/_components/plans/_faq.scss */
+/* line 115, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i:before {
   top: 0;
   left: 50%;
@@ -5065,7 +5158,7 @@ picture {
           transform: translateX(-50%);
 }
 
-/* line 97, src/scss/_components/plans/_faq.scss */
+/* line 122, src/scss/_components/plans/_faq.scss */
 .faq__collapse-head i:after {
   top: 50%;
   left: 0;
@@ -5076,24 +5169,32 @@ picture {
           transform: translateY(-50%);
 }
 
-/* line 107, src/scss/_components/plans/_faq.scss */
+/* line 132, src/scss/_components/plans/_faq.scss */
 .faq__collapse-body {
   display: none;
 }
 
-/* line 110, src/scss/_components/plans/_faq.scss */
+/* line 135, src/scss/_components/plans/_faq.scss */
 .faq__collapse-body > div {
   padding: 20px 30px;
 }
 
-/* line 114, src/scss/_components/plans/_faq.scss */
+/* line 139, src/scss/_components/plans/_faq.scss */
 .faq__collapse-body p {
   font-size: 16px;
   line-height: 30px;
   color: #163A5F;
 }
 
-/* line 122, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 139, src/scss/_components/plans/_faq.scss */
+  .faq__collapse-body p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+
+/* line 151, src/scss/_components/plans/_faq.scss */
 .faq__desc {
   font-size: 16px;
   line-height: 20px;
@@ -5101,7 +5202,15 @@ picture {
   color: #576472;
 }
 
-/* line 128, src/scss/_components/plans/_faq.scss */
+@media screen and (max-width: 767px) {
+  /* line 151, src/scss/_components/plans/_faq.scss */
+  .faq__desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* line 161, src/scss/_components/plans/_faq.scss */
 .faq__desc a {
   color: #21bf73;
   text-decoration: underline;
