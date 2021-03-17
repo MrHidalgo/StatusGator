@@ -196,6 +196,28 @@ var initSwiper = function initSwiper() {
 			// centeredSlides: true,
 		});
 	}
+	if ($('.statusSwiper').length > 0) {
+
+		new Swiper('.statusSwiper', {
+			loop: false,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1000,
+			slidesPerView: 1,
+			spaceBetween: 100,
+			navigation: {
+				nextEl: '.status__btn--next',
+				prevEl: '.status__btn--prev'
+			},
+			pagination: {
+				el: '.status__pagination',
+				clickable: true,
+				type: 'progressbar'
+			}
+		});
+	}
 };
 
 /**
@@ -329,7 +351,7 @@ var initSwiper = function initSwiper() {
 		// ==========================================
 
 		// lib
-		// initSwiper();
+		initSwiper();
 		initStellar();
 		initHamburger();
 		// ==========================================
