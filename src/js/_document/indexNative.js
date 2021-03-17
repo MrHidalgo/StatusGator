@@ -25,14 +25,14 @@
 			.set(eyebrownRight, {transformOrigin: 'center'});
 		
 		tl
-			.fromTo(dino, 1.35, {x: -2, rotation: 0}, {x: 2, rotation: 5, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(eyeLeft, 1.35, {scaleY:1, rotation: 15}, {scaleY:0, rotation: 15, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(eyeLeftWhite, 1.35, {scaleY:1, rotation: 15}, {scaleY:0, rotation: 15, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(eyebrownLeft, 1.35, {rotation: 0}, {rotation: 12, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(eyebrownRight, 1.35, {rotation: 0}, {rotation: -15, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(dinoTail, 1.35, {y: 0, rotation: 0}, {y: -65, rotation: 50, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(leftHand, 1.35, {x: 0, rotation:0}, {x:2, rotation: -30, ease:Power1.easeInOut}, '-=1.35')
-			.fromTo(rightHand, 1.35, {y:0, rotation:0}, {y:2, rotation: -30, ease:Power1.easeInOut}, '-=1.35');
+			.fromTo(dino, 1.3, {x: -3, y: 2, rotation: 0}, {x: 3, y: -5, rotation: 5, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(eyeLeft, 1.3, {scaleY:1, rotation: 15}, {scaleY:0, rotation: 15, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(eyeLeftWhite, 1.3, {scaleY:1, rotation: 15}, {scaleY:0, rotation: 15, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(eyebrownLeft, 1.3, {rotation: 0}, {rotation: 12, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(eyebrownRight, 1.3, {rotation: 0}, {rotation: -15, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(dinoTail, 1.3, {y: 0, rotation: 0}, {y: -65, rotation: 50, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(leftHand, 1.3, {x: 0, rotation:0}, {x:2, rotation: -30, ease:Power1.easeInOut}, '-=1.3')
+			.fromTo(rightHand, 1.3, {y:0, rotation:0}, {y:2, rotation: -30, ease:Power1.easeInOut}, '-=1.3');
 	};
 	
 	
@@ -170,6 +170,25 @@
 			}
 		});
 	};
+	
+	
+	const plansCB = () => {
+		$('.plans__option input[type="checkbox"]').on('change', (ev) => {
+			if($(ev.currentTarget).is(':checked')) {
+				
+				$.each($('.plans__box-price'), (idx, val) => {
+					$(val).find('span').text($(val).attr('data-monthly-price'));
+				});
+				
+			} else {
+				
+				$.each($('.plans__box-price'), (idx, val) => {
+					$(val).find('span').text($(val).attr('data-annual-price'));
+				});
+				
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -197,6 +216,7 @@
 		faqCollapse();
 		supportCollapse();
 		filtersCB();
+		plansCB();
 		// ==========================================
 	};
 	initNative();

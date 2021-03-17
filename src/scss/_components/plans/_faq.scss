@@ -50,6 +50,7 @@
 			padding: 10px 25px;
 			border-radius: 10px;
 			background-color: #F8FAFF;
+			background-color: lighten(#e6edff, 2.5%);
 
 			&.is-active {
 				i {
@@ -64,7 +65,7 @@
 			}
 
 			p {
-				font-weight: 600;
+				font-weight: 500;
 				font-size: 16px;
 				line-height: 20px;
 				color: #163A5F;
@@ -112,7 +113,7 @@
 
 			p {
 				font-size: 16px;
-				line-height: 24px;
+				line-height: 30px;
 				color: #163A5F;
 			}
 		}

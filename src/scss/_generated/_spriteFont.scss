@@ -57,20 +57,23 @@
 	@if $filename == image {
 		$char: "\E00A";
 	}
-	@if $filename == list {
+	@if $filename == line {
 		$char: "\E00B";
 	}
-	@if $filename == message-q {
+	@if $filename == list {
 		$char: "\E00C";
 	}
-	@if $filename == plus-sq {
+	@if $filename == message-q {
 		$char: "\E00D";
 	}
-	@if $filename == search {
+	@if $filename == plus-sq {
 		$char: "\E00E";
 	}
-	@if $filename == toggle {
+	@if $filename == search {
 		$char: "\E00F";
+	}
+	@if $filename == toggle {
+		$char: "\E010";
 	}
 
 	@return $char;
@@ -125,6 +128,10 @@
 }
 .icon-image {
 	@include icon(image);
+
+}
+.icon-line {
+	@include icon(line);
 
 }
 .icon-list {

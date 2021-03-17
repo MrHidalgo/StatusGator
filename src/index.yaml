@@ -5,17 +5,17 @@ PageList:
   titleName: Homepage
   ready: 55
 - file: solution.html
-  titleName: Solution - Education
+  titleName: Solution
   ready: 55
 - file: plans.html
   titleName: Plans
   ready: 55
 - file: all-services.html
   titleName: All Services
-  ready: 55
+  ready: 90
 - file: signup.html
   titleName: Sign Up
-  ready: 55
+  ready: 90
 - file: service.html
   titleName: Service
   ready: 55

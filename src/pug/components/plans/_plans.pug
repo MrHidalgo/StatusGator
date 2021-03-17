@@ -42,7 +42,6 @@ section#plans.plans.plans--plans
 									div
 										span 1 dashboard, 1 user
 						.plans__box-footer
-							button.plans__box-link(type='button') Learn more
 							.c-btn__wrapper
 								button.c-btn.c-btn__border.c-btn--medium(type='button')
 									span Try for free
@@ -51,7 +50,7 @@ section#plans.plans.plans--plans
 						img.plans__box-shadow(src="img/img-plans-shadow.png" srcset="img/img-plans-shadow@2x.png 2x" alt="")
 						.plans__box-head
 							p.plans__box-badge Incubator
-							p.plans__box-price!= "<i>$</i> 27.49"
+							p.plans__box-price(data-annual-price='27.49' data-monthly-price='13.99')!= "<i>$</i> <span>27.49</span>"
 							p.plans__box-info Per month
 						.plans__box-body
 							ul.plans__box-list
@@ -71,7 +70,6 @@ section#plans.plans.plans--plans
 									div
 										span Component filtering
 						.plans__box-footer
-							button.plans__box-link(type='button') Learn more
 							.c-btn__wrapper
 								button.c-btn.c-btn__border.c-btn--medium(type='button')
 									span Try for free
@@ -112,7 +110,7 @@ section#plans.plans.plans--plans
 
 						.plans__box-head
 							p.plans__box-badge Startup
-							p.plans__box-price!= "<i>$</i> 91.66"
+							p.plans__box-price(data-annual-price='91.66' data-monthly-price='45.99')!= "<i>$</i> <span>91.66</span>"
 							p.plans__box-info Per month
 							p.plans__box-top Top Plan
 						.plans__box-body
@@ -133,7 +131,6 @@ section#plans.plans.plans--plans
 									div
 										span!= "Everything in Incubator <br>+ Integrations"
 						.plans__box-footer
-							button.plans__box-link(type='button') Learn more
 							.c-btn__wrapper
 								button.c-btn.c-btn__bg.c-btn__bg--green.c-btn--medium(type='button')
 									span Try for free
@@ -142,7 +139,7 @@ section#plans.plans.plans--plans
 						img.plans__box-shadow(src="img/img-plans-shadow.png" srcset="img/img-plans-shadow@2x.png 2x" alt="")
 						.plans__box-head
 							p.plans__box-badge Venture
-							p.plans__box-price!= "<i>$</i> 274.99"
+							p.plans__box-price(data-annual-price='274.99' data-monthly-price='135.99')!= "<i>$</i> <span>274.99</span>"
 							p.plans__box-info Per month
 						.plans__box-body
 							ul.plans__box-list
@@ -162,7 +159,6 @@ section#plans.plans.plans--plans
 									div
 										span Everything in Startup + API
 						.plans__box-footer
-							button.plans__box-link(type='button') Learn more
 							.c-btn__wrapper
 								button.c-btn.c-btn__border.c-btn--medium(type='button')
 									span Try for free
