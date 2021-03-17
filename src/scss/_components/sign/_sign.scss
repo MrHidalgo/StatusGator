@@ -18,6 +18,13 @@
 			max-width: 600px;
 			padding: 50px 50px 70px;
 			background-color: #21bf73;
+			@include adaptive(1279) {
+				max-width: 500px;
+				padding: 40px 20px 20px;
+			}
+			@include adaptive(1023) {
+				max-width: 50%;
+			}
 		}
 
 		&-right {
@@ -25,6 +32,9 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding: 80px 0 20px 20px;
+			@include adaptive(1279) {
+				padding: 40px 0 20px 20px;
+			}
 			
 			> div {
 				width: 100%;
@@ -39,12 +49,18 @@
 		padding-bottom: 40px;
 		color: #ffffff;
 		text-align: left;
+		@include adaptive(1023) {
+			font-size: 30px;
+		}
 	}
 
 	&__subtitle {
 		padding-bottom: 50px;
 		text-align: left;
 		font-weight: 600;
+		@include adaptive(1279) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__list {
@@ -58,15 +74,24 @@
 			font-size: 20px;
 			line-height: 0;
 			color: #ffffff;
+			@include adaptive(1279) {
+				font-size: 18px;
+			}
 
 			&:not(:last-of-type) {
 				padding-bottom: 20px;
+				@include adaptive(1279) {
+					padding-bottom: 15px;
+				}
 			}
 
 			p {
 				font-size: 18px;
 				line-height: 28px;
 				color: #FFFFFF;
+				@include adaptive(1279) {
+					font-size: 16px;
+				}
 			}
 		}
 	}

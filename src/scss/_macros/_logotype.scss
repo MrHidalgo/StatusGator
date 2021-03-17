@@ -26,6 +26,9 @@
 	}
 	&.logo--sign {
 		padding-bottom: 90px;
+		@include adaptive(1279) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__btn {
