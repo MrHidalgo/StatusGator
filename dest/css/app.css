@@ -13,7 +13,7 @@
 }
 
 /* line 36, src/scss/_utilities/_extend.scss */
-.c-title, .plans__desc, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p, .service__wrapper p, .suite__title {
+.c-title, .plans__desc, .plans__box-price, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p, .service__wrapper p, .suite__title {
   font-family: 'Gogh', sans-serif;
 }
 
@@ -726,8 +726,8 @@ picture {
 .c-btn span {
   z-index: 2;
   position: relative;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
@@ -1985,7 +1985,7 @@ picture {
   }
 }
 
-/* line 398, src/scss/_components/common/_plans.scss */
+/* line 399, src/scss/_components/common/_plans.scss */
 .plans__box-price i {
   padding-right: 5px;
   font-weight: 800;
@@ -1993,7 +1993,7 @@ picture {
   line-height: 28px;
 }
 
-/* line 406, src/scss/_components/common/_plans.scss */
+/* line 407, src/scss/_components/common/_plans.scss */
 .plans__box-top {
   position: absolute;
   top: 0;
@@ -2022,13 +2022,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 406, src/scss/_components/common/_plans.scss */
+  /* line 407, src/scss/_components/common/_plans.scss */
   .plans__box-top {
     font-size: 12px;
   }
 }
 
-/* line 426, src/scss/_components/common/_plans.scss */
+/* line 427, src/scss/_components/common/_plans.scss */
 .plans__box-info {
   text-align: center;
   font-size: 14px;
@@ -2036,7 +2036,7 @@ picture {
   color: rgba(87, 100, 114, 0.8);
 }
 
-/* line 433, src/scss/_components/common/_plans.scss */
+/* line 434, src/scss/_components/common/_plans.scss */
 .plans__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2049,7 +2049,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 437, src/scss/_components/common/_plans.scss */
+/* line 438, src/scss/_components/common/_plans.scss */
 .plans__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2057,17 +2057,17 @@ picture {
   display: flex;
 }
 
-/* line 440, src/scss/_components/common/_plans.scss */
+/* line 441, src/scss/_components/common/_plans.scss */
 .plans__box-list li:not(:last-of-type) {
   padding-bottom: 16px;
 }
 
-/* line 445, src/scss/_components/common/_plans.scss */
+/* line 446, src/scss/_components/common/_plans.scss */
 .plans__box-list li > div:nth-of-type(1) {
   width: 30px;
 }
 
-/* line 448, src/scss/_components/common/_plans.scss */
+/* line 449, src/scss/_components/common/_plans.scss */
 .plans__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2077,14 +2077,14 @@ picture {
   max-width: 100%;
 }
 
-/* line 456, src/scss/_components/common/_plans.scss */
+/* line 457, src/scss/_components/common/_plans.scss */
 .plans__box-list span {
   font-size: 14px;
   line-height: 20px;
   color: #163A5F;
 }
 
-/* line 463, src/scss/_components/common/_plans.scss */
+/* line 464, src/scss/_components/common/_plans.scss */
 .plans__box-link {
   cursor: pointer;
   outline: none;
@@ -2118,7 +2118,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 484, src/scss/_components/common/_plans.scss */
+/* line 485, src/scss/_components/common/_plans.scss */
 .plans__box-link:before, .plans__box-link:after {
   content: '';
   position: absolute;
@@ -2131,17 +2131,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 495, src/scss/_components/common/_plans.scss */
+/* line 496, src/scss/_components/common/_plans.scss */
 .plans__box-link:before {
   left: 50%;
 }
 
-/* line 498, src/scss/_components/common/_plans.scss */
+/* line 499, src/scss/_components/common/_plans.scss */
 .plans__box-link:after {
   right: 50%;
 }
 
-/* line 503, src/scss/_components/common/_plans.scss */
+/* line 504, src/scss/_components/common/_plans.scss */
 .plans__box-link:hover:before, .plans__box-link:hover:after {
   width: 50%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -2149,17 +2149,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 511, src/scss/_components/common/_plans.scss */
+/* line 512, src/scss/_components/common/_plans.scss */
 .plans__box .c-btn {
   width: 100%;
 }
 
-/* line 514, src/scss/_components/common/_plans.scss */
+/* line 515, src/scss/_components/common/_plans.scss */
 .plans__box .c-btn-wrapper {
   width: 100%;
 }
 
-/* line 520, src/scss/_components/common/_plans.scss */
+/* line 521, src/scss/_components/common/_plans.scss */
 .plans__subtitle {
   font-size: 64px;
   line-height: 88px;
@@ -2167,7 +2167,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 520, src/scss/_components/common/_plans.scss */
+  /* line 521, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     font-size: 54px;
     line-height: 80px;
@@ -2175,7 +2175,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 520, src/scss/_components/common/_plans.scss */
+  /* line 521, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     font-size: 50px;
     line-height: 65px;
@@ -2183,7 +2183,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 520, src/scss/_components/common/_plans.scss */
+  /* line 521, src/scss/_components/common/_plans.scss */
   .plans__subtitle {
     padding-bottom: 25px;
     font-size: 36px;
@@ -2192,7 +2192,7 @@ picture {
   }
 }
 
-/* line 540, src/scss/_components/common/_plans.scss */
+/* line 541, src/scss/_components/common/_plans.scss */
 .plans__subtitle strong {
   font-weight: 700;
 }
@@ -3622,7 +3622,7 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   -webkit-box-shadow: 0px 0px 80px rgba(28, 202, 135, 0.2);
@@ -3652,13 +3652,13 @@ picture {
   width: 100%;
   height: 65px;
   padding: 0 25px;
-  border: none;
+  border: 1px solid #eef1f6;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   background-color: rgba(241, 244, 248, 0.5);
-  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #163A5F;
@@ -3666,42 +3666,42 @@ picture {
 
 /* line 88, src/scss/_utilities/_mixin.scss */
 .services-main__search > div label input.placeholder {
-  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #163A5F;
+  color: rgba(22, 58, 95, 0.5);
 }
 
 /* line 89, src/scss/_utilities/_mixin.scss */
 .services-main__search > div label input:-moz-placeholder {
-  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #163A5F;
+  color: rgba(22, 58, 95, 0.5);
 }
 
 /* line 90, src/scss/_utilities/_mixin.scss */
 .services-main__search > div label input::-moz-placeholder {
-  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #163A5F;
+  color: rgba(22, 58, 95, 0.5);
 }
 
 /* line 91, src/scss/_utilities/_mixin.scss */
 .services-main__search > div label input:-ms-input-placeholder {
-  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #163A5F;
+  color: rgba(22, 58, 95, 0.5);
 }
 
 /* line 92, src/scss/_utilities/_mixin.scss */
 .services-main__search > div label input::-webkit-input-placeholder {
-  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #163A5F;
+  color: rgba(22, 58, 95, 0.5);
 }
 
 /* line 140, src/scss/_components/all-services/_main.scss */
@@ -3754,8 +3754,8 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 21px;
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -3776,12 +3776,17 @@ picture {
   color: #21BF73;
 }
 
-/* line 189, src/scss/_components/all-services/_main.scss */
+/* line 188, src/scss/_components/all-services/_main.scss */
+.services-main__link a.is-active span {
+  padding-right: 5px;
+}
+
+/* line 193, src/scss/_components/all-services/_main.scss */
 .services-main__link a:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 195, src/scss/_components/all-services/_main.scss */
+/* line 199, src/scss/_components/all-services/_main.scss */
 .services-main__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3796,9 +3801,27 @@ picture {
   -webkit-border-radius: 8px;
           border-radius: 8px;
   background-color: rgba(241, 244, 248, 0.7);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 202, src/scss/_components/all-services/_main.scss */
+/* line 207, src/scss/_components/all-services/_main.scss */
+.services-main__box:hover {
+  background-color: #f1f4f8;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 213, src/scss/_components/all-services/_main.scss */
 .services-main__box-wrapper {
   position: relative;
   left: -15px;
@@ -3814,7 +3837,7 @@ picture {
   padding-bottom: 35px;
 }
 
-/* line 210, src/scss/_components/all-services/_main.scss */
+/* line 221, src/scss/_components/all-services/_main.scss */
 .services-main__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 3);
@@ -3823,7 +3846,7 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 218, src/scss/_components/all-services/_main.scss */
+/* line 229, src/scss/_components/all-services/_main.scss */
 .services-main__box-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3836,7 +3859,7 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 223, src/scss/_components/all-services/_main.scss */
+/* line 234, src/scss/_components/all-services/_main.scss */
 .services-main__box-head img {
   display: block;
   max-width: 100%;
@@ -3844,7 +3867,7 @@ picture {
   margin-right: 10px;
 }
 
-/* line 230, src/scss/_components/all-services/_main.scss */
+/* line 241, src/scss/_components/all-services/_main.scss */
 .services-main__box-head p {
   font-weight: bold;
   font-size: 18px;
@@ -3852,7 +3875,40 @@ picture {
   color: #163A5F;
 }
 
-/* line 241, src/scss/_components/all-services/_main.scss */
+/* line 250, src/scss/_components/all-services/_main.scss */
+.services-main__box-body ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 254, src/scss/_components/all-services/_main.scss */
+.services-main__box-body ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 257, src/scss/_components/all-services/_main.scss */
+.services-main__box-body ul li:not(:last-of-type) {
+  padding-bottom: 5px;
+}
+
+/* line 261, src/scss/_components/all-services/_main.scss */
+.services-main__box-body ul li span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 271, src/scss/_components/all-services/_main.scss */
 .services-main__see {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3864,7 +3920,7 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 248, src/scss/_components/all-services/_main.scss */
+/* line 278, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3883,23 +3939,23 @@ picture {
   padding-right: 15px;
 }
 
-/* line 256, src/scss/_components/all-services/_main.scss */
+/* line 286, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(2) {
   width: 100%;
   max-width: 170px;
 }
 
-/* line 260, src/scss/_components/all-services/_main.scss */
+/* line 290, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(2) .c-btn {
   width: 100%;
 }
 
-/* line 263, src/scss/_components/all-services/_main.scss */
+/* line 293, src/scss/_components/all-services/_main.scss */
 .services-main__see > div:nth-of-type(2) .c-btn__wrapper {
   width: 100%;
 }
 
-/* line 270, src/scss/_components/all-services/_main.scss */
+/* line 300, src/scss/_components/all-services/_main.scss */
 .services-main__see-icon {
   position: relative;
   display: -webkit-box;
@@ -3921,7 +3977,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 280, src/scss/_components/all-services/_main.scss */
+/* line 310, src/scss/_components/all-services/_main.scss */
 .services-main__see-icon .icon-font {
   height: 15px;
   font-size: 15px;
@@ -3929,7 +3985,7 @@ picture {
   color: #21bf73;
 }
 
-/* line 288, src/scss/_components/all-services/_main.scss */
+/* line 318, src/scss/_components/all-services/_main.scss */
 .services-main__see p {
   padding-left: 25px;
   font-size: 18px;

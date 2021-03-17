@@ -386,6 +386,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@extend %fontGogh;
 			font-weight: 800;
 			font-size: 48px;
 			line-height: 50px;

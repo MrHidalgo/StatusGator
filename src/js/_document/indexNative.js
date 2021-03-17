@@ -92,6 +92,18 @@
 	
 	const expandFilters = () => {
 		$('[expand-all-js]').on('click', (ev) => {
+			const el = $(ev.currentTarget),
+				elExpandAttrVal = el.attr('data-expand'),
+				elCollapseAttrVal = el.attr('data-collapse');
+			
+			if(el.hasClass('is-collapse')) {
+				el.removeClass('is-collapse');
+				el.find('span').text(elExpandAttrVal);
+			} else {
+				el.addClass('is-collapse');
+				el.find('span').text(elCollapseAttrVal);
+			}
+			
 			$(ev.currentTarget).closest('.services-main__link').find('> div').slideToggle(350);
 		});
 	};

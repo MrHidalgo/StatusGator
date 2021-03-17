@@ -6,7 +6,7 @@ PageList:
   ready: 55
 - file: solution.html
   titleName: Solution - Education
-  ready: 90
+  ready: 55
 - file: solution.html
   titleName: Solution - Devops
   ready: 0

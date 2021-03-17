@@ -11,12 +11,12 @@ section#services-main.services-main
 	.c-grid
 		.services-main__wrapper.services-main__wrapper-1
 
-			p.services-main__title!= "Now Monitoring and Normalizing Data <br>from <span>1020 Services!</span>"
+			h1.services-main__title!= "Now Monitoring and Normalizing Data <br>from <span>1020 Services!</span>"
 
 			.services-main__search
 				div
 					label
-						input(type='text' name='' placeholder='')
+						input(type='text' name='' placeholder='Type to Search...')
 					.c-btn__wrapper
 						a.c-btn.c-btn__bg.c-btn__bg--green(href="#")
 							span Search
@@ -48,14 +48,14 @@ section#services-main.services-main
 						a(href="#") Audio
 						a(href="#") Advertising
 						a(href="#") Analytics
-					a.is-active(href="#" expand-all-js) Expand All
+					a.is-active(href="#" data-expand="Expand" data-collapse="Collapse" expand-all-js)!= "<span>Expand</span> All"
 
 			.services-main__wrapper-right
 
 				.services-main__box-wrapper
 					each val, idx in [1,2,3]
 						div
-							.services-main__box
+							a.services-main__box(href="#")
 								.services-main__box-head
 									div
 										img(src="img/img-athennian.png" srcset='img/img-athennian@2x.png 2x' alt="")
@@ -70,7 +70,7 @@ section#services-main.services-main
 										li
 											span ... and 10 matching components
 						div
-							.services-main__box
+							a.services-main__box(href="#")
 								.services-main__box-head
 									div
 										img(src="img/img-atlassian.png" srcset='img/img-atlassian@2x.png 2x' alt="")
@@ -85,7 +85,7 @@ section#services-main.services-main
 										li
 											span ... and 10 matching components
 						div
-							.services-main__box
+							a.services-main__box(href="#")
 								.services-main__box-head
 									div
 										img(src="img/img-atlassian.png" srcset='img/img-atlassian@2x.png 2x' alt="")
