@@ -25,6 +25,9 @@
 			@include adaptive(1023) {
 				max-width: 50%;
 			}
+			@include adaptive(767) {
+				display: none;
+			}
 		}
 
 		&-right {
@@ -34,6 +37,9 @@
 			padding: 80px 0 20px 20px;
 			@include adaptive(1279) {
 				padding: 40px 0 20px 20px;
+			}
+			@include adaptive(767) {
+				padding: 0;
 			}
 			
 			> div {
@@ -60,6 +66,9 @@
 		font-weight: 600;
 		@include adaptive(1279) {
 			padding-bottom: 40px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 20px;
 		}
 	}
 
@@ -131,7 +140,7 @@
 				i {
 					display: block;
 					font-style: normal;
-					font-weight: bold;
+					font-weight: 600;
 					font-size: 14px;
 					line-height: 17px;
 					text-align: center;
@@ -146,6 +155,10 @@
 					font-size: 14px;
 					line-height: 17px;
 					color: rgba(#576472, 0.7);
+					@include adaptive(767) {
+						font-size: 12px;
+						line-height: 20px;
+					}
 				}
 
 				p {
@@ -154,6 +167,10 @@
 					line-height: 17px;
 					text-align: center;
 					color: #576472;
+					@include adaptive(767) {
+						font-size: 12px;
+						line-height: 15px;
+					}
 
 					a {
 						margin-left: 15px;
@@ -162,6 +179,11 @@
 						line-height: 22px;
 						text-decoration-line: underline;
 						color: #21BF73;
+						@include adaptive(767) {
+							margin-left: 5px;
+							font-size: 12px;
+							line-height: 15px;
+						}
 					}
 				}
 			}
@@ -184,6 +206,11 @@
 				font-size: 14px;
 				line-height: 17px;
 				color: #576472;
+				@include adaptive(767) {
+					padding-bottom: 5px;
+					font-size: 12px;
+					line-height: 15px;
+				}
 			}
 
 			input {
@@ -201,17 +228,30 @@
 				@include inputPlaceholder {
 					color: rgba(#182135, 0.5);
 				}
+				@include adaptive(767) {
+					height: 47px;
+				}
 			}
 		}
 
 		&-group {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			margin-bottom: 20px;
 			
 			> div {
 				width: 100%;
 				max-width: calc((100% - 20px) / 2);
+				@include adaptive(767) {
+					max-width: 100%;
+
+					&:nth-of-type(1) {
+						.sign__form-field {
+							margin-bottom: 20px;
+						}
+					}
+				}
 			}
 			
 			.sign__form-field {
@@ -248,6 +288,10 @@
 				line-height: 21px;
 				text-align: center;
 				color: #163A5F;
+				@include adaptive(767) {
+					font-size: 14px;
+					line-height: 17px;
+				}
 			}
 		}
 	}
