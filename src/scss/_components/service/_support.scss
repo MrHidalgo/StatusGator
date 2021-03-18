@@ -3,6 +3,10 @@
 .support {
 	padding-top: 100px;
 	padding-bottom: 75px;
+	@include adaptive(767) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	&__desc {
 		width: 100%;
@@ -14,6 +18,11 @@
 		font-size: 18px;
 		line-height: 26px;
 		color: #576472;
+		@include adaptive(767) {
+			padding-bottom: 30px;
+			font-size: 14px;
+			line-height: 22px;
+		}
 	}
 
 	&__collapse {
@@ -43,6 +52,10 @@
 			border-radius: 10px;
 			box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
 			background-color: #FFFFFF;
+			@include adaptive(767) {
+				min-height: 40px;
+				padding: 10px;
+			}
 
 			&.is-active {
 				.support__collapse-toggle {
@@ -61,6 +74,9 @@
 				}
 				&:nth-of-type(2) {
 					width: 50px;
+					@include adaptive(767) {
+						width: 20px;
+					}
 				}
 			}
 
@@ -125,10 +141,14 @@
 
 					i {
 						font-style: normal;
-						font-weight: 600;
+						font-weight: 500;
 						font-size: 18px;
 						line-height: 22px;
 						color: #163A5F;
+						@include adaptive(767) {
+							font-size: 14px;
+							line-height: 17px;
+						}
 					}
 				}
 			}
@@ -139,12 +159,19 @@
 
 			> div {
 				padding: 20px;
+				@include adaptive(767) {
+					padding: 20px 10px;
+				}
 			}
 
 			p {
 				font-size: 14px;
 				line-height: 22px;
 				color: #576472;
+				@include adaptive(767) {
+					font-size: 13px;
+					line-height: 20px;
+				}
 			}
 		}
 
@@ -155,6 +182,11 @@
 			justify-content: flex-end;
 			width: 50px;
 			height: 50px;
+			@include adaptive(767) {
+				width: 20px;
+				height: 20px;
+				transform: translateX(-5px);
+			}
 
 			i {
 				width: 10px;

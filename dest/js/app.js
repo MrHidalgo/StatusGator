@@ -270,7 +270,15 @@ var initSwiper = function initSwiper() {
 			effect: 'slide',
 			speed: 1000,
 			slidesPerView: 'auto',
-			spaceBetween: 30
+			spaceBetween: 30,
+			breakpoints: {
+				320: {
+					spaceBetween: 10
+				},
+				768: {
+					spaceBetween: 30
+				}
+			}
 		});
 	}
 	if ($('.statusSwiper').length > 0) {

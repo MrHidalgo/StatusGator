@@ -19,7 +19,7 @@ section#last.last
 								span(style='left: 12%; width: 100px; background-color: #FFB26B;')
 								span(style='left: 58%; width: 10px; background-color: #FD5E53;')
 
-				.status__box-time
+				.status__box-time.status__box-time--desktop
 					div
 						span 5:00 PM
 					div
@@ -33,6 +33,16 @@ section#last.last
 					div
 						span 1:00 PM
 
+				.status__box-time.status__box-time--mobile
+					div
+						span 6hrs
+					div
+						span 12hrs
+					div
+						span 18hrs
+					div
+						span 24hrs
+
 				.status__box-body
 					ul
 						li.warning0
@@ -43,5 +53,10 @@ section#last.last
 							p!= "<strong>Down:</strong> 45 minutes"
 						li.warning01
 							p!= "<strong>Maintenance:</strong> None"
+
+				.status__box-footer
+					a.status__preview(href="#")
+						i.icon-font.icon-eye
+						span Click to Enlarge
 
 // SECTION :: END

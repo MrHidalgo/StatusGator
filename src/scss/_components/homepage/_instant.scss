@@ -4,9 +4,16 @@
 	padding-top: 70px;
 	padding-bottom: 70px;
 	background-color: rgba(#21BF73, 0.1);
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 	&__title {
 		padding-bottom: 50px;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 
 		span {
 			color: #21bf73;

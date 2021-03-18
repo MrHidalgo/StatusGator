@@ -102,6 +102,10 @@
 				width: 20px;
 				height: 20px;
 				@include transition(transform);
+				@include adaptive(767) {
+					width: 16px;
+					height: 16px;
+				}
 
 				&:before,
 				&:after {
@@ -118,6 +122,9 @@
 					width: 3px;
 					height: 100%;
 					transform: translateX(-50%);
+					@include adaptive(767) {
+						width: 2px;
+					}
 				}
 				&:after {
 					top: 50%;
@@ -125,6 +132,9 @@
 					width: 100%;
 					height: 3px;
 					transform: translateY(-50%);
+					@include adaptive(767) {
+						height: 2px;
+					}
 				}
 			}
 		}

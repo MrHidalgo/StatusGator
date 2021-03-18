@@ -3,6 +3,10 @@
 .status {
 	padding-top: 75px;
 	padding-bottom: 75px;
+	@include adaptive(767) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	&__title {
 		padding-bottom: 10px;
@@ -17,6 +21,10 @@
 		line-height: 26px;
 		text-align: center;
 		color: #576472;
+		@include adaptive(767) {
+			font-size: 14px;
+			line-height: 22px;
+		}
 	}
 
 	&__box {
@@ -26,21 +34,43 @@
 		border-radius: 10px;
 		box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
 		background-color: #FFFFFF;
+		@include adaptive(767) {
+			padding: 20px;
+		}
 
 		&-head {
 			padding-bottom: 40px;
+			@include adaptive(767) {
+				padding-bottom: 20px;
+			}
 		}
 
 		&-body {
+			@include adaptive(767) {
+				padding-top: 20px;
+				border-top: 2px solid #DFECF4;
+			}
+
 			ul {
 				display: flex;
 				flex-wrap: wrap;
 				align-items: center;
+				@include adaptive(767) {
+					flex-direction: column;
+					align-items: flex-start;
+				}
 
 				li {
 					display: flex;
 					align-items: center;
 					padding-bottom: 20px;
+					@include adaptive(767) {
+						padding-bottom: 0;
+
+						&:not(:last-of-type) {
+							padding-bottom: 15px;
+						}
+					}
 
 					&.warning0 {
 						p {
@@ -94,6 +124,9 @@
 
 					&:not(:last-of-type) {
 						padding-right: 20px;
+						@include adaptive(767) {
+							padding-right: 0;
+						}
 					}
 
 					p {
@@ -102,6 +135,10 @@
 						font-size: 16px;
 						line-height: 20px;
 						color: #576472;
+						@include adaptive(767) {
+							font-size: 12px;
+							line-height: 15px;
+						}
 
 						strong {
 							font-weight: 500;
@@ -124,18 +161,51 @@
 			}
 		}
 
+		&-footer {
+			display: none;
+			align-items: center;
+			justify-content: center;
+			padding-top: 20px;
+			@include adaptive(767) {
+				display: flex;
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				color: #21bf73;
+
+				.icon-font {
+					margin-right: 10px;
+					font-size: 16px;
+				}
+
+				span {
+					font-size: 12px;
+					line-height: 15px;
+				}
+			}
+		}
+
 		&-line {
 			position: relative;
 			width: 100%;
 			height: 50px;
 			border-radius: 5px;
 			background-color: #f4f4f2;
+			@include adaptive(767) {
+				height: 30px;
+			}
 
 			> span {
 				position: absolute;
 				top: -5px;
 				height: calc(100% + 10px);
 				border-radius: 3px;
+				@include adaptive(767) {
+					top: -2px;
+					height: calc(100% + 4px);
+				}
 			}
 
 			&-wrapper {
@@ -150,11 +220,22 @@
 					&:nth-of-type(1) {
 						width: 100%;
 						max-width: 160px;
+						@include adaptive(767) {
+							max-width: 70px;
+						}
 
 						p {
 							font-size: 20px;
 							line-height: 37px;
 							color: #163A5F;
+							@include adaptive(767) {
+								font-size: 12px;
+								line-height: 15px;
+
+							  span {
+									display: none;
+								}
+							}
 						}
 					}
 					&:nth-of-type(2) {
@@ -170,6 +251,21 @@
 			display: flex;
 			align-items: center;
 			padding-bottom: 35px;
+			@include adaptive(767) {
+				padding-bottom: 20px;
+			}
+
+			&--desktop {
+				@include adaptive(767) {
+					display: none;
+				}
+			}
+			&--mobile {
+				display: none;
+				@include adaptive(767) {
+					display: flex;
+				}
+			}
 
 			> div {
 				display: flex;
@@ -188,6 +284,10 @@
 
 				span {
 					color: #163a5f;
+					@include adaptive(767) {
+						font-size: 10px;
+						line-height: 12px;
+					}
 				}
 			}
 		}
@@ -196,6 +296,9 @@
 	&__action {
 		display: flex;
 		align-items: center;
+		@include adaptive(767) {
+		  flex-direction: column;
+		}
 
 		> div {
 			&:nth-of-type(1) {
@@ -203,10 +306,19 @@
 				min-width: 1px;
 				max-width: 100%;
 				padding-right: 30px;
+				@include adaptive(767) {
+					width: 100%;
+					padding-right: 0;
+					padding-bottom: 20px;
+				}
 			}
 			&:nth-of-type(2) {
 				display: flex;
 				align-items: center;
+				@include adaptive(767) {
+					width: 100%;
+					justify-content: space-between;
+				}
 			}
 		}
 	}
@@ -284,6 +396,11 @@
 			left: -50px;
 			width: calc(100% + 100px);
 			padding: 50px;
+			@include adaptive(767) {
+				left: -15px;
+				width: calc(100% + 30px);
+				padding: 20px;
+			}
 		}
 	}
 }

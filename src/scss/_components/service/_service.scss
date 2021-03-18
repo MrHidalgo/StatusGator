@@ -3,8 +3,13 @@
 .service {
 	padding-top: 152px;
 	padding-bottom: 50px;
+	@include adaptive(767) {
+		padding-top: 72px;
+		padding-bottom: 40px;
+	}
 
 	&__wrapper {
+		position: relative;
 		display: flex;
 		align-items: center;
 		width: 100%;
@@ -14,6 +19,10 @@
 		padding: 50px 40px;
 		border-radius: 6px;
 		background-color: rgba(#21BF73, 0.1);
+		@include adaptive(767) {
+			display: block;
+			padding: 20px;
+		}
 
 		&:not(:last-of-type) {
 			margin-bottom: 25px;
@@ -22,10 +31,21 @@
 		> div {
 			&:nth-of-type(1) {
 				width: 50px;
+				@include adaptive(767) {
+					position: absolute;
+					left: 20px;
+					bottom: 20px;
+					width: 30px;
+					height: 30px;
+				}
 
 				.icon-font {
 					font-size: 50px;
 					color: #21bf73;
+					@include adaptive(767) {
+						height: 30px;
+						font-size: 30px;
+					}
 				}
 			}
 			&:nth-of-type(2) {
@@ -33,6 +53,9 @@
 				min-width: 1px;
 				max-width: 100%;
 				padding-left: 35px;
+				@include adaptive(767) {
+					padding-left: 0;
+				}
 			}
 		}
 
@@ -56,6 +79,11 @@
 					font-size: 35px;
 					line-height: 45px;
 				}
+				@include adaptive(767) {
+					padding-bottom: 10px;
+					font-size: 24px;
+					line-height: 34px;
+				}
 			}
 			&.long {
 				font-size: 32px;
@@ -68,6 +96,10 @@
 					font-size: 24px;
 					line-height: 35px;
 				}
+				@include adaptive(767) {
+					font-size: 20px;
+					line-height: 26px;
+				}
 			}
 		}
 
@@ -75,9 +107,31 @@
 			font-size: 18px;
 			line-height: 22px;
 			color: #163A5F;
+			@include adaptive(767) {
+				display: block;
+				padding-left: 50px;
+				font-size: 12px;
+				line-height: 18px;
+			}
 
 			a {
 				color: #21bf73;
+			}
+		}
+	}
+
+	&__icon {
+		@include adaptive(767) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			width: 30px;
+			height: 30px;
+
+			.icon-font {
+				display: flex;
+				align-items: center;
 			}
 		}
 	}

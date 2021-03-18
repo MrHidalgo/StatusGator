@@ -3,6 +3,10 @@
 .last {
 	padding-top: 75px;
 	padding-bottom: 75px;
+	@include adaptive(767) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	&__desc {
 		padding-bottom: 50px;
@@ -10,6 +14,11 @@
 		line-height: 30px;
 		text-align: center;
 		color: #576472;
+		@include adaptive(767) {
+			padding-bottom: 20px;
+			font-size: 14px;
+			line-height: 22px;
+		}
 	}
 }
 

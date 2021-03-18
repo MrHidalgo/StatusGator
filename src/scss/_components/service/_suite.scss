@@ -4,6 +4,10 @@
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: rgba(#21BF73, 0.1);
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -12,6 +16,9 @@
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+		@include adaptive(767) {
+		  flex-direction: column;
+		}
 
 		&-left {
 			width: 100%;
@@ -22,6 +29,9 @@
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+			@include adaptive(767) {
+				width: 100%;
+			}
 
 			.c-btn {
 				width: 100%;
@@ -30,6 +40,9 @@
 					width: 100%;
 					max-width: 250px;
 					margin-left: auto;
+					@include adaptive(767) {
+						max-width: 100%;
+					}
 				}
 			}
 		}
@@ -53,12 +66,26 @@
 			font-size: 49px;
 			line-height: 70px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 10px;
+			font-size: 36px;
+			line-height: 50px;
+			text-align: center;
+		}
 	}
 
 	&__desc {
 		font-size: 18px;
 		line-height: 28px;
 		color: #576472;
+		@include adaptive(767) {
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 22px;
+		}
 	}
 }
 

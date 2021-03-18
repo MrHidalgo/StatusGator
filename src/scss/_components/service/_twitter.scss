@@ -3,6 +3,10 @@
 .twitter {
 	padding-top: 75px;
 	padding-bottom: 75px;
+	@include adaptive(767) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	&__title {
 		padding-bottom: 50px;
@@ -24,6 +28,9 @@
 		border-radius: 10px;
 		border: 1px solid rgba(87, 100, 114, 0.3);
 		background-color: #FFFFFF;
+		@include adaptive(767) {
+			padding: 20px;
+		}
 
 		&-head {
 			display: flex;
@@ -53,12 +60,20 @@
 				font-size: 16px;
 				line-height: 20px;
 				color: #163A5F;
+				@include adaptive(767) {
+					font-size: 14px;
+					line-height: 17px;
+				}
 			}
 
 			span {
 				font-size: 14px;
 				line-height: 17px;
 				color: #576472;
+				@include adaptive(767) {
+					font-size: 13px;
+					line-height: 15px;
+				}
 			}
 		}
 
@@ -67,6 +82,10 @@
 				font-size: 14px;
 				line-height: 22px;
 				color: #576472;
+				@include adaptive(767) {
+					font-size: 13px;
+					line-height: 20px;
+				}
 			}
 		}
 
@@ -93,6 +112,9 @@
 			height: auto;
 			@include adaptive(1023) {
 				width: 330px !important;
+			}
+			@include adaptive(767) {
+				width: 85% !important;
 			}
 		}
 	}

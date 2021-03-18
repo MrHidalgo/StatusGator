@@ -24,6 +24,18 @@
 		.main {
 			&__title {
 				padding-bottom: 50px;
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-bottom: 20px;
+				}
+			}
+
+			&__btn {
+				@include adaptive(767) {
+				  .c-btn {
+						width: 100%;
+					}
+				}
 			}
 		}
 	}

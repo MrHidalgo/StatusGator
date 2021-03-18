@@ -152,6 +152,14 @@ const initSwiper = () => {
       speed: 1000,
       slidesPerView: 'auto',
       spaceBetween: 30,
+      breakpoints: {
+        320: {
+          spaceBetween: 10,
+        },
+        768: {
+          spaceBetween: 30,
+        }
+      },
     });
     
   }
