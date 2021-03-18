@@ -2709,20 +2709,69 @@ picture {
 
 /* line 36, src/scss/_components/solution/_feature.scss */
 .feature__box--reverse .feature__box-left {
-  padding-bottom: 25px;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
-/* line 40, src/scss/_components/solution/_feature.scss */
+@media screen and (max-width: 767px) {
+  /* line 36, src/scss/_components/solution/_feature.scss */
+  .feature__box--reverse .feature__box-left {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-bottom: 25px;
+  }
+}
+
+/* line 43, src/scss/_components/solution/_feature.scss */
 .feature__box--reverse .feature__box-left video {
   margin-left: auto;
 }
 
-/* line 44, src/scss/_components/solution/_feature.scss */
+/* line 47, src/scss/_components/solution/_feature.scss */
 .feature__box--reverse .feature__box-right {
-  padding-left: 0;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-left: 100px;
 }
 
-/* line 51, src/scss/_components/solution/_feature.scss */
+@media screen and (max-width: 1439px) {
+  /* line 47, src/scss/_components/solution/_feature.scss */
+  .feature__box--reverse .feature__box-right {
+    padding-left: 75px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 47, src/scss/_components/solution/_feature.scss */
+  .feature__box--reverse .feature__box-right {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 47, src/scss/_components/solution/_feature.scss */
+  .feature__box--reverse .feature__box-right {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 47, src/scss/_components/solution/_feature.scss */
+  .feature__box--reverse .feature__box-right {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+/* line 66, src/scss/_components/solution/_feature.scss */
 .feature__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2735,44 +2784,44 @@ picture {
           flex-direction: column;
 }
 
-/* line 56, src/scss/_components/solution/_feature.scss */
+/* line 71, src/scss/_components/solution/_feature.scss */
 .feature__box-wrapper > div:not(:last-of-type) {
   padding-bottom: 100px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/_components/solution/_feature.scss */
+  /* line 71, src/scss/_components/solution/_feature.scss */
   .feature__box-wrapper > div:not(:last-of-type) {
     padding-bottom: 50px;
   }
 }
 
-/* line 65, src/scss/_components/solution/_feature.scss */
+/* line 80, src/scss/_components/solution/_feature.scss */
 .feature__box-left {
   width: -webkit-calc((100% / 2) + 40px);
   width: calc((100% / 2) + 40px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 65, src/scss/_components/solution/_feature.scss */
+  /* line 80, src/scss/_components/solution/_feature.scss */
   .feature__box-left {
     width: 100%;
   }
 }
 
-/* line 71, src/scss/_components/solution/_feature.scss */
+/* line 86, src/scss/_components/solution/_feature.scss */
 .feature__box-left .feature__box-title {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 71, src/scss/_components/solution/_feature.scss */
+  /* line 86, src/scss/_components/solution/_feature.scss */
   .feature__box-left .feature__box-title {
     display: block;
   }
 }
 
-/* line 78, src/scss/_components/solution/_feature.scss */
+/* line 93, src/scss/_components/solution/_feature.scss */
 .feature__box-left video {
   display: block;
   max-width: 80%;
@@ -2780,7 +2829,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 78, src/scss/_components/solution/_feature.scss */
+  /* line 93, src/scss/_components/solution/_feature.scss */
   .feature__box-left video {
     max-width: 100%;
     margin-left: auto;
@@ -2788,7 +2837,7 @@ picture {
   }
 }
 
-/* line 90, src/scss/_components/solution/_feature.scss */
+/* line 105, src/scss/_components/solution/_feature.scss */
 .feature__box-right {
   width: -webkit-calc((100% / 2) - 40px);
   width: calc((100% / 2) - 40px);
@@ -2796,41 +2845,41 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 90, src/scss/_components/solution/_feature.scss */
+  /* line 105, src/scss/_components/solution/_feature.scss */
   .feature__box-right {
     padding-left: 75px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 90, src/scss/_components/solution/_feature.scss */
+  /* line 105, src/scss/_components/solution/_feature.scss */
   .feature__box-right {
     padding-left: 25px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 90, src/scss/_components/solution/_feature.scss */
+  /* line 105, src/scss/_components/solution/_feature.scss */
   .feature__box-right {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 90, src/scss/_components/solution/_feature.scss */
+  /* line 105, src/scss/_components/solution/_feature.scss */
   .feature__box-right {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 106, src/scss/_components/solution/_feature.scss */
+  /* line 121, src/scss/_components/solution/_feature.scss */
   .feature__box-right .feature__box-title {
     display: none;
   }
 }
 
-/* line 113, src/scss/_components/solution/_feature.scss */
+/* line 128, src/scss/_components/solution/_feature.scss */
 .feature__box-title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -2840,14 +2889,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 113, src/scss/_components/solution/_feature.scss */
+  /* line 128, src/scss/_components/solution/_feature.scss */
   .feature__box-title {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 113, src/scss/_components/solution/_feature.scss */
+  /* line 128, src/scss/_components/solution/_feature.scss */
   .feature__box-title {
     padding-bottom: 20px;
     font-size: 20px;
@@ -2855,7 +2904,7 @@ picture {
   }
 }
 
-/* line 130, src/scss/_components/solution/_feature.scss */
+/* line 145, src/scss/_components/solution/_feature.scss */
 .feature__box-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2872,13 +2921,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 130, src/scss/_components/solution/_feature.scss */
+  /* line 145, src/scss/_components/solution/_feature.scss */
   .feature__box-list {
     padding-bottom: 20px;
   }
 }
 
-/* line 140, src/scss/_components/solution/_feature.scss */
+/* line 155, src/scss/_components/solution/_feature.scss */
 .feature__box-list li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2890,12 +2939,12 @@ picture {
           align-items: center;
 }
 
-/* line 144, src/scss/_components/solution/_feature.scss */
+/* line 159, src/scss/_components/solution/_feature.scss */
 .feature__box-list li:not(:last-of-type) {
   padding-bottom: 20px;
 }
 
-/* line 149, src/scss/_components/solution/_feature.scss */
+/* line 164, src/scss/_components/solution/_feature.scss */
 .feature__box-list li > div:nth-of-type(1) {
   position: relative;
   display: -webkit-box;
@@ -2921,14 +2970,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 149, src/scss/_components/solution/_feature.scss */
+  /* line 164, src/scss/_components/solution/_feature.scss */
   .feature__box-list li > div:nth-of-type(1) {
     width: 40px;
     height: 40px;
   }
 }
 
-/* line 165, src/scss/_components/solution/_feature.scss */
+/* line 180, src/scss/_components/solution/_feature.scss */
 .feature__box-list li > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2939,7 +2988,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 173, src/scss/_components/solution/_feature.scss */
+/* line 188, src/scss/_components/solution/_feature.scss */
 .feature__box-list li .icon-font {
   font-size: 18px;
   height: 18px;
@@ -2948,13 +2997,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 173, src/scss/_components/solution/_feature.scss */
+  /* line 188, src/scss/_components/solution/_feature.scss */
   .feature__box-list li .icon-font {
     font-size: 15px;
   }
 }
 
-/* line 183, src/scss/_components/solution/_feature.scss */
+/* line 198, src/scss/_components/solution/_feature.scss */
 .feature__box-list li p {
   font-size: 18px;
   font-weight: 400;
@@ -2963,14 +3012,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 183, src/scss/_components/solution/_feature.scss */
+  /* line 198, src/scss/_components/solution/_feature.scss */
   .feature__box-list li p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 183, src/scss/_components/solution/_feature.scss */
+  /* line 198, src/scss/_components/solution/_feature.scss */
   .feature__box-list li p {
     font-size: 14px;
     line-height: 22px;
@@ -2978,7 +3027,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 201, src/scss/_components/solution/_feature.scss */
+  /* line 216, src/scss/_components/solution/_feature.scss */
   .feature__box-btn .c-btn {
     width: 100%;
   }
@@ -5760,16 +5809,17 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_solutions.scss */
 .solutions {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 150px;
 }
 
-/* line 7, src/scss/_components/homepage/_solutions.scss */
+/* line 8, src/scss/_components/homepage/_solutions.scss */
 .solutions__title {
   padding-bottom: 60px;
 }
 
-/* line 11, src/scss/_components/homepage/_solutions.scss */
+/* line 12, src/scss/_components/homepage/_solutions.scss */
 .solutions__wrapper {
   position: relative;
   display: -webkit-box;
@@ -5782,7 +5832,7 @@ picture {
           align-items: center;
 }
 
-/* line 16, src/scss/_components/homepage/_solutions.scss */
+/* line 17, src/scss/_components/homepage/_solutions.scss */
 .solutions__wrapper-left, .solutions__wrapper-right {
   position: absolute;
   top: 50%;
@@ -5791,7 +5841,21 @@ picture {
           transform: translateY(-50%);
 }
 
-/* line 23, src/scss/_components/homepage/_solutions.scss */
+@media screen and (max-width: 1279px) {
+  /* line 17, src/scss/_components/homepage/_solutions.scss */
+  .solutions__wrapper-left, .solutions__wrapper-right {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 17, src/scss/_components/homepage/_solutions.scss */
+  .solutions__wrapper-left, .solutions__wrapper-right {
+    display: none;
+  }
+}
+
+/* line 30, src/scss/_components/homepage/_solutions.scss */
 .solutions__wrapper-left {
   left: 0;
   -webkit-transform: translateX(-200%) translateY(-50%);
@@ -5799,7 +5863,25 @@ picture {
           transform: translateX(-200%) translateY(-50%);
 }
 
-/* line 28, src/scss/_components/homepage/_solutions.scss */
+@media screen and (max-width: 1365px) {
+  /* line 30, src/scss/_components/homepage/_solutions.scss */
+  .solutions__wrapper-left {
+    -webkit-transform: translateX(-100%) translateY(-50%);
+        -ms-transform: translateX(-100%) translateY(-50%);
+            transform: translateX(-100%) translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 30, src/scss/_components/homepage/_solutions.scss */
+  .solutions__wrapper-left {
+    -webkit-transform: translateX(0) translateY(-50%);
+        -ms-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+  }
+}
+
+/* line 41, src/scss/_components/homepage/_solutions.scss */
 .solutions__wrapper-middle {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -5809,7 +5891,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 34, src/scss/_components/homepage/_solutions.scss */
+/* line 47, src/scss/_components/homepage/_solutions.scss */
 .solutions__wrapper-right {
   right: 0;
   -webkit-transform: translateX(200%) translateY(-50%);
@@ -5817,7 +5899,25 @@ picture {
           transform: translateX(200%) translateY(-50%);
 }
 
-/* line 40, src/scss/_components/homepage/_solutions.scss */
+@media screen and (max-width: 1365px) {
+  /* line 47, src/scss/_components/homepage/_solutions.scss */
+  .solutions__wrapper-right {
+    -webkit-transform: translateX(100%) translateY(-50%);
+        -ms-transform: translateX(100%) translateY(-50%);
+            transform: translateX(100%) translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 47, src/scss/_components/homepage/_solutions.scss */
+  .solutions__wrapper-right {
+    -webkit-transform: translateX(0) translateY(-50%);
+        -ms-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+  }
+}
+
+/* line 59, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5845,7 +5945,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 51, src/scss/_components/homepage/_solutions.scss */
+/* line 70, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn:hover {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
@@ -5855,7 +5955,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 55, src/scss/_components/homepage/_solutions.scss */
+/* line 74, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -5863,7 +5963,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 61, src/scss/_components/homepage/_solutions.scss */
+/* line 80, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn.swiper-button-disabled {
   pointer-events: none;
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
@@ -5876,7 +5976,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 67, src/scss/_components/homepage/_solutions.scss */
+/* line 86, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn.swiper-button-disabled .icon-font {
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
@@ -5884,14 +5984,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 74, src/scss/_components/homepage/_solutions.scss */
+/* line 93, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn--next .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 79, src/scss/_components/homepage/_solutions.scss */
+/* line 98, src/scss/_components/homepage/_solutions.scss */
 .solutions__btn .icon-font {
   width: 14px;
   height: 14px;
@@ -5903,13 +6003,13 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 89, src/scss/_components/homepage/_solutions.scss */
+/* line 108, src/scss/_components/homepage/_solutions.scss */
 .solutions__slider {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-/* line 95, src/scss/_components/homepage/_solutions.scss */
+/* line 114, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5922,7 +6022,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 100, src/scss/_components/homepage/_solutions.scss */
+/* line 119, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5935,7 +6035,14 @@ picture {
   padding-bottom: 24px;
 }
 
-/* line 106, src/scss/_components/homepage/_solutions.scss */
+@media screen and (max-width: 1279px) {
+  /* line 119, src/scss/_components/homepage/_solutions.scss */
+  .solutions__box-head {
+    min-height: 114px;
+  }
+}
+
+/* line 128, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-head > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5956,7 +6063,7 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 115, src/scss/_components/homepage/_solutions.scss */
+/* line 137, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-head > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -5967,20 +6074,36 @@ picture {
   padding-left: 20px;
 }
 
-/* line 123, src/scss/_components/homepage/_solutions.scss */
+/* line 145, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-head .icon-font {
   font-size: 18px;
   color: #21bf73;
 }
 
-/* line 128, src/scss/_components/homepage/_solutions.scss */
+/* line 150, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-head p {
   font-size: 36px;
   line-height: 45px;
   color: #163A5F;
 }
 
-/* line 136, src/scss/_components/homepage/_solutions.scss */
+@media screen and (max-width: 1439px) {
+  /* line 150, src/scss/_components/homepage/_solutions.scss */
+  .solutions__box-head p {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 150, src/scss/_components/homepage/_solutions.scss */
+  .solutions__box-head p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+/* line 166, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-body ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5994,19 +6117,19 @@ picture {
   padding-left: 20px;
 }
 
-/* line 141, src/scss/_components/homepage/_solutions.scss */
+/* line 171, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-body ul li {
   list-style: disc;
   font-size: 20px;
   color: #21bf73;
 }
 
-/* line 146, src/scss/_components/homepage/_solutions.scss */
+/* line 176, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-body ul li:not(:last-of-type) {
   padding-bottom: 5px;
 }
 
-/* line 151, src/scss/_components/homepage/_solutions.scss */
+/* line 181, src/scss/_components/homepage/_solutions.scss */
 .solutions__box-body ul span {
   font-size: 18px;
   line-height: 28px;

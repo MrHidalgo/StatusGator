@@ -1,6 +1,7 @@
 // SECTION :: START
 
 .solutions {
+	position: relative;
 	padding-top: 50px;
 	padding-bottom: 150px;
 
@@ -18,11 +19,23 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
+			@include adaptive(1279) {
+				position: relative;
+			}
+			@include adaptive(767) {
+				display: none;
+			}
 		}
 
 		&-left {
 			left: 0;
 			transform: translateX(-200%) translateY(-50%);
+			@include adaptive(1365) {
+				transform: translateX(-100%) translateY(-50%);
+			}
+			@include adaptive(1279) {
+				transform: translateX(0) translateY(-50%);
+			}
 		}
 
 		&-middle {
@@ -34,6 +47,12 @@
 		&-right {
 			right: 0;
 			transform: translateX(200%) translateY(-50%);
+			@include adaptive(1365) {
+				transform: translateX(100%) translateY(-50%);
+			}
+			@include adaptive(1279) {
+				transform: translateX(0) translateY(-50%);
+			}
 		}
 	}
 
@@ -101,6 +120,9 @@
 			display: flex;
 			align-items: center;
 			padding-bottom: 24px;
+			@include adaptive(1279) {
+				min-height: 114px;
+			}
 
 			> div {
 				&:nth-of-type(1) {
@@ -129,6 +151,14 @@
 				font-size: 36px;
 				line-height: 45px;
 				color: #163A5F;
+				@include adaptive(1439) {
+					font-size: 33px;
+				}
+				@include adaptive(767) {
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 33px;
+				}
 			}
 		}
 

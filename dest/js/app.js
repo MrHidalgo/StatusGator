@@ -185,16 +185,41 @@ var initSwiper = function initSwiper() {
 		});
 	}
 	if ($('.solutionsSwiper').length > 0) {
-
-		new Swiper('.solutionsSwiper', {
+		var solutionsSwiper = undefined,
+		    solutionSwiperOPT = {
 			loop: false,
 			effect: 'slide',
 			speed: 1000,
 			slidesPerView: 3,
 			spaceBetween: 50,
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 50
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 50
+				}
+			},
 			navigation: {
 				nextEl: '.solutions__btn--next',
 				prevEl: '.solutions__btn--prev'
+			}
+		};
+
+		$(window).on('load', function () {
+			if ($(window).width() > 767) {
+				solutionsSwiper = new Swiper('.solutionsSwiper', solutionSwiperOPT);
+			}
+		});
+		$(window).on('resize', function () {
+			if ($(window).width() < 768 && solutionsSwiper !== undefined) {
+
+				solutionsSwiper.destroy(true, true);
+				solutionsSwiper = undefined;
+			} else if (solutionsSwiper === undefined) {
+				solutionsSwiper = new Swiper('.solutionsSwiper', solutionSwiperOPT);
 			}
 		});
 	}
@@ -211,6 +236,23 @@ var initSwiper = function initSwiper() {
 			slidesPerView: 5,
 			slidesPerGroup: 5,
 			spaceBetween: 50,
+			breakpoints: {
+				320: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+					spaceBetween: 30
+				},
+				768: {
+					slidesPerView: 4,
+					slidesPerGroup: 4,
+					spaceBetween: 30
+				},
+				1024: {
+					slidesPerView: 5,
+					slidesPerGroup: 5,
+					spaceBetween: 50
+				}
+			},
 			pagination: {
 				el: '.trust__pagination',
 				clickable: true
