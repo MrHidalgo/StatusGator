@@ -6271,6 +6271,102 @@ picture {
 }
 
 /* line 32, src/scss/_components/service/_recent.scss */
+.recent__table {
+  position: relative;
+  padding: 40px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
+          box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
+  background-color: #FFFFFF;
+}
+
+/* line 39, src/scss/_components/service/_recent.scss */
+.recent__table table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 45, src/scss/_components/service/_recent.scss */
+.recent__table table thead th {
+  padding-bottom: 22px;
+  text-align: left;
+  border-bottom: 2px solid #DFECF4;
+}
+
+/* line 50, src/scss/_components/service/_recent.scss */
+.recent__table table thead th:not(:first-of-type) {
+  padding-left: 50px;
+}
+
+/* line 54, src/scss/_components/service/_recent.scss */
+.recent__table table thead th p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #163A5F;
+}
+
+/* line 64, src/scss/_components/service/_recent.scss */
+.recent__table table tbody tr {
+  border-bottom: 1px solid #DFECF4;
+}
+
+/* line 67, src/scss/_components/service/_recent.scss */
+.recent__table table tbody tr td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+/* line 72, src/scss/_components/service/_recent.scss */
+.recent__table table tbody tr td:not(:first-of-type) {
+  padding-left: 50px;
+}
+
+/* line 76, src/scss/_components/service/_recent.scss */
+.recent__table table tbody tr td i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 70px;
+  padding: 5px 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #F5BE4F;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* line 91, src/scss/_components/service/_recent.scss */
+.recent__table table tbody tr td p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #576472;
+}
+
+/* line 97, src/scss/_components/service/_recent.scss */
+.recent__table table tbody tr td a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #21BF73;
+}
+
+/* line 109, src/scss/_components/service/_recent.scss */
 .recent__sign {
   position: absolute;
   left: 2px;
@@ -6290,6 +6386,7 @@ picture {
           justify-content: center;
   width: -webkit-calc(100% - 4px);
   width: calc(100% - 4px);
+  height: 303px;
   margin-left: auto;
   margin-right: auto;
   padding: 55px;
@@ -6300,7 +6397,7 @@ picture {
           backdrop-filter: blur(2px);
 }
 
-/* line 48, src/scss/_components/service/_recent.scss */
+/* line 126, src/scss/_components/service/_recent.scss */
 .recent__sign-title {
   font-weight: 600;
   font-size: 30px;
@@ -6309,7 +6406,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 56, src/scss/_components/service/_recent.scss */
+/* line 134, src/scss/_components/service/_recent.scss */
 .recent__sign-desc {
   padding-bottom: 30px;
   font-size: 16px;

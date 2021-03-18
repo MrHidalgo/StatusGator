@@ -8,8 +8,33 @@ section#recent.recent
 
 		.recent__wrapper
 
-			.recent__img
-				img(src="img/img-recent.svg" alt="")
+			.recent__table
+				table
+					thead
+						tr
+							th
+								p Start Time
+							th
+								p Type
+							th
+								p Length
+							th
+								p Message
+							th
+								p Details
+					tbody
+						each val, idx in [1,2,3,4,5,6,7,8,9,10]
+							tr
+								td
+									p Novemer 18, 2020 12:27 UTC
+								td
+									i WARM
+								td
+									p about 1 hour
+								td
+									p Problem affecting Gmail, Google Keep, and Blogger
+								td
+									a(href="#") Learn more
 
 				.recent__sign
 					div
