@@ -226,6 +226,7 @@
 		initSwiper();
 		initStellar();
 		initHamburger();
+		initPopups();
 		// ==========================================
 
 		// callback

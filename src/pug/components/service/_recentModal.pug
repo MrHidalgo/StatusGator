@@ -1,0 +1,32 @@
+mixin modalContent()
+	.c-modal__body
+		a.c-modal__close(href="#" popup-close-js)
+			i.icon-font.icon-close
+
+		p.c-modal__title Recent Outages and Issues
+
+		.recent__table
+			table
+				tbody
+					tr
+						td
+							div
+								span Start Time
+								p Novemer 18, 2020 12:27 UTC
+					tr
+						td
+							div
+								span Type
+								i WARM
+					tr
+						td
+							div
+								span Length
+								p about 1 hour
+					tr
+						td
+							div
+								span Message
+								p Problem affecting Gmail, Google Keep, and Blogger
+
++modal('recentDetails', 'modalContent')

@@ -87,7 +87,7 @@ const initSwiper = () => {
       };
     
     $(window).on('load', () => {
-      if ($(window).width() > 767) {
+      if($(window).width() > 767) {
         solutionsSwiper = new Swiper('.solutionsSwiper', solutionSwiperOPT);
       }
     });
@@ -97,7 +97,7 @@ const initSwiper = () => {
         solutionsSwiper.destroy(true, true);
         solutionsSwiper = undefined;
         
-      } else if(solutionsSwiper === undefined) {
+      } else if(solutionsSwiper === undefined && $(window).width() > 767) {
         solutionsSwiper = new Swiper('.solutionsSwiper', solutionSwiperOPT);
       }
     });

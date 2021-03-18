@@ -1,11 +1,13 @@
-.modal {
+.c-modal {
   position: relative;
   width: 100%;
-  //max-width: 500px;
-  //min-height: 200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
+
+  .mfp-close {
+    display: none;
+  }
 }
 
 

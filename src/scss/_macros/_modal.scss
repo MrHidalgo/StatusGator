@@ -1,5 +1,89 @@
 // MODAL :: START
 
-.c-modal {}
+.c-modal {
+	padding: 20px;
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 8px;
+		background-color: rgba(22, 58, 95, 0.1);
+
+		.icon-font {
+			font-size: 9px;
+			color: #163a5f;
+		}
+	}
+
+	&__title {
+		padding: 0 70px 40px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		color: #163A5F;
+	}
+
+	.recent__table {
+		padding: 0;
+		box-shadow: none;
+
+		table {
+			tbody {
+				tr {
+					td {
+						> div {
+							display: flex;
+							align-items: center;
+							min-height: 35px;
+
+							span {
+								width: 100%;
+								max-width: 100px;
+								font-size: 12px;
+								line-height: 15px;
+								color: #576472;
+							}
+
+							p {
+								flex: 1;
+								min-width: 1px;
+								max-width: 100%;
+								font-weight: 500;
+								font-size: 14px;
+								line-height: 18px;
+								color: #163A5F;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.status__box {
+		padding: 0;
+
+		&-body {
+			ul {
+				@include adaptive(767) {
+				  flex-direction: row;
+				}
+
+				li {
+					&:not(:last-of-type) {
+						padding-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
 
 // MODAL :: END

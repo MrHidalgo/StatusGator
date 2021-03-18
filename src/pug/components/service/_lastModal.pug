@@ -1,0 +1,44 @@
+mixin modalContent()
+	.c-modal__body
+		a.c-modal__close(href="#" popup-close-js)
+			i.icon-font.icon-close
+
+		p.c-modal__title 3 status changes in the last 24 hours
+
+		.status__box
+			.status__box-head
+
+				.status__box-line-wrapper
+					div(style="display: none;")
+					div
+						.status__box-line
+							span(style='left: 2%; width: 10px; background-color: #BBBFCA;')
+							span(style='left: 12%; width: 100px; background-color: #FFB26B;')
+							span(style='left: 58%; width: 10px; background-color: #FD5E53;')
+
+			.status__box-time
+				div
+					span 5:00 PM
+				div
+					span 9:00 PM
+				div
+					span 1:00 AM
+				div
+					span 5:00 AM
+				div
+					span 9:00 AM
+				div
+					span 1:00 PM
+
+			.status__box-body
+				ul
+					li.warning0
+						p!= "<strong>Up:</strong> 23 hours"
+					li.warning2
+						p!= "<strong>Warn:</strong> 10 minutes"
+					li.warning5
+						p!= "<strong>Down:</strong> 45 minutes"
+					li.warning01
+						p!= "<strong>Maintenance:</strong> None"
+
++modal('lastDetails', 'modalContent')

@@ -540,6 +540,110 @@ picture {
   color: #576472;
 }
 
+/* line 1, src/scss/_shared/_magnificPopup.scss */
+.c-modal {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+/* line 8, src/scss/_shared/_magnificPopup.scss */
+.c-modal .mfp-close {
+  display: none;
+}
+
+/* line 18, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/* line 24, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 30, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+/* line 34, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* line 40, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+/* line 44, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* line 55, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+/* line 61, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 67, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 71, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* line 77, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+}
+
+/* line 81, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 /* line 3, src/scss/_macros/_logotype.scss */
 .logo {
   display: -webkit-box;
@@ -757,6 +861,115 @@ picture {
     font-size: 14px;
     line-height: 17px;
   }
+}
+
+/* line 3, src/scss/_macros/_modal.scss */
+.c-modal {
+  padding: 20px;
+}
+
+/* line 6, src/scss/_macros/_modal.scss */
+.c-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: rgba(22, 58, 95, 0.1);
+}
+
+/* line 18, src/scss/_macros/_modal.scss */
+.c-modal__close .icon-font {
+  font-size: 9px;
+  color: #163a5f;
+}
+
+/* line 24, src/scss/_macros/_modal.scss */
+.c-modal__title {
+  padding: 0 70px 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #163A5F;
+}
+
+/* line 33, src/scss/_macros/_modal.scss */
+.c-modal .recent__table {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 41, src/scss/_macros/_modal.scss */
+.c-modal .recent__table table tbody tr td > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 35px;
+}
+
+/* line 46, src/scss/_macros/_modal.scss */
+.c-modal .recent__table table tbody tr td > div span {
+  width: 100%;
+  max-width: 100px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #576472;
+}
+
+/* line 54, src/scss/_macros/_modal.scss */
+.c-modal .recent__table table tbody tr td > div p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #163A5F;
+}
+
+/* line 70, src/scss/_macros/_modal.scss */
+.c-modal .status__box {
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 74, src/scss/_macros/_modal.scss */
+  .c-modal .status__box-body ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/* line 80, src/scss/_macros/_modal.scss */
+.c-modal .status__box-body ul li:not(:last-of-type) {
+  padding-right: 20px;
 }
 
 /* line 3, src/scss/_components/common/_header.scss */

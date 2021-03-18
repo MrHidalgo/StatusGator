@@ -1,0 +1,51 @@
+mixin modalContent()
+	.c-modal__body
+		a.c-modal__close(href="#" popup-close-js)
+			i.icon-font.icon-close
+
+		p.c-modal__title Status History
+
+		.status__box
+			.status__box-head
+
+				.status__box-line-wrapper
+					div
+						p!= "Feb<span>ruary</span> 2020"
+					div
+						.status__box-line.status__box-line-1
+							span(style='left: 7%;width:10px;background-color:#ffd56b;')
+							span(style='left: 18%;width:20px;background-color:#ff7b54;')
+							span(style='left: 30%;width:5px;background-color:#fd5e53;')
+							span(style='left: 62%;width:30px;background-color:#ffb26b;')
+				.status__box-line-wrapper
+					div
+						p!= "Mar<span>ch</span> 2020"
+					div
+						.status__box-line.status__box-line-2
+							span(style='left: 25%;width:10px;background-color:#ffd56b;')
+							span(style='left: 48%;width:5px;background-color:#ffb26b;')
+							span(style='left: 80%;width:30px;background-color:#ff7b54;')
+				.status__box-line-wrapper
+					div
+						p!= "Apr<span>il</span> 2020"
+					div
+						.status__box-line.status__box-line-3
+							span(style='left: 11%;width:10px;background-color:#FFD56B;')
+							span(style='left: 23%;width:20px;background-color:#FF7B54;')
+							span(style='left: 39%;width:30px;background-color:#FFD56B;')
+							span(style='left: 71%;width:5px;background-color:#FD5E53;')
+
+			.status__box-body
+				ul
+					li.warning1
+						p Less than 60 mins
+					li.warning2
+						p Between 60 and 120 mins
+					li.warning3
+						p Between 120 and 360 mins
+					li.warning4
+						p Between 360 and 720 mins
+					li.warning5
+						p More than 720 mins
+
++modal('statusDetails', 'modalContent')
