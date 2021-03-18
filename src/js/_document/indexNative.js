@@ -189,6 +189,25 @@
 			}
 		});
 	};
+	
+	
+	const solutionEveryoneCB = () => {
+		$('.solutions__box-head').on('click', (ev) => {
+			if($(window).width() < 768) {
+				if($(ev.currentTarget).hasClass('is-active')) {
+					$(ev.currentTarget).removeClass('is-active');
+					$(ev.currentTarget).siblings('.solutions__box-body').slideUp(350);
+				} else {
+					$('.solutions__box-head').removeClass('is-active');
+					$(ev.currentTarget).addClass('is-active');
+					
+					$('.solutions__box-body').slideUp(350);
+					$(ev.currentTarget).siblings('.solutions__box-body').slideDown(350);
+				}
+				
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -217,6 +236,7 @@
 		supportCollapse();
 		filtersCB();
 		plansCB();
+		solutionEveryoneCB();
 		// ==========================================
 	};
 	initNative();

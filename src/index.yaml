@@ -3,7 +3,7 @@ ProjectTitle: StatusGator
 PageList:
 - file: index.html
   titleName: Homepage
-  ready: 55
+  ready: 90
 - file: solution.html
   titleName: Solution
   ready: 90

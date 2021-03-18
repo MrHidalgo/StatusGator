@@ -4,9 +4,16 @@
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 150px;
+	@include adaptive(767) {
+		padding-top: 25px;
+		padding-bottom: 50px;
+	}
 
 	&__title {
 		padding-bottom: 60px;
+		@include adaptive(767) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__wrapper {
@@ -108,6 +115,10 @@
 	&__slider {
 		padding-left: 30px;
 		padding-right: 30px;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	&__box {
@@ -123,6 +134,23 @@
 			@include adaptive(1279) {
 				min-height: 114px;
 			}
+			@include adaptive(767) {
+				cursor: pointer;
+				min-height: 70px;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 5px 60px 0 rgba(22, 58, 95, 0.06);
+				background-color: #FFFFFF;
+
+				&.is-active {
+					p {
+						&:after {
+							transform: rotate(-225deg);
+							@include transition(transform);
+						}
+					}
+				}
+			}
 
 			> div {
 				&:nth-of-type(1) {
@@ -133,6 +161,11 @@
 					height: 50px;
 					border-radius: 10px;
 					background-color: rgba(#21BF73, 0.1);
+					@include adaptive(767) {
+						width: 30px;
+						height: 30px;
+						border-radius: 6px;
+					}
 				}
 				&:nth-of-type(2) {
 					flex: 1;
@@ -145,6 +178,9 @@
 			.icon-font {
 				font-size: 18px;
 				color: #21bf73;
+				@include adaptive(767) {
+					font-size: 14px;
+				}
 			}
 
 			p {
@@ -155,14 +191,41 @@
 					font-size: 33px;
 				}
 				@include adaptive(767) {
-					font-weight: 700;
-					font-size: 24px;
-					line-height: 33px;
+					position: relative;
+					padding-right: 20px;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 17px;
+
+					&:after {
+						content: '';
+						position: absolute;
+						top: 50%;
+						right: 0;
+						margin-top: -5px;
+						width: 10px;
+						height: 10px;
+						border-left: 2px solid #163A5F;
+						border-bottom: 2px solid #163A5F;
+						transform: rotate(-45deg);
+						@include transition(transform);
+					}
 				}
 			}
 		}
 
 		&-body {
+			@include respondCustom('(min-width: 768px)') {
+				display: block !important;
+			}
+			@include adaptive(767) {
+				display: none ;
+
+				> div {
+					padding: 20px;
+				}
+			}
+			
 			ul {
 				display: flex;
 				flex-direction: column;
@@ -172,9 +235,15 @@
 					list-style: disc;
 					font-size: 20px;
 					color: #21bf73;
+					@include adaptive(767) {
+						font-size: 15px;
+					}
 
 					&:not(:last-of-type) {
 						padding-bottom: 5px;
+						@include adaptive(767) {
+							padding-bottom: 15px;
+						}
 					}
 				}
 
@@ -182,6 +251,33 @@
 					font-size: 18px;
 					line-height: 28px;
 					color: #576472;
+					@include adaptive(767) {
+						font-size: 13px;
+						line-height: 15px;
+						color: #576472;
+					}
+				}
+			}
+		}
+	}
+	
+	.swiper {
+		&-container {
+			@include adaptive(767) {
+				overflow: unset;
+			}
+		}
+
+		&-wrapper {
+			@include adaptive(767) {
+			  flex-direction: column;
+			}
+		}
+
+		&-slide {
+			@include adaptive(767) {
+				&:not(:last-of-type) {
+					padding-bottom: 10px;
 				}
 			}
 		}

@@ -27,6 +27,23 @@
 			}
 		}
 	}
+	&.main--homepage {
+		.main {
+			&__title {
+				@include adaptive(767) {
+					max-width: 100%;
+				}
+			}
+
+			&__btn {
+				@include adaptive(767) {
+				  .c-btn {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 
 	&__bg {
 		z-index: 0;
