@@ -17,7 +17,7 @@
 	&__box {
 		display: flex;
 		flex-direction: column;
-		width: 360px;
+		width: 100%;
 		height: 100%;
 		min-width: 100%;
 		padding: 30px 30px 50px;
@@ -84,11 +84,16 @@
 	}
 
 	.swiper {
-		&-wrapper {}
+		&-container {
+			padding-left: 15px;
+		}
 
 		&-slide {
 			width: 360px !important;
 			height: auto;
+			@include adaptive(1023) {
+				width: 330px !important;
+			}
 		}
 	}
 }

@@ -152,7 +152,6 @@ const initSwiper = () => {
       speed: 1000,
       slidesPerView: 'auto',
       spaceBetween: 30,
-      // centeredSlides: true,
     });
     
   }

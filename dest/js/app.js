@@ -271,7 +271,6 @@ var initSwiper = function initSwiper() {
 			speed: 1000,
 			slidesPerView: 'auto',
 			spaceBetween: 30
-			// centeredSlides: true,
 		});
 	}
 	if ($('.statusSwiper').length > 0) {

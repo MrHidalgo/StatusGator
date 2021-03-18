@@ -92,8 +92,8 @@
 						}
 					}
 
-					&:not(:first-of-type) {
-						padding-left: 20px;
+					&:not(:last-of-type) {
+						padding-right: 20px;
 					}
 
 					p {
@@ -130,74 +130,6 @@
 			height: 50px;
 			border-radius: 5px;
 			background-color: #f4f4f2;
-
-			&-1 {
-				> span {
-					&:nth-of-type(1) {
-						left: 70px;
-						width: 10px;
-						background-color: #ffd56b;
-					}
-					&:nth-of-type(2) {
-						left: 170px;
-						width: 20px;
-						background-color: #ff7b54;
-					}
-					&:nth-of-type(3) {
-						left: 270px;
-						width: 5px;
-						background-color: #fd5e53;
-					}
-					&:nth-of-type(4) {
-						right: 303px;
-						width: 30px;
-						background-color: #ffb26b;
-					}
-				}
-			}
-			&-2 {
-				> span {
-					&:nth-of-type(1) {
-						left: 233px;
-						width: 10px;
-						background-color: #ffd56b;
-					}
-					&:nth-of-type(2) {
-						left: 50%;
-						width: 5px;
-						background-color: #ffb26b;
-					}
-					&:nth-of-type(3) {
-						right: 140px;
-						width: 30px;
-						background-color: #ff7b54;
-					}
-				}
-			}
-			&-3 {
-				> span {
-					&:nth-of-type(1) {
-						left: 107px;
-						width: 10px;
-						background-color: #FFD56B;
-					}
-					&:nth-of-type(2) {
-						left: 207px;
-						width: 20px;
-						background-color: #FF7B54;
-					}
-					&:nth-of-type(3) {
-						left: 354px;
-						width: 30px;
-						background-color: #FFD56B;
-					}
-					&:nth-of-type(4) {
-						right: 253px;
-						width: 5px;
-						background-color: #FD5E53;
-					}
-				}
-			}
 
 			> span {
 				position: absolute;

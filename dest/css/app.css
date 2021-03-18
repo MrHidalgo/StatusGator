@@ -6472,18 +6472,23 @@ picture {
   background-color: rgba(33, 191, 115, 0.1);
 }
 
-/* line 19, src/scss/_components/service/_service.scss */
+/* line 18, src/scss/_components/service/_service.scss */
+.service__wrapper:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+/* line 23, src/scss/_components/service/_service.scss */
 .service__wrapper > div:nth-of-type(1) {
   width: 50px;
 }
 
-/* line 22, src/scss/_components/service/_service.scss */
+/* line 26, src/scss/_components/service/_service.scss */
 .service__wrapper > div:nth-of-type(1) .icon-font {
   font-size: 50px;
   color: #21bf73;
 }
 
-/* line 27, src/scss/_components/service/_service.scss */
+/* line 31, src/scss/_components/service/_service.scss */
 .service__wrapper > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -6494,32 +6499,72 @@ picture {
   padding-left: 35px;
 }
 
-/* line 35, src/scss/_components/service/_service.scss */
+/* line 39, src/scss/_components/service/_service.scss */
 .service__wrapper p {
   font-weight: 800;
   color: #163A5F;
 }
 
-/* line 40, src/scss/_components/service/_service.scss */
+/* line 44, src/scss/_components/service/_service.scss */
 .service__wrapper p.short {
   font-size: 48px;
   line-height: 60px;
 }
 
-/* line 44, src/scss/_components/service/_service.scss */
+@media screen and (max-width: 1365px) {
+  /* line 44, src/scss/_components/service/_service.scss */
+  .service__wrapper p.short {
+    font-size: 44px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 44, src/scss/_components/service/_service.scss */
+  .service__wrapper p.short {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 44, src/scss/_components/service/_service.scss */
+  .service__wrapper p.short {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+/* line 60, src/scss/_components/service/_service.scss */
 .service__wrapper p.long {
   font-size: 32px;
   line-height: 44px;
 }
 
-/* line 50, src/scss/_components/service/_service.scss */
+@media screen and (max-width: 1365px) {
+  /* line 60, src/scss/_components/service/_service.scss */
+  .service__wrapper p.long {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 60, src/scss/_components/service/_service.scss */
+  .service__wrapper p.long {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+/* line 74, src/scss/_components/service/_service.scss */
 .service__wrapper span {
   font-size: 18px;
   line-height: 22px;
   color: #163A5F;
 }
 
-/* line 55, src/scss/_components/service/_service.scss */
+/* line 79, src/scss/_components/service/_service.scss */
 .service__wrapper span a {
   color: #21bf73;
 }
@@ -6590,7 +6635,14 @@ picture {
   padding-left: 50px;
 }
 
-/* line 54, src/scss/_components/service/_recent.scss */
+@media screen and (max-width: 1279px) {
+  /* line 50, src/scss/_components/service/_recent.scss */
+  .recent__table table thead th:not(:first-of-type) {
+    padding-left: 30px;
+  }
+}
+
+/* line 57, src/scss/_components/service/_recent.scss */
 .recent__table table thead th p {
   font-weight: 500;
   font-size: 18px;
@@ -6598,24 +6650,31 @@ picture {
   color: #163A5F;
 }
 
-/* line 64, src/scss/_components/service/_recent.scss */
+/* line 67, src/scss/_components/service/_recent.scss */
 .recent__table table tbody tr {
   border-bottom: 1px solid #DFECF4;
 }
 
-/* line 67, src/scss/_components/service/_recent.scss */
+/* line 70, src/scss/_components/service/_recent.scss */
 .recent__table table tbody tr td {
   text-align: left;
   vertical-align: middle;
   padding: 10px 0;
 }
 
-/* line 72, src/scss/_components/service/_recent.scss */
+/* line 75, src/scss/_components/service/_recent.scss */
 .recent__table table tbody tr td:not(:first-of-type) {
   padding-left: 50px;
 }
 
-/* line 76, src/scss/_components/service/_recent.scss */
+@media screen and (max-width: 1279px) {
+  /* line 75, src/scss/_components/service/_recent.scss */
+  .recent__table table tbody tr td:not(:first-of-type) {
+    padding-left: 30px;
+  }
+}
+
+/* line 82, src/scss/_components/service/_recent.scss */
 .recent__table table tbody tr td i {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6641,22 +6700,24 @@ picture {
   color: #ffffff;
 }
 
-/* line 91, src/scss/_components/service/_recent.scss */
+/* line 97, src/scss/_components/service/_recent.scss */
 .recent__table table tbody tr td p {
   font-size: 14px;
   line-height: 17px;
   color: #576472;
 }
 
-/* line 97, src/scss/_components/service/_recent.scss */
+/* line 103, src/scss/_components/service/_recent.scss */
 .recent__table table tbody tr td a {
+  white-space: nowrap;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #21BF73;
 }
 
-/* line 109, src/scss/_components/service/_recent.scss */
+/* line 117, src/scss/_components/service/_recent.scss */
 .recent__sign {
   position: absolute;
   left: 2px;
@@ -6683,11 +6744,18 @@ picture {
   -webkit-border-radius: 0 0 10px 10px;
           border-radius: 0 0 10px 10px;
   background-color: rgba(188, 188, 188, 0.1);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
-/* line 126, src/scss/_components/service/_recent.scss */
+@media screen and (max-width: 1023px) {
+  /* line 117, src/scss/_components/service/_recent.scss */
+  .recent__sign {
+    height: 314px;
+  }
+}
+
+/* line 137, src/scss/_components/service/_recent.scss */
 .recent__sign-title {
   font-weight: 600;
   font-size: 30px;
@@ -6696,7 +6764,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 134, src/scss/_components/service/_recent.scss */
+/* line 145, src/scss/_components/service/_recent.scss */
 .recent__sign-desc {
   padding-bottom: 30px;
   font-size: 16px;
@@ -6831,8 +6899,8 @@ picture {
 }
 
 /* line 95, src/scss/_components/service/_status.scss */
-.status__box-body ul li:not(:first-of-type) {
-  padding-left: 20px;
+.status__box-body ul li:not(:last-of-type) {
+  padding-right: 20px;
 }
 
 /* line 99, src/scss/_components/service/_status.scss */
@@ -6876,84 +6944,7 @@ picture {
   background-color: #f4f4f2;
 }
 
-/* line 136, src/scss/_components/service/_status.scss */
-.status__box-line-1 > span:nth-of-type(1) {
-  left: 70px;
-  width: 10px;
-  background-color: #ffd56b;
-}
-
-/* line 141, src/scss/_components/service/_status.scss */
-.status__box-line-1 > span:nth-of-type(2) {
-  left: 170px;
-  width: 20px;
-  background-color: #ff7b54;
-}
-
-/* line 146, src/scss/_components/service/_status.scss */
-.status__box-line-1 > span:nth-of-type(3) {
-  left: 270px;
-  width: 5px;
-  background-color: #fd5e53;
-}
-
-/* line 151, src/scss/_components/service/_status.scss */
-.status__box-line-1 > span:nth-of-type(4) {
-  right: 303px;
-  width: 30px;
-  background-color: #ffb26b;
-}
-
-/* line 160, src/scss/_components/service/_status.scss */
-.status__box-line-2 > span:nth-of-type(1) {
-  left: 233px;
-  width: 10px;
-  background-color: #ffd56b;
-}
-
-/* line 165, src/scss/_components/service/_status.scss */
-.status__box-line-2 > span:nth-of-type(2) {
-  left: 50%;
-  width: 5px;
-  background-color: #ffb26b;
-}
-
-/* line 170, src/scss/_components/service/_status.scss */
-.status__box-line-2 > span:nth-of-type(3) {
-  right: 140px;
-  width: 30px;
-  background-color: #ff7b54;
-}
-
-/* line 179, src/scss/_components/service/_status.scss */
-.status__box-line-3 > span:nth-of-type(1) {
-  left: 107px;
-  width: 10px;
-  background-color: #FFD56B;
-}
-
-/* line 184, src/scss/_components/service/_status.scss */
-.status__box-line-3 > span:nth-of-type(2) {
-  left: 207px;
-  width: 20px;
-  background-color: #FF7B54;
-}
-
-/* line 189, src/scss/_components/service/_status.scss */
-.status__box-line-3 > span:nth-of-type(3) {
-  left: 354px;
-  width: 30px;
-  background-color: #FFD56B;
-}
-
-/* line 194, src/scss/_components/service/_status.scss */
-.status__box-line-3 > span:nth-of-type(4) {
-  right: 253px;
-  width: 5px;
-  background-color: #FD5E53;
-}
-
-/* line 202, src/scss/_components/service/_status.scss */
+/* line 134, src/scss/_components/service/_status.scss */
 .status__box-line > span {
   position: absolute;
   top: -5px;
@@ -6963,7 +6954,7 @@ picture {
           border-radius: 3px;
 }
 
-/* line 209, src/scss/_components/service/_status.scss */
+/* line 141, src/scss/_components/service/_status.scss */
 .status__box-line-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6975,25 +6966,25 @@ picture {
           align-items: center;
 }
 
-/* line 213, src/scss/_components/service/_status.scss */
+/* line 145, src/scss/_components/service/_status.scss */
 .status__box-line-wrapper:not(:last-of-type) {
   padding-bottom: 20px;
 }
 
-/* line 218, src/scss/_components/service/_status.scss */
+/* line 150, src/scss/_components/service/_status.scss */
 .status__box-line-wrapper > div:nth-of-type(1) {
   width: 100%;
   max-width: 160px;
 }
 
-/* line 222, src/scss/_components/service/_status.scss */
+/* line 154, src/scss/_components/service/_status.scss */
 .status__box-line-wrapper > div:nth-of-type(1) p {
   font-size: 20px;
   line-height: 37px;
   color: #163A5F;
 }
 
-/* line 228, src/scss/_components/service/_status.scss */
+/* line 160, src/scss/_components/service/_status.scss */
 .status__box-line-wrapper > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -7003,7 +6994,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 237, src/scss/_components/service/_status.scss */
+/* line 169, src/scss/_components/service/_status.scss */
 .status__box-time {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7016,7 +7007,7 @@ picture {
   padding-bottom: 35px;
 }
 
-/* line 242, src/scss/_components/service/_status.scss */
+/* line 174, src/scss/_components/service/_status.scss */
 .status__box-time > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7034,7 +7025,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 249, src/scss/_components/service/_status.scss */
+/* line 181, src/scss/_components/service/_status.scss */
 .status__box-time > div:not(:first-of-type):not(:last-of-type) {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -7042,7 +7033,7 @@ picture {
           justify-content: center;
 }
 
-/* line 253, src/scss/_components/service/_status.scss */
+/* line 185, src/scss/_components/service/_status.scss */
 .status__box-time > div:last-of-type {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -7050,12 +7041,12 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 257, src/scss/_components/service/_status.scss */
+/* line 189, src/scss/_components/service/_status.scss */
 .status__box-time > div span {
   color: #163a5f;
 }
 
-/* line 264, src/scss/_components/service/_status.scss */
+/* line 196, src/scss/_components/service/_status.scss */
 .status__action {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7067,7 +7058,7 @@ picture {
           align-items: center;
 }
 
-/* line 269, src/scss/_components/service/_status.scss */
+/* line 201, src/scss/_components/service/_status.scss */
 .status__action > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -7078,7 +7069,7 @@ picture {
   padding-right: 30px;
 }
 
-/* line 275, src/scss/_components/service/_status.scss */
+/* line 207, src/scss/_components/service/_status.scss */
 .status__action > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7090,7 +7081,7 @@ picture {
           align-items: center;
 }
 
-/* line 282, src/scss/_components/service/_status.scss */
+/* line 214, src/scss/_components/service/_status.scss */
 .status__pagination {
   position: relative;
   width: 100%;
@@ -7098,7 +7089,7 @@ picture {
   background-color: #edf0f3;
 }
 
-/* line 288, src/scss/_components/service/_status.scss */
+/* line 220, src/scss/_components/service/_status.scss */
 .status__pagination > span {
   top: -2px !important;
   height: 6px !important;
@@ -7107,7 +7098,7 @@ picture {
   background-color: #21BF73 !important;
 }
 
-/* line 296, src/scss/_components/service/_status.scss */
+/* line 228, src/scss/_components/service/_status.scss */
 .status__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7135,12 +7126,12 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 307, src/scss/_components/service/_status.scss */
+/* line 239, src/scss/_components/service/_status.scss */
 .status__btn:not(:last-of-type) {
   margin-right: 10px;
 }
 
-/* line 311, src/scss/_components/service/_status.scss */
+/* line 243, src/scss/_components/service/_status.scss */
 .status__btn:hover {
   background-color: #21bf73;
   -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
@@ -7150,7 +7141,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 315, src/scss/_components/service/_status.scss */
+/* line 247, src/scss/_components/service/_status.scss */
 .status__btn:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -7158,7 +7149,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 321, src/scss/_components/service/_status.scss */
+/* line 253, src/scss/_components/service/_status.scss */
 .status__btn.swiper-button-disabled {
   pointer-events: none;
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
@@ -7171,7 +7162,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 327, src/scss/_components/service/_status.scss */
+/* line 259, src/scss/_components/service/_status.scss */
 .status__btn.swiper-button-disabled .icon-font {
   color: #576472;
   -webkit-transition: color 0.3s ease-in-out;
@@ -7179,14 +7170,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 334, src/scss/_components/service/_status.scss */
+/* line 266, src/scss/_components/service/_status.scss */
 .status__btn--next .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 339, src/scss/_components/service/_status.scss */
+/* line 271, src/scss/_components/service/_status.scss */
 .status__btn .icon-font {
   width: 14px;
   height: 14px;
@@ -7198,7 +7189,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 350, src/scss/_components/service/_status.scss */
+/* line 282, src/scss/_components/service/_status.scss */
 .status .swiper-container {
   position: relative;
   left: -50px;
@@ -7482,7 +7473,7 @@ picture {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 360px;
+  width: 100%;
   height: 100%;
   min-width: 100%;
   padding: 30px 30px 50px;
@@ -7569,10 +7560,22 @@ picture {
           border-radius: 50%;
 }
 
-/* line 89, src/scss/_components/service/_twitter.scss */
+/* line 87, src/scss/_components/service/_twitter.scss */
+.twitter .swiper-container {
+  padding-left: 15px;
+}
+
+/* line 91, src/scss/_components/service/_twitter.scss */
 .twitter .swiper-slide {
   width: 360px !important;
   height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 91, src/scss/_components/service/_twitter.scss */
+  .twitter .swiper-slide {
+    width: 330px !important;
+  }
 }
 
 /* line 3, src/scss/_components/service/_suite.scss */
@@ -7634,7 +7637,31 @@ picture {
   color: #21BF73;
 }
 
-/* line 46, src/scss/_components/service/_suite.scss */
+@media screen and (max-width: 1365px) {
+  /* line 38, src/scss/_components/service/_suite.scss */
+  .suite__title {
+    font-size: 59px;
+    line-height: 82px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 38, src/scss/_components/service/_suite.scss */
+  .suite__title {
+    font-size: 54px;
+    line-height: 78px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 38, src/scss/_components/service/_suite.scss */
+  .suite__title {
+    font-size: 49px;
+    line-height: 70px;
+  }
+}
+
+/* line 58, src/scss/_components/service/_suite.scss */
 .suite__desc {
   font-size: 18px;
   line-height: 28px;

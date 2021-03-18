@@ -41,6 +41,18 @@
 		font-size: 64px;
 		line-height: 88px;
 		color: #21BF73;
+		@include adaptive(1365) {
+			font-size: 59px;
+			line-height: 82px;
+		}
+		@include adaptive(1279) {
+			font-size: 54px;
+			line-height: 78px;
+		}
+		@include adaptive(1023) {
+			font-size: 49px;
+			line-height: 70px;
+		}
 	}
 
 	&__desc {

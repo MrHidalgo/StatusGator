@@ -49,6 +49,9 @@
 
 					&:not(:first-of-type) {
 						padding-left: 50px;
+						@include adaptive(1279) {
+							padding-left: 30px;
+						}
 					}
 
 					p {
@@ -71,6 +74,9 @@
 
 						&:not(:first-of-type) {
 							padding-left: 50px;
+							@include adaptive(1279) {
+								padding-left: 30px;
+							}
 						}
 
 						i {
@@ -95,6 +101,8 @@
 						}
 
 						a {
+							white-space: nowrap;
+							display: block;
 							font-weight: 500;
 							font-size: 14px;
 							line-height: 17px;
@@ -121,7 +129,10 @@
 		padding: 55px;
 		border-radius: 0 0 10px 10px;
 		background-color: rgba(188, 188, 188, 0.1);
-		backdrop-filter: blur(2px);
+		backdrop-filter: blur(3px);
+		@include adaptive(1023) {
+			height: 314px;
+		}
 
 		&-title {
 			font-weight: 600;
