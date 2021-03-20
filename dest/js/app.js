@@ -223,15 +223,15 @@ var initSwiper = function initSwiper() {
       effect: 'slide',
       speed: 1000,
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 25,
       breakpoints: {
         320: {
           slidesPerView: 2,
-          spaceBetween: 50
+          spaceBetween: 25
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween: 50
+          spaceBetween: 25
         }
       },
       navigation: {

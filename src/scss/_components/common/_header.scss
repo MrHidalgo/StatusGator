@@ -138,7 +138,7 @@
 						align-items: center;
 						justify-content: center;
 						width: 100%;
-						padding: 32px;
+						padding: 32px 0;
 					}
 				}
 
@@ -210,6 +210,7 @@
 		justify-content: center;
 		@include adaptive(1023) {
 		  flex-direction: column;
+			width: 100%;
 		}
 
 		a {
@@ -230,11 +231,12 @@
 				margin-right: 15px;
 			}
 			@include adaptive(1023) {
+				width: 100%;
+				padding: 5px 10px 15px;
+				margin-bottom: 15px;
+				border-bottom: 1px solid rgba(87, 100, 114, 0.2);
 				font-size: 18px;
-
-				&:not(:last-of-type) {
-					margin-bottom: 40px;
-				}
+				font-weight: 500;
 			}
 
 			&:before,
