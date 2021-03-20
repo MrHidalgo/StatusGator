@@ -3,13 +3,13 @@ ProjectTitle: StatusGator
 PageList:
 - file: index.html
   titleName: Homepage
-  ready: 90
+  ready: 95
 - file: solution.html
   titleName: Solution
   ready: 90
 - file: plans.html
   titleName: Plans
-  ready: 90
+  ready: 95
 - file: all-services.html
   titleName: All Services
   ready: 90
