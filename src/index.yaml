@@ -6,7 +6,7 @@ PageList:
   ready: 95
 - file: solution.html
   titleName: Solution
-  ready: 90
+  ready: 95
 - file: plans.html
   titleName: Plans
   ready: 95
@@ -15,7 +15,7 @@ PageList:
   ready: 95
 - file: signup.html
   titleName: Sign Up
-  ready: 90
+  ready: 95
 - file: service.html
   titleName: Service
   ready: 90

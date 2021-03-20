@@ -689,7 +689,7 @@ picture {
   padding-bottom: 90px;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1535px) {
   /* line 27, src/scss/_macros/_logotype.scss */
   .logo.logo--sign {
     padding-bottom: 40px;
@@ -5682,7 +5682,7 @@ picture {
   padding: 80px 0 20px 20px;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1535px) {
   /* line 33, src/scss/_components/sign/_sign.scss */
   .sign__wrapper-right {
     padding: 40px 0 20px 20px;
@@ -5696,7 +5696,7 @@ picture {
   }
 }
 
-/* line 45, src/scss/_components/sign/_sign.scss */
+/* line 48, src/scss/_components/sign/_sign.scss */
 .sign__wrapper-right > div {
   width: 100%;
   max-width: 600px;
@@ -5704,7 +5704,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 54, src/scss/_components/sign/_sign.scss */
+/* line 57, src/scss/_components/sign/_sign.scss */
 .sign__title {
   padding-bottom: 40px;
   color: #ffffff;
@@ -5712,34 +5712,34 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 54, src/scss/_components/sign/_sign.scss */
+  /* line 57, src/scss/_components/sign/_sign.scss */
   .sign__title {
     font-size: 30px;
   }
 }
 
-/* line 63, src/scss/_components/sign/_sign.scss */
+/* line 66, src/scss/_components/sign/_sign.scss */
 .sign__subtitle {
   padding-bottom: 50px;
   text-align: left;
   font-weight: 600;
 }
 
-@media screen and (max-width: 1279px) {
-  /* line 63, src/scss/_components/sign/_sign.scss */
-  .sign__subtitle {
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 63, src/scss/_components/sign/_sign.scss */
+@media screen and (max-width: 1535px) {
+  /* line 66, src/scss/_components/sign/_sign.scss */
   .sign__subtitle {
     padding-bottom: 20px;
   }
 }
 
-/* line 75, src/scss/_components/sign/_sign.scss */
+@media screen and (max-width: 767px) {
+  /* line 66, src/scss/_components/sign/_sign.scss */
+  .sign__subtitle {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 81, src/scss/_components/sign/_sign.scss */
 .sign__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5754,7 +5754,7 @@ picture {
   padding-bottom: 40px;
 }
 
-/* line 81, src/scss/_components/sign/_sign.scss */
+/* line 87, src/scss/_components/sign/_sign.scss */
 .sign__list li {
   list-style: disc;
   font-size: 20px;
@@ -5763,25 +5763,25 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 81, src/scss/_components/sign/_sign.scss */
+  /* line 87, src/scss/_components/sign/_sign.scss */
   .sign__list li {
     font-size: 18px;
   }
 }
 
-/* line 90, src/scss/_components/sign/_sign.scss */
+/* line 96, src/scss/_components/sign/_sign.scss */
 .sign__list li:not(:last-of-type) {
   padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 90, src/scss/_components/sign/_sign.scss */
+  /* line 96, src/scss/_components/sign/_sign.scss */
   .sign__list li:not(:last-of-type) {
     padding-bottom: 15px;
   }
 }
 
-/* line 97, src/scss/_components/sign/_sign.scss */
+/* line 103, src/scss/_components/sign/_sign.scss */
 .sign__list li p {
   font-size: 18px;
   line-height: 28px;
@@ -5789,13 +5789,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 97, src/scss/_components/sign/_sign.scss */
+  /* line 103, src/scss/_components/sign/_sign.scss */
   .sign__list li p {
     font-size: 16px;
   }
 }
 
-/* line 108, src/scss/_components/sign/_sign.scss */
+/* line 114, src/scss/_components/sign/_sign.scss */
 .sign__video {
   overflow: hidden;
   position: relative;
@@ -5811,7 +5811,7 @@ picture {
           border-radius: 14px;
 }
 
-/* line 118, src/scss/_components/sign/_sign.scss */
+/* line 124, src/scss/_components/sign/_sign.scss */
 .sign__video video {
   display: block;
   max-width: 100%;
@@ -5820,7 +5820,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 127, src/scss/_components/sign/_sign.scss */
+/* line 133, src/scss/_components/sign/_sign.scss */
 .sign__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5833,7 +5833,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 131, src/scss/_components/sign/_sign.scss */
+/* line 137, src/scss/_components/sign/_sign.scss */
 .sign__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5846,12 +5846,12 @@ picture {
           flex-direction: column;
 }
 
-/* line 135, src/scss/_components/sign/_sign.scss */
+/* line 141, src/scss/_components/sign/_sign.scss */
 .sign__form-field:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
-/* line 140, src/scss/_components/sign/_sign.scss */
+/* line 146, src/scss/_components/sign/_sign.scss */
 .sign__form-field--divider i {
   display: block;
   font-style: normal;
@@ -5862,12 +5862,12 @@ picture {
   color: #163A5F;
 }
 
-/* line 151, src/scss/_components/sign/_sign.scss */
+/* line 157, src/scss/_components/sign/_sign.scss */
 .sign__form-field--info {
   padding-bottom: 4px;
 }
 
-/* line 154, src/scss/_components/sign/_sign.scss */
+/* line 160, src/scss/_components/sign/_sign.scss */
 .sign__form-field--info span {
   font-size: 14px;
   line-height: 17px;
@@ -5875,14 +5875,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 154, src/scss/_components/sign/_sign.scss */
+  /* line 160, src/scss/_components/sign/_sign.scss */
   .sign__form-field--info span {
     font-size: 12px;
     line-height: 20px;
   }
 }
 
-/* line 164, src/scss/_components/sign/_sign.scss */
+/* line 170, src/scss/_components/sign/_sign.scss */
 .sign__form-field--info p {
   padding-top: 16px;
   font-size: 14px;
@@ -5892,14 +5892,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 164, src/scss/_components/sign/_sign.scss */
+  /* line 170, src/scss/_components/sign/_sign.scss */
   .sign__form-field--info p {
     font-size: 12px;
     line-height: 15px;
   }
 }
 
-/* line 175, src/scss/_components/sign/_sign.scss */
+/* line 181, src/scss/_components/sign/_sign.scss */
 .sign__form-field--info p a {
   margin-left: 15px;
   font-weight: bold;
@@ -5911,7 +5911,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 175, src/scss/_components/sign/_sign.scss */
+  /* line 181, src/scss/_components/sign/_sign.scss */
   .sign__form-field--info p a {
     margin-left: 5px;
     font-size: 12px;
@@ -5919,22 +5919,22 @@ picture {
   }
 }
 
-/* line 191, src/scss/_components/sign/_sign.scss */
+/* line 197, src/scss/_components/sign/_sign.scss */
 .sign__form-field--btn {
   margin-bottom: 10px;
 }
 
-/* line 194, src/scss/_components/sign/_sign.scss */
+/* line 200, src/scss/_components/sign/_sign.scss */
 .sign__form-field--btn .c-btn {
   width: 100%;
 }
 
-/* line 197, src/scss/_components/sign/_sign.scss */
+/* line 203, src/scss/_components/sign/_sign.scss */
 .sign__form-field--btn .c-btn__wrapper {
   width: 100%;
 }
 
-/* line 203, src/scss/_components/sign/_sign.scss */
+/* line 209, src/scss/_components/sign/_sign.scss */
 .sign__form-field label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5947,7 +5947,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 203, src/scss/_components/sign/_sign.scss */
+  /* line 209, src/scss/_components/sign/_sign.scss */
   .sign__form-field label {
     padding-bottom: 5px;
     font-size: 12px;
@@ -5955,7 +5955,7 @@ picture {
   }
 }
 
-/* line 216, src/scss/_components/sign/_sign.scss */
+/* line 222, src/scss/_components/sign/_sign.scss */
 .sign__form-field input {
   outline: none;
   position: relative;
@@ -5997,13 +5997,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 216, src/scss/_components/sign/_sign.scss */
+  /* line 222, src/scss/_components/sign/_sign.scss */
   .sign__form-field input {
     height: 47px;
   }
 }
 
-/* line 237, src/scss/_components/sign/_sign.scss */
+/* line 243, src/scss/_components/sign/_sign.scss */
 .sign__form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6019,7 +6019,7 @@ picture {
   margin-bottom: 20px;
 }
 
-/* line 243, src/scss/_components/sign/_sign.scss */
+/* line 249, src/scss/_components/sign/_sign.scss */
 .sign__form-group > div {
   width: 100%;
   max-width: -webkit-calc((100% - 20px) / 2);
@@ -6027,22 +6027,22 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 243, src/scss/_components/sign/_sign.scss */
+  /* line 249, src/scss/_components/sign/_sign.scss */
   .sign__form-group > div {
     max-width: 100%;
   }
-  /* line 250, src/scss/_components/sign/_sign.scss */
+  /* line 256, src/scss/_components/sign/_sign.scss */
   .sign__form-group > div:nth-of-type(1) .sign__form-field {
     margin-bottom: 20px;
   }
 }
 
-/* line 257, src/scss/_components/sign/_sign.scss */
+/* line 263, src/scss/_components/sign/_sign.scss */
 .sign__form-group .sign__form-field {
   margin-bottom: 0;
 }
 
-/* line 262, src/scss/_components/sign/_sign.scss */
+/* line 268, src/scss/_components/sign/_sign.scss */
 .sign__form-btn {
   outline: none;
   position: relative;
@@ -6066,7 +6066,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 274, src/scss/_components/sign/_sign.scss */
+/* line 280, src/scss/_components/sign/_sign.scss */
 .sign__form-btn img {
   position: absolute;
   top: 50%;
@@ -6080,7 +6080,7 @@ picture {
   height: auto;
 }
 
-/* line 285, src/scss/_components/sign/_sign.scss */
+/* line 291, src/scss/_components/sign/_sign.scss */
 .sign__form-btn span {
   font-weight: 500;
   font-size: 17px;
@@ -6090,7 +6090,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 285, src/scss/_components/sign/_sign.scss */
+  /* line 291, src/scss/_components/sign/_sign.scss */
   .sign__form-btn span {
     font-size: 14px;
     line-height: 17px;
