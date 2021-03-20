@@ -346,11 +346,11 @@
 		}
 		@include adaptive(767) {
 			padding: 15px;
-			background-color: transparent;
+			//background-color: transparent;
 		}
 
 		&:hover {
-			background-color: rgba(#F1F4F8, 1);
+			background-color: darken(#F1F4F8, 3%);
 			transform: translateY(-5px);
 			@include transition(background-color, transform);
 		}
@@ -376,7 +376,7 @@
 				@include adaptive(767) {
 					max-width: 100%;
 					padding-left: 0;
-					padding-bottom: 0;
+					//padding-bottom: 0;
 				}
 			}
 		}

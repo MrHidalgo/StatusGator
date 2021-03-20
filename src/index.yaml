@@ -12,7 +12,7 @@ PageList:
   ready: 95
 - file: all-services.html
   titleName: All Services
-  ready: 90
+  ready: 95
 - file: signup.html
   titleName: Sign Up
   ready: 90

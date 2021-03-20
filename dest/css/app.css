@@ -4556,13 +4556,12 @@ picture {
   /* line 337, src/scss/_components/all-services/_main.scss */
   .services-main__box {
     padding: 15px;
-    background-color: transparent;
   }
 }
 
 /* line 352, src/scss/_components/all-services/_main.scss */
 .services-main__box:hover {
-  background-color: #f1f4f8;
+  background-color: #e7ecf3;
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -4612,7 +4611,6 @@ picture {
   .services-main__box-wrapper > div {
     max-width: 100%;
     padding-left: 0;
-    padding-bottom: 0;
   }
 }
 
