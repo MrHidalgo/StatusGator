@@ -13,7 +13,7 @@
 }
 
 /* line 36, src/scss/_utilities/_extend.scss */
-.c-title, .plans.plans--plans .plans__title, .plans__desc, .plans__box-price, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p, .service__wrapper p, .suite__title {
+.c-title, .plans.plans--plans .plans__title, .plans__desc, .plans__box-price, .plans__subtitle, .main__title, .feature__box-title, .additional__box h3, .highlights__header p, .highlights__table-price p, .service__wrapper h1, .suite__title {
   font-family: 'Gogh', sans-serif;
 }
 
@@ -878,6 +878,11 @@ picture {
 }
 
 /* line 6, src/scss/_macros/_modal.scss */
+.c-modal#serviceDetails {
+  max-width: 550px;
+}
+
+/* line 10, src/scss/_macros/_modal.scss */
 .c-modal__close {
   position: absolute;
   top: 20px;
@@ -901,13 +906,13 @@ picture {
   background-color: rgba(22, 58, 95, 0.1);
 }
 
-/* line 18, src/scss/_macros/_modal.scss */
+/* line 22, src/scss/_macros/_modal.scss */
 .c-modal__close .icon-font {
   font-size: 9px;
   color: #163a5f;
 }
 
-/* line 24, src/scss/_macros/_modal.scss */
+/* line 28, src/scss/_macros/_modal.scss */
 .c-modal__title {
   padding: 0 70px 40px;
   font-weight: 500;
@@ -917,14 +922,21 @@ picture {
   color: #163A5F;
 }
 
-/* line 33, src/scss/_macros/_modal.scss */
+/* line 37, src/scss/_macros/_modal.scss */
+.c-modal__desc {
+  font-size: 18px;
+  line-height: 30px;
+  color: #576472;
+}
+
+/* line 43, src/scss/_macros/_modal.scss */
 .c-modal .recent__table {
   padding: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 41, src/scss/_macros/_modal.scss */
+/* line 51, src/scss/_macros/_modal.scss */
 .c-modal .recent__table table tbody tr td > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -937,7 +949,7 @@ picture {
   min-height: 35px;
 }
 
-/* line 46, src/scss/_macros/_modal.scss */
+/* line 56, src/scss/_macros/_modal.scss */
 .c-modal .recent__table table tbody tr td > div span {
   width: 100%;
   max-width: 100px;
@@ -946,7 +958,7 @@ picture {
   color: #576472;
 }
 
-/* line 54, src/scss/_macros/_modal.scss */
+/* line 64, src/scss/_macros/_modal.scss */
 .c-modal .recent__table table tbody tr td > div p {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -960,13 +972,13 @@ picture {
   color: #163A5F;
 }
 
-/* line 70, src/scss/_macros/_modal.scss */
+/* line 80, src/scss/_macros/_modal.scss */
 .c-modal .status__box {
   padding: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 74, src/scss/_macros/_modal.scss */
+  /* line 84, src/scss/_macros/_modal.scss */
   .c-modal .status__box-body ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -976,7 +988,7 @@ picture {
   }
 }
 
-/* line 80, src/scss/_macros/_modal.scss */
+/* line 90, src/scss/_macros/_modal.scss */
 .c-modal .status__box-body ul li:not(:last-of-type) {
   padding-right: 20px;
 }
@@ -5484,7 +5496,7 @@ picture {
 }
 
 /* line 88, src/scss/_components/plans/_faq.scss */
-.faq__collapse-head p {
+.faq__collapse-head h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -5493,7 +5505,7 @@ picture {
 
 @media screen and (max-width: 767px) {
   /* line 88, src/scss/_components/plans/_faq.scss */
-  .faq__collapse-head p {
+  .faq__collapse-head h3 {
     font-size: 13px;
     line-height: 20px;
   }
@@ -6401,7 +6413,7 @@ picture {
     background-color: #FFFFFF;
   }
   /* line 174, src/scss/_components/homepage/_solutions.scss */
-  .solutions__box-head.is-active p:after {
+  .solutions__box-head.is-active h3:after {
     -webkit-transform: rotate(-225deg);
         -ms-transform: rotate(-225deg);
             transform: rotate(-225deg);
@@ -6469,7 +6481,7 @@ picture {
 }
 
 /* line 213, src/scss/_components/homepage/_solutions.scss */
-.solutions__box-head p {
+.solutions__box-head h3 {
   font-size: 33px;
   line-height: 45px;
   color: #163A5F;
@@ -6477,7 +6489,7 @@ picture {
 
 @media screen and (max-width: 767px) {
   /* line 213, src/scss/_components/homepage/_solutions.scss */
-  .solutions__box-head p {
+  .solutions__box-head h3 {
     position: relative;
     padding-right: 20px;
     font-weight: 500;
@@ -6485,7 +6497,7 @@ picture {
     line-height: 17px;
   }
   /* line 224, src/scss/_components/homepage/_solutions.scss */
-  .solutions__box-head p:after {
+  .solutions__box-head h3:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -6958,20 +6970,20 @@ picture {
 }
 
 /* line 62, src/scss/_components/service/_service.scss */
-.service__wrapper p {
+.service__wrapper h1 {
   font-weight: 800;
   color: #163A5F;
 }
 
 /* line 67, src/scss/_components/service/_service.scss */
-.service__wrapper p.short {
+.service__wrapper h1.short {
   font-size: 48px;
   line-height: 60px;
 }
 
 @media screen and (max-width: 1365px) {
   /* line 67, src/scss/_components/service/_service.scss */
-  .service__wrapper p.short {
+  .service__wrapper h1.short {
     font-size: 44px;
     line-height: 55px;
   }
@@ -6979,7 +6991,7 @@ picture {
 
 @media screen and (max-width: 1279px) {
   /* line 67, src/scss/_components/service/_service.scss */
-  .service__wrapper p.short {
+  .service__wrapper h1.short {
     font-size: 40px;
     line-height: 50px;
   }
@@ -6987,7 +6999,7 @@ picture {
 
 @media screen and (max-width: 1023px) {
   /* line 67, src/scss/_components/service/_service.scss */
-  .service__wrapper p.short {
+  .service__wrapper h1.short {
     font-size: 35px;
     line-height: 45px;
   }
@@ -6995,7 +7007,7 @@ picture {
 
 @media screen and (max-width: 767px) {
   /* line 67, src/scss/_components/service/_service.scss */
-  .service__wrapper p.short {
+  .service__wrapper h1.short {
     padding-bottom: 10px;
     font-size: 24px;
     line-height: 34px;
@@ -7003,14 +7015,14 @@ picture {
 }
 
 /* line 88, src/scss/_components/service/_service.scss */
-.service__wrapper p.long {
+.service__wrapper h1.long {
   font-size: 32px;
   line-height: 44px;
 }
 
 @media screen and (max-width: 1365px) {
   /* line 88, src/scss/_components/service/_service.scss */
-  .service__wrapper p.long {
+  .service__wrapper h1.long {
     font-size: 28px;
     line-height: 40px;
   }
@@ -7018,7 +7030,7 @@ picture {
 
 @media screen and (max-width: 1023px) {
   /* line 88, src/scss/_components/service/_service.scss */
-  .service__wrapper p.long {
+  .service__wrapper h1.long {
     font-size: 24px;
     line-height: 35px;
   }
@@ -7026,7 +7038,7 @@ picture {
 
 @media screen and (max-width: 767px) {
   /* line 88, src/scss/_components/service/_service.scss */
-  .service__wrapper p.long {
+  .service__wrapper h1.long {
     font-size: 20px;
     line-height: 26px;
   }

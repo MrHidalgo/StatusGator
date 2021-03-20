@@ -8,16 +8,17 @@ section#last.last
 
 		.last__wrapper
 
-			.status__box
+			a.status__box(href="#lastDetails" popup-status-js data-effect='mfp-zoom-in')
 				.status__box-head
 
 					.status__box-line-wrapper
 						div(style="display: none;")
 						div
 							.status__box-line
-								span(style='left: 2%; width: 10px; background-color: #BBBFCA;')
-								span(style='left: 12%; width: 100px; background-color: #FFB26B;')
-								span(style='left: 58%; width: 10px; background-color: #FD5E53;')
+								span(data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Up:</strong> 23 hours" style='left: 2%; width: 10px; background-color: #BBBFCA;')
+								span(data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Warn:</strong> 10 minutes" style='left: 12%; width: 100px; background-color: #FFB26B;')
+								span(data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Down:</strong> 45 minutes" style='left: 58%; width: 10px; background-color: #FD5E53;')
+								span(data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Maintenance:</strong> None" style='left: 70%; width: 10px; background-color: #E9E9E2;')
 
 				.status__box-time.status__box-time--desktop
 					div
@@ -55,7 +56,7 @@ section#last.last
 							p!= "<strong>Maintenance:</strong> None"
 
 				.status__box-footer
-					a.status__preview(href="#lastDetails" popup-js data-effect='mfp-zoom-in')
+					a.status__preview(href="#lastDetails" popup-status-js data-effect='mfp-zoom-in')
 						i.icon-font.icon-eye
 						span Click to Enlarge
 

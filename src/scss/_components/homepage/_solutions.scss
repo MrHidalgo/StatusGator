@@ -170,7 +170,7 @@
 				background-color: #FFFFFF;
 
 				&.is-active {
-					p {
+					h3 {
 						&:after {
 							transform: rotate(-225deg);
 							@include transition(transform);
@@ -210,7 +210,7 @@
 				}
 			}
 
-			p {
+			h3 {
 				font-size: 33px;
 				line-height: 45px;
 				color: #163A5F;

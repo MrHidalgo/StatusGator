@@ -239,6 +239,10 @@
 		plansCB();
 		solutionEveryoneCB();
 		// ==========================================
+		
+		// OTHER
+		$('[data-toggle="tooltip"]').tooltip();
+		// ==========================================
 	};
 	initNative();
 })();

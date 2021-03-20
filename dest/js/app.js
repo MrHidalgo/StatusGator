@@ -77,6 +77,30 @@ var initPopups = function initPopups() {
       }
     });
 
+    $('[popup-status-js]').on('click', function (ev) {
+      if ($(window).width() < 768) {
+        $('[popup-status-js]').magnificPopup({
+          type: 'inline',
+          fixedContentPos: true,
+          fixedBgPos: true,
+          overflowY: 'auto',
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'is-show',
+          callbacks: {
+            beforeOpen: function beforeOpen() {
+              this.st.mainClass = this.st.el.attr('data-effect');
+            },
+            close: function close() {}
+          }
+        });
+      } else {
+        return false;
+      }
+    });
+
     $('[popup-close-js]').on('click', function (ev) {
       $.magnificPopup.close();
     });
@@ -554,6 +578,10 @@ var initSwiper = function initSwiper() {
     filtersCB();
     plansCB();
     solutionEveryoneCB();
+    // ==========================================
+
+    // OTHER
+    $('[data-toggle="tooltip"]').tooltip();
     // ==========================================
   };
   initNative();
