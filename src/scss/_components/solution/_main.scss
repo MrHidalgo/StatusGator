@@ -13,7 +13,7 @@
 	}
 
 	&.main--service {
-		padding-top: 50px;
+		padding-top: 100px;
 		@include adaptive(1279) {
 			padding-top: 50px;
 		}
@@ -24,6 +24,10 @@
 		.main {
 			&__title {
 				padding-bottom: 50px;
+				font-size: 44px;
+				@include adaptive(1535) {
+					font-size: 36px;
+				}
 				@include adaptive(767) {
 					max-width: 100%;
 					padding-bottom: 20px;

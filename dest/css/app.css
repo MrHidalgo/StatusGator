@@ -2564,7 +2564,7 @@ picture {
 
 /* line 15, src/scss/_components/solution/_main.scss */
 .main.main--service {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -2584,6 +2584,14 @@ picture {
 /* line 25, src/scss/_components/solution/_main.scss */
 .main.main--service .main__title {
   padding-bottom: 50px;
+  font-size: 44px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 25, src/scss/_components/solution/_main.scss */
+  .main.main--service .main__title {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2595,27 +2603,27 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 35, src/scss/_components/solution/_main.scss */
+  /* line 39, src/scss/_components/solution/_main.scss */
   .main.main--service .main__btn .c-btn {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 44, src/scss/_components/solution/_main.scss */
+  /* line 48, src/scss/_components/solution/_main.scss */
   .main.main--homepage .main__title {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 52, src/scss/_components/solution/_main.scss */
+  /* line 56, src/scss/_components/solution/_main.scss */
   .main.main--homepage .main__btn .c-btn {
     width: 100%;
   }
 }
 
-/* line 60, src/scss/_components/solution/_main.scss */
+/* line 64, src/scss/_components/solution/_main.scss */
 .main__bg {
   z-index: 0;
   position: absolute;
@@ -2633,20 +2641,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 60, src/scss/_components/solution/_main.scss */
+  /* line 64, src/scss/_components/solution/_main.scss */
   .main__bg {
     opacity: 0.55;
   }
 }
 
-/* line 78, src/scss/_components/solution/_main.scss */
+/* line 82, src/scss/_components/solution/_main.scss */
 .main__bg-circle {
   position: absolute;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 82, src/scss/_components/solution/_main.scss */
+/* line 86, src/scss/_components/solution/_main.scss */
 .main__bg-circle:nth-of-type(1) {
   left: 0;
   bottom: 217px;
@@ -2655,7 +2663,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 89, src/scss/_components/solution/_main.scss */
+/* line 93, src/scss/_components/solution/_main.scss */
 .main__bg-circle:nth-of-type(2) {
   left: 241px;
   bottom: 0;
@@ -2664,7 +2672,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 96, src/scss/_components/solution/_main.scss */
+/* line 100, src/scss/_components/solution/_main.scss */
 .main__bg-circle:nth-of-type(3) {
   right: 0;
   bottom: 89px;
@@ -2673,7 +2681,7 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 103, src/scss/_components/solution/_main.scss */
+/* line 107, src/scss/_components/solution/_main.scss */
 .main__bg-circle:nth-of-type(4) {
   top: 0;
   right: 34px;
@@ -2682,7 +2690,7 @@ picture {
   background-color: #F5DEA3;
 }
 
-/* line 110, src/scss/_components/solution/_main.scss */
+/* line 114, src/scss/_components/solution/_main.scss */
 .main__bg-circle:nth-of-type(5) {
   top: 130px;
   left: 67px;
@@ -2691,13 +2699,13 @@ picture {
   background-color: #99F3BD;
 }
 
-/* line 120, src/scss/_components/solution/_main.scss */
+/* line 124, src/scss/_components/solution/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 125, src/scss/_components/solution/_main.scss */
+/* line 129, src/scss/_components/solution/_main.scss */
 .main__title {
   padding-bottom: 10px;
   font-size: 48px;
@@ -2708,14 +2716,14 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 125, src/scss/_components/solution/_main.scss */
+  /* line 129, src/scss/_components/solution/_main.scss */
   .main__title {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/solution/_main.scss */
+  /* line 129, src/scss/_components/solution/_main.scss */
   .main__title {
     width: 100%;
     max-width: 200px;
@@ -2727,7 +2735,7 @@ picture {
   }
 }
 
-/* line 147, src/scss/_components/solution/_main.scss */
+/* line 151, src/scss/_components/solution/_main.scss */
 .main__desc {
   width: 100%;
   max-width: 535px;
@@ -2742,7 +2750,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 147, src/scss/_components/solution/_main.scss */
+  /* line 151, src/scss/_components/solution/_main.scss */
   .main__desc {
     width: 100%;
     max-width: 300px;
@@ -2752,33 +2760,33 @@ picture {
   }
 }
 
-/* line 167, src/scss/_components/solution/_main.scss */
+/* line 171, src/scss/_components/solution/_main.scss */
 .main__btn {
   padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 167, src/scss/_components/solution/_main.scss */
+  /* line 171, src/scss/_components/solution/_main.scss */
   .main__btn {
     padding-bottom: 32px;
   }
 }
 
-/* line 173, src/scss/_components/solution/_main.scss */
+/* line 177, src/scss/_components/solution/_main.scss */
 .main__btn .c-btn {
   -webkit-box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
           box-shadow: 0px 6px 20px rgba(40, 223, 153, 0.2), 0px 20px 30px rgba(40, 223, 153, 0.2);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 173, src/scss/_components/solution/_main.scss */
+  /* line 177, src/scss/_components/solution/_main.scss */
   .main__btn .c-btn {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 
-/* line 181, src/scss/_components/solution/_main.scss */
+/* line 185, src/scss/_components/solution/_main.scss */
 .main__video {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2790,7 +2798,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 185, src/scss/_components/solution/_main.scss */
+/* line 189, src/scss/_components/solution/_main.scss */
 .main__video video {
   display: block;
   max-width: 100%;
