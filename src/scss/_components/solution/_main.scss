@@ -24,13 +24,20 @@
 		.main {
 			&__title {
 				padding-bottom: 50px;
-				font-size: 44px;
-				@include adaptive(1535) {
-					font-size: 36px;
+				font-size: 28px;
+				line-height: 44px;
+				@include adaptive(1365) {
+					line-height: 40px;
+				}
+				@include adaptive(1023) {
+					font-size: 24px;
+					line-height: 35px;
 				}
 				@include adaptive(767) {
 					max-width: 100%;
 					padding-bottom: 20px;
+					font-size: 20px;
+					line-height: 26px;
 				}
 			}
 
